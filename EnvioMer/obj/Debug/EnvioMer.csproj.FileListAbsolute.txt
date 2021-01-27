@@ -1,0 +1,13 @@
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\bin\Debug\EnvioMer.exe.config
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\bin\Debug\EnvioMer.exe
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\bin\Debug\EnvioMer.pdb
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\obj\Debug\EnvioMer.csprojAssemblyReference.cache
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\obj\Debug\EnvioMer.Form1.resources
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\obj\Debug\EnvioMer.Properties.Resources.resources
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\obj\Debug\EnvioMer.csproj.GenerateResource.cache
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\obj\Debug\EnvioMer.csproj.CoreCompileInputs.cache
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\obj\Debug\EnvioMer.csproj.CopyComplete
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\obj\Debug\EnvioMer.exe
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\obj\Debug\EnvioMer.pdb
+C:\Users\ANGEL\source\repos\EnvioMer\EnvioMer\obj\Debug\EnvioMer.FormCostos.resources
