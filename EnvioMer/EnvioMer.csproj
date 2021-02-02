@@ -79,18 +79,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="embarque\FormFCL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="embarque\FormFCL.Designer.cs">
-      <DependentUpon>FormFCL.cs</DependentUpon>
-    </Compile>
-    <Compile Include="embarque\FormLCL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="embarque\FormLCL.Designer.cs">
-      <DependentUpon>FormLCL.cs</DependentUpon>
-    </Compile>
     <Compile Include="datos.cs" />
     <Compile Include="menu.cs">
       <SubType>Form</SubType>
@@ -114,12 +102,6 @@
     <Compile Include="Mysql\conexion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="embarque\FormFCL.resx">
-      <DependentUpon>FormFCL.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="embarque\FormLCL.resx">
-      <DependentUpon>FormLCL.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>

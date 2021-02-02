@@ -31,15 +31,26 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCostos));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelFCL = new System.Windows.Forms.Panel();
+            this.dataGridTablaFCL = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.BtnAgregar = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textCantidadPaquetesFCL = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.comboTipoCont = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textCostoXcontenedor = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.btnaceptar = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.TXTMAritimo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.labelCerrar = new System.Windows.Forms.Label();
             this.labelFCL = new System.Windows.Forms.Label();
             this.labelLCL = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.TXTidCompra = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -57,7 +68,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxIcoterm = new System.Windows.Forms.ComboBox();
-            this.idCompra = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -99,7 +109,8 @@
             this.label18 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.PanelContenedor.SuspendLayout();
+            this.panelFCL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridTablaFCL)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -117,7 +128,6 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -130,7 +140,8 @@
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage1.BackgroundImage = global::EnvioMer.Properties.Resources.nombre;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.tabPage1.Controls.Add(this.PanelContenedor);
+            this.tabPage1.Controls.Add(this.panelFCL);
+            this.tabPage1.Controls.Add(this.btnaceptar);
             this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -141,14 +152,137 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Maritimo";
             // 
-            // PanelContenedor
+            // panelFCL
             // 
-            this.PanelContenedor.Controls.Add(this.btnaceptar);
-            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(199, 77);
-            this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(707, 456);
-            this.PanelContenedor.TabIndex = 43;
+            this.panelFCL.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelFCL.BackColor = System.Drawing.Color.Transparent;
+            this.panelFCL.Controls.Add(this.dataGridTablaFCL);
+            this.panelFCL.Controls.Add(this.label8);
+            this.panelFCL.Controls.Add(this.BtnAgregar);
+            this.panelFCL.Controls.Add(this.label13);
+            this.panelFCL.Controls.Add(this.textCantidadPaquetesFCL);
+            this.panelFCL.Controls.Add(this.label14);
+            this.panelFCL.Controls.Add(this.comboTipoCont);
+            this.panelFCL.Controls.Add(this.label17);
+            this.panelFCL.Controls.Add(this.textCostoXcontenedor);
+            this.panelFCL.Controls.Add(this.label16);
+            this.panelFCL.Location = new System.Drawing.Point(199, 83);
+            this.panelFCL.Name = "panelFCL";
+            this.panelFCL.Size = new System.Drawing.Size(710, 375);
+            this.panelFCL.TabIndex = 53;
+            this.panelFCL.Visible = false;
+            // 
+            // dataGridTablaFCL
+            // 
+            this.dataGridTablaFCL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridTablaFCL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridTablaFCL.Location = new System.Drawing.Point(317, 53);
+            this.dataGridTablaFCL.Name = "dataGridTablaFCL";
+            this.dataGridTablaFCL.Size = new System.Drawing.Size(263, 192);
+            this.dataGridTablaFCL.TabIndex = 50;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 40);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(86, 23);
+            this.label8.TabIndex = 52;
+            this.label8.Text = "Cantidad";
+            // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.Location = new System.Drawing.Point(20, 317);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(177, 45);
+            this.BtnAgregar.TabIndex = 51;
+            this.BtnAgregar.Text = "Agregar";
+            this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(402, 293);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(81, 41);
+            this.label13.TabIndex = 45;
+            this.label13.Text = "00.0";
+            // 
+            // textCantidadPaquetesFCL
+            // 
+            this.textCantidadPaquetesFCL.Location = new System.Drawing.Point(16, 83);
+            this.textCantidadPaquetesFCL.Name = "textCantidadPaquetesFCL";
+            this.textCantidadPaquetesFCL.Size = new System.Drawing.Size(181, 32);
+            this.textCantidadPaquetesFCL.TabIndex = 43;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(406, 258);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(101, 23);
+            this.label14.TabIndex = 44;
+            this.label14.Text = "Costo total";
+            // 
+            // comboTipoCont
+            // 
+            this.comboTipoCont.FormattingEnabled = true;
+            this.comboTipoCont.Items.AddRange(new object[] {
+            "Contenedor DRY-VAN 20´",
+            "Contenedor DRY-VAN 40´",
+            "Contenedor DRY -VAN 40´    HIGH CUBE",
+            "Contenedor Ventilado 20´",
+            "Contenedor Refrigerado 20´",
+            "Contenedor Refrigerado 40´",
+            "Contenedor Flat Rack 20\'",
+            "Contenedor Flat Rack 40\'",
+            "Contenedor ABIERTO 20´    OPEN TOP"});
+            this.comboTipoCont.Location = new System.Drawing.Point(16, 169);
+            this.comboTipoCont.Name = "comboTipoCont";
+            this.comboTipoCont.Size = new System.Drawing.Size(181, 31);
+            this.comboTipoCont.TabIndex = 49;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(12, 222);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(194, 23);
+            this.label17.TabIndex = 47;
+            this.label17.Text = "Costo por contenedor";
+            // 
+            // textCostoXcontenedor
+            // 
+            this.textCostoXcontenedor.Location = new System.Drawing.Point(16, 258);
+            this.textCostoXcontenedor.Name = "textCostoXcontenedor";
+            this.textCostoXcontenedor.Size = new System.Drawing.Size(181, 32);
+            this.textCostoXcontenedor.TabIndex = 48;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(12, 129);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(180, 23);
+            this.label16.TabIndex = 46;
+            this.label16.Text = "Tipo de  contenedor";
+            // 
+            // btnaceptar
+            // 
+            this.btnaceptar.Location = new System.Drawing.Point(215, 465);
+            this.btnaceptar.Name = "btnaceptar";
+            this.btnaceptar.Size = new System.Drawing.Size(138, 46);
+            this.btnaceptar.TabIndex = 0;
+            this.btnaceptar.Text = "Aceptar";
+            this.btnaceptar.UseVisualStyleBackColor = true;
+            this.btnaceptar.Click += new System.EventHandler(this.btnaceptar_Click);
             // 
             // panel3
             // 
@@ -165,23 +299,13 @@
             this.panel3.Size = new System.Drawing.Size(707, 74);
             this.panel3.TabIndex = 42;
             // 
-            // btnaceptar
-            // 
-            this.btnaceptar.Location = new System.Drawing.Point(54, 356);
-            this.btnaceptar.Name = "btnaceptar";
-            this.btnaceptar.Size = new System.Drawing.Size(103, 45);
-            this.btnaceptar.TabIndex = 0;
-            this.btnaceptar.Text = "Aceptar";
-            this.btnaceptar.UseVisualStyleBackColor = true;
-            this.btnaceptar.Click += new System.EventHandler(this.btnaceptar_Click);
-            // 
             // TXTMAritimo
             // 
             this.TXTMAritimo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.TXTMAritimo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TXTMAritimo.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTMAritimo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.TXTMAritimo.Location = new System.Drawing.Point(293, 34);
+            this.TXTMAritimo.Location = new System.Drawing.Point(230, 29);
             this.TXTMAritimo.Name = "TXTMAritimo";
             this.TXTMAritimo.Size = new System.Drawing.Size(10, 14);
             this.TXTMAritimo.TabIndex = 3;
@@ -245,6 +369,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.TXTidCompra);
             this.panel2.Controls.Add(this.panel10);
             this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.panel9);
@@ -262,7 +387,6 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.comboBoxIcoterm);
-            this.panel2.Controls.Add(this.idCompra);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.ForeColor = System.Drawing.Color.Black;
@@ -270,6 +394,13 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(196, 530);
             this.panel2.TabIndex = 41;
+            // 
+            // TXTidCompra
+            // 
+            this.TXTidCompra.Location = new System.Drawing.Point(24, 116);
+            this.TXTidCompra.Name = "TXTidCompra";
+            this.TXTidCompra.Size = new System.Drawing.Size(154, 32);
+            this.TXTidCompra.TabIndex = 44;
             // 
             // panel10
             // 
@@ -339,8 +470,6 @@
             this.comboBoxTipoEnvio.Name = "comboBoxTipoEnvio";
             this.comboBoxTipoEnvio.Size = new System.Drawing.Size(155, 31);
             this.comboBoxTipoEnvio.TabIndex = 37;
-            this.comboBoxTipoEnvio.Text = "FCL Contenedor Completo";
-            this.comboBoxTipoEnvio.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipoEnvio_SelectedIndexChanged_1);
             // 
             // label3
             // 
@@ -370,7 +499,6 @@
             this.comboBoxMoneda.Name = "comboBoxMoneda";
             this.comboBoxMoneda.Size = new System.Drawing.Size(155, 31);
             this.comboBoxMoneda.TabIndex = 38;
-            this.comboBoxMoneda.Text = "EUR";
             // 
             // textBoxDestinoPuerto
             // 
@@ -432,14 +560,6 @@
             this.comboBoxIcoterm.Name = "comboBoxIcoterm";
             this.comboBoxIcoterm.Size = new System.Drawing.Size(155, 31);
             this.comboBoxIcoterm.TabIndex = 36;
-            this.comboBoxIcoterm.Text = "EXW (Ex Works)";
-            // 
-            // idCompra
-            // 
-            this.idCompra.Location = new System.Drawing.Point(24, 115);
-            this.idCompra.Name = "idCompra";
-            this.idCompra.Size = new System.Drawing.Size(155, 32);
-            this.idCompra.TabIndex = 35;
             // 
             // label1
             // 
@@ -928,7 +1048,9 @@
             this.Text = "Form2";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.PanelContenedor.ResumeLayout(false);
+            this.panelFCL.ResumeLayout(false);
+            this.panelFCL.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridTablaFCL)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -960,7 +1082,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBoxIcoterm;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBoxTipoEnvio;
         private System.Windows.Forms.TextBox textBoxOrigenPuerto;
@@ -1015,10 +1136,21 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TextBox idCompra;
         public System.Windows.Forms.TextBox TXTMAritimo;
-        private System.Windows.Forms.Panel PanelContenedor;
         public System.Windows.Forms.TabPage tabPage1;
+        public System.Windows.Forms.TextBox TXTidCompra;
+        public System.Windows.Forms.ComboBox comboBoxIcoterm;
         private System.Windows.Forms.Button btnaceptar;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button BtnAgregar;
+        private System.Windows.Forms.DataGridView dataGridTablaFCL;
+        private System.Windows.Forms.TextBox textCantidadPaquetesFCL;
+        private System.Windows.Forms.ComboBox comboTipoCont;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textCostoXcontenedor;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Panel panelFCL;
     }
 }
