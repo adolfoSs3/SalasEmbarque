@@ -58,3 +58,31 @@ C:\Users\ANGEL\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.cs
 C:\Users\ANGEL\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csproj.CopyComplete
 C:\Users\ANGEL\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.exe
 C:\Users\ANGEL\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.pdb
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\EnvioMer.exe.config
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\EnvioMer.exe
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\EnvioMer.pdb
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\GMap.NET.Core.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\GMap.NET.WindowsForms.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\MySql.Data.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\Google.Protobuf.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\Zstandard.Net.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\BouncyCastle.Crypto.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\Ubiety.Dns.Core.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\Renci.SshNet.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\System.Buffers.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\K4os.Compression.LZ4.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\K4os.Hash.xxHash.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\MySql.Data.xml
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csprojAssemblyReference.cache
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.exe.config
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.menu.resources
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.FormCostos.resources
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.Mapa.resources
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.Properties.Resources.resources
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csproj.GenerateResource.cache
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csproj.CoreCompileInputs.cache
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csproj.CopyComplete
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.exe
+D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.pdb
