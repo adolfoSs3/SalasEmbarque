@@ -32,21 +32,19 @@ namespace EnvioMer
 
     public class DatosLCL
     {
-        public string TipoEm { get; set; }
         public int NPaquetes { get; set; }
         public double peso { get; set; }
         public double Volumen { get; set; }
         public double costo { get; set; }
         public int idEmbarque { get; set; }
         public DatosLCL() { }
-        public DatosLCL(int NPaquetes, double peso, double Volumen, double costo,string TipoE,int idEmbarque)
+        public DatosLCL(int NPaquetes, double peso, double Volumen, double costo,int idEmbarque)
         {
             
             this.NPaquetes = NPaquetes;
             this.peso = peso;
             this.Volumen = Volumen;
             this.costo = costo;
-            this.TipoEm = TipoE;
             this.idEmbarque = idEmbarque;
         }
     }

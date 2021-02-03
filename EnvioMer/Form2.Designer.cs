@@ -107,6 +107,19 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.TxtNPaquetesLCL = new System.Windows.Forms.TextBox();
+            this.TxtPesoLCL = new System.Windows.Forms.TextBox();
+            this.TxtVolumenLCL = new System.Windows.Forms.TextBox();
+            this.TxtCostoLCL = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.BtnAgregarLCL = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panelFCL.SuspendLayout();
@@ -121,6 +134,8 @@
             this.bunifuGradientPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -140,6 +155,7 @@
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage1.BackgroundImage = global::EnvioMer.Properties.Resources.nombre;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.panelFCL);
             this.tabPage1.Controls.Add(this.btnaceptar);
             this.tabPage1.Controls.Add(this.panel3);
@@ -168,7 +184,7 @@
             this.panelFCL.Controls.Add(this.label17);
             this.panelFCL.Controls.Add(this.textCostoXcontenedor);
             this.panelFCL.Controls.Add(this.label16);
-            this.panelFCL.Location = new System.Drawing.Point(199, 83);
+            this.panelFCL.Location = new System.Drawing.Point(898, 113);
             this.panelFCL.Name = "panelFCL";
             this.panelFCL.Size = new System.Drawing.Size(710, 375);
             this.panelFCL.TabIndex = 53;
@@ -1038,6 +1054,129 @@
             this.label18.TabIndex = 3;
             this.label18.Text = "Aéreo";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.BtnAgregarLCL);
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.TxtCostoLCL);
+            this.panel1.Controls.Add(this.TxtVolumenLCL);
+            this.panel1.Controls.Add(this.TxtPesoLCL);
+            this.panel1.Controls.Add(this.TxtNPaquetesLCL);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Location = new System.Drawing.Point(199, 83);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(710, 375);
+            this.panel1.TabIndex = 54;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(30, 30);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(187, 23);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Número de paquetes";
+            // 
+            // TxtNPaquetesLCL
+            // 
+            this.TxtNPaquetesLCL.Location = new System.Drawing.Point(261, 21);
+            this.TxtNPaquetesLCL.Name = "TxtNPaquetesLCL";
+            this.TxtNPaquetesLCL.Size = new System.Drawing.Size(100, 32);
+            this.TxtNPaquetesLCL.TabIndex = 1;
+            // 
+            // TxtPesoLCL
+            // 
+            this.TxtPesoLCL.Location = new System.Drawing.Point(261, 107);
+            this.TxtPesoLCL.Name = "TxtPesoLCL";
+            this.TxtPesoLCL.Size = new System.Drawing.Size(100, 32);
+            this.TxtPesoLCL.TabIndex = 2;
+            // 
+            // TxtVolumenLCL
+            // 
+            this.TxtVolumenLCL.Location = new System.Drawing.Point(261, 174);
+            this.TxtVolumenLCL.Name = "TxtVolumenLCL";
+            this.TxtVolumenLCL.Size = new System.Drawing.Size(100, 32);
+            this.TxtVolumenLCL.TabIndex = 3;
+            // 
+            // TxtCostoLCL
+            // 
+            this.TxtCostoLCL.Location = new System.Drawing.Point(261, 243);
+            this.TxtCostoLCL.Name = "TxtCostoLCL";
+            this.TxtCostoLCL.Size = new System.Drawing.Size(100, 32);
+            this.TxtCostoLCL.TabIndex = 4;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(34, 125);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(50, 23);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Peso";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(34, 192);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(86, 23);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "Volumen";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(34, 261);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(58, 23);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "Costo";
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(473, 288);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(81, 41);
+            this.label13.TabIndex = 47;
+            this.label13.Text = "00.0";
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(477, 253);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(101, 23);
+            this.label15.TabIndex = 46;
+            this.label15.Text = "Costo total";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(384, 21);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(318, 195);
+            this.dataGridView1.TabIndex = 48;
+            // 
+            // BtnAgregarLCL
+            // 
+            this.BtnAgregarLCL.Location = new System.Drawing.Point(116, 304);
+            this.BtnAgregarLCL.Name = "BtnAgregarLCL";
+            this.BtnAgregarLCL.Size = new System.Drawing.Size(144, 44);
+            this.BtnAgregarLCL.TabIndex = 49;
+            this.BtnAgregarLCL.Text = "Agregar";
+            this.BtnAgregarLCL.UseVisualStyleBackColor = true;
+            this.BtnAgregarLCL.Click += new System.EventHandler(this.BtnAgregarLCL_Click);
+            // 
             // FormCostos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1069,6 +1208,9 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1153,5 +1295,18 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panelFCL;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button BtnAgregarLCL;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox TxtCostoLCL;
+        private System.Windows.Forms.TextBox TxtVolumenLCL;
+        private System.Windows.Forms.TextBox TxtPesoLCL;
+        private System.Windows.Forms.TextBox TxtNPaquetesLCL;
+        private System.Windows.Forms.Label label9;
     }
 }

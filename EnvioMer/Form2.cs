@@ -16,6 +16,7 @@ namespace EnvioMer
         datos TodosLosDatos = new datos();
         DatosFCL DatosFCL = new DatosFCL();
         funciones Funciones = new funciones();
+        DatosLCL DatosLCL = new DatosLCL();
        
         
         public FormCostos()
@@ -75,7 +76,7 @@ namespace EnvioMer
                 DatosFCL.Tipo_Contenedor = comboTipoCont.Text;
                 DatosFCL.Costo_Contenedor = double.Parse(textCostoXcontenedor.Text);
                 DatosFCL.idEmbarque = int.Parse(TXTidCompra.Text);
-                //multiplicacion para obtener el costo total 
+                //multiplicacion para obtener el costo total este se agrega directo a la bd
                 int Cantidad= int.Parse(textCantidadPaquetesFCL.Text);
                 double CostoXC= double.Parse(textCostoXcontenedor.Text);
                 double resultado = Cantidad * CostoXC;
@@ -126,6 +127,23 @@ namespace EnvioMer
             }
 
 
+        }
+        //------------------Campos LCL-----------------------------------
+        private void BtnAgregarLCL_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DatosLCL.NPaquetes = int.Parse(TxtNPaquetesLCL.Text);
+                DatosLCL.peso = double.Parse(TxtPesoLCL.Text);
+                DatosLCL.Volumen = double.Parse(TxtVolumenLCL.Text);
+                DatosLCL.costo = double.Parse(TxtCostoLCL.Text);
+                DatosLCL.idEmbarque = Convert.ToInt32(TXTidCompra.Text);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
