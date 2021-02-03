@@ -15,6 +15,7 @@ namespace EnvioMer
     {
         datos TodosLosDatos = new datos();
         DatosFCL DatosFCL = new DatosFCL();
+        funciones Funciones = new funciones();
        
         
         public FormCostos()
@@ -69,10 +70,16 @@ namespace EnvioMer
         {
             try
             {
+
                 DatosFCL.Cantidad = int.Parse(textCantidadPaquetesFCL.Text);
                 DatosFCL.Tipo_Contenedor = comboTipoCont.Text;
                 DatosFCL.Costo_Contenedor = double.Parse(textCostoXcontenedor.Text);
                 DatosFCL.idEmbarque = int.Parse(TXTidCompra.Text);
+                //multiplicacion para obtener el costo total 
+                int Cantidad= int.Parse(textCantidadPaquetesFCL.Text);
+                double CostoXC= double.Parse(textCostoXcontenedor.Text);
+                double resultado = Cantidad * CostoXC;
+                DatosFCL.Costo_Total = resultado;
            
 
             //condiciones para el Panel que contiene FCL
@@ -104,8 +111,12 @@ namespace EnvioMer
                     }
                     
                 }
-               
-                    
+                    //Se muestran los datos de la tabla FCL
+                    Funciones.ConsultaFCL(dataGridTablaFCL,TXTidCompra);
+                    //se muestra el costo total de los contenedores
+                    Funciones.CostoFinalFCL(LblTotal);
+
+
                 }
 
             }

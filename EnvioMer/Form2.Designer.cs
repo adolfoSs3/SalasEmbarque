@@ -35,7 +35,7 @@
             this.dataGridTablaFCL = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.BtnAgregar = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
+            this.LblTotal = new System.Windows.Forms.Label();
             this.textCantidadPaquetesFCL = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.comboTipoCont = new System.Windows.Forms.ComboBox();
@@ -161,7 +161,7 @@
             this.panelFCL.Controls.Add(this.dataGridTablaFCL);
             this.panelFCL.Controls.Add(this.label8);
             this.panelFCL.Controls.Add(this.BtnAgregar);
-            this.panelFCL.Controls.Add(this.label13);
+            this.panelFCL.Controls.Add(this.LblTotal);
             this.panelFCL.Controls.Add(this.textCantidadPaquetesFCL);
             this.panelFCL.Controls.Add(this.label14);
             this.panelFCL.Controls.Add(this.comboTipoCont);
@@ -178,9 +178,9 @@
             // 
             this.dataGridTablaFCL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridTablaFCL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridTablaFCL.Location = new System.Drawing.Point(317, 53);
+            this.dataGridTablaFCL.Location = new System.Drawing.Point(231, 53);
             this.dataGridTablaFCL.Name = "dataGridTablaFCL";
-            this.dataGridTablaFCL.Size = new System.Drawing.Size(263, 192);
+            this.dataGridTablaFCL.Size = new System.Drawing.Size(471, 192);
             this.dataGridTablaFCL.TabIndex = 50;
             // 
             // label8
@@ -202,17 +202,17 @@
             this.BtnAgregar.UseVisualStyleBackColor = true;
             this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
-            // label13
+            // LblTotal
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(402, 293);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(81, 41);
-            this.label13.TabIndex = 45;
-            this.label13.Text = "00.0";
+            this.LblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblTotal.AutoSize = true;
+            this.LblTotal.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTotal.ForeColor = System.Drawing.Color.Red;
+            this.LblTotal.Location = new System.Drawing.Point(402, 293);
+            this.LblTotal.Name = "LblTotal";
+            this.LblTotal.Size = new System.Drawing.Size(81, 41);
+            this.LblTotal.TabIndex = 45;
+            this.LblTotal.Text = "00.0";
             // 
             // textCantidadPaquetesFCL
             // 
@@ -220,6 +220,7 @@
             this.textCantidadPaquetesFCL.Name = "textCantidadPaquetesFCL";
             this.textCantidadPaquetesFCL.Size = new System.Drawing.Size(181, 32);
             this.textCantidadPaquetesFCL.TabIndex = 43;
+            this.textCantidadPaquetesFCL.Text = " ";
             // 
             // label14
             // 
@@ -1148,7 +1149,7 @@
         private System.Windows.Forms.ComboBox comboTipoCont;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textCostoXcontenedor;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label LblTotal;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panelFCL;

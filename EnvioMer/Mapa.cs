@@ -43,6 +43,9 @@ namespace EnvioMer
 
         }
 
-      
+        private void Mapa_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Dispose();
+        }
     }
 }

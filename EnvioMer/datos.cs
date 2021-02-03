@@ -57,13 +57,15 @@ namespace EnvioMer
         public string Tipo_Contenedor { get; set; }
         public double Costo_Contenedor { get; set; }
         public int idEmbarque { get; set; }
+        public double Costo_Total { get; set; }
         public DatosFCL() { }
-        public DatosFCL(int Cantidad, string Tipo_Contenedor,double Costo_Contenedor,int idEmbarque)
+        public DatosFCL(int Cantidad, string Tipo_Contenedor,double Costo_Contenedor,int idEmbarque, double costoTotal)
         {
             this.Cantidad = Cantidad;
             this.Tipo_Contenedor = Tipo_Contenedor;
             this.Costo_Contenedor = Costo_Contenedor;
             this.idEmbarque = idEmbarque;
+            this.Costo_Total = costoTotal;
         }
     }
 

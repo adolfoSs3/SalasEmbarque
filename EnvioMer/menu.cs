@@ -47,7 +47,17 @@ namespace EnvioMer
        
         private void picturX_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            try
+            {
+              Application.Exit();
+            }
+            catch (Exception )
+            {
+                Application.Exit();
+                
+            }
+            
+            
         }
 
         private void picturMaximizar_Click(object sender, EventArgs e)
@@ -90,18 +100,13 @@ namespace EnvioMer
             fh.Show();
         }
 
-        private void bunifuFlatButtonCosto_Click(object sender, EventArgs e)
+      
+        private void BTNEmbarque_Click(object sender, EventArgs e)
         {
             AbrirFCostos(new FormCostos());
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Mysql.conexion.obtenerConexion();
-            MessageBox.Show("exito");
-        }
-
-        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        private void BTNMapa_Click(object sender, EventArgs e)
         {
             AbrirFCostos(new Mapa());
         }
