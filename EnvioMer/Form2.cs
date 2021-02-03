@@ -114,7 +114,7 @@ namespace EnvioMer
                     //Se muestran los datos de la tabla FCL
                     Funciones.ConsultaFCL(dataGridTablaFCL,TXTidCompra);
                     //se muestra el costo total de los contenedores
-                    Funciones.CostoFinalFCL(LblTotal);
+                    LblTotal.Text = Funciones.CostoFinalFCL(TXTidCompra).ToString();
 
 
                 }
