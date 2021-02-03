@@ -124,7 +124,7 @@ namespace EnvioMer
             catch (Exception EX)
             {
                 MessageBox.Show("Error" + EX.Message);
-                MessageBox.Show("che Culo we XD");
+                //MessageBox.Show("che Culo we XD");
             }
 
 
