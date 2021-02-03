@@ -127,6 +127,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.gMapControl1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Mapa";
             this.Text = "Mapa";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Mapa_FormClosing);
