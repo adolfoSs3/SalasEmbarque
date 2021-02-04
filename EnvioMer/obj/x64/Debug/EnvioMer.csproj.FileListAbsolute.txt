@@ -86,3 +86,38 @@ D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMe
 D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csproj.CopyComplete
 D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.exe
 D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.pdb
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csprojAssemblyReference.cache
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.exe.config
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.Login.resources
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.menu.resources
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.FormCostos.resources
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.Mapa.resources
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.Properties.Resources.resources
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csproj.GenerateResource.cache
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csproj.CoreCompileInputs.cache
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.exe
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.pdb
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\EnvioMer.exe.config
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\EnvioMer.exe
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\EnvioMer.pdb
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\GMap.NET.Core.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\GMap.NET.WindowsForms.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\MySql.Data.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\Google.Protobuf.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\Zstandard.Net.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\BouncyCastle.Crypto.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\Ubiety.Dns.Core.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\Renci.SshNet.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\System.Buffers.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\K4os.Compression.LZ4.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\K4os.Hash.xxHash.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\MySql.Data.xml
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csproj.CopyComplete
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\x64\pdfium.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\x86\pdfium.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\PdfiumViewer.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\PdfiumViewer.xml
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\nl\PdfiumViewer.resources.dll
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.Incotems.resources

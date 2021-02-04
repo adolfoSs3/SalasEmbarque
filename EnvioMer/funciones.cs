@@ -76,37 +76,15 @@ namespace EnvioMer
             Double Resultado;
             try
             {
-                MySqlCommand comando = new MySqlCommand("SELECT SUM(Costo_Total) FROM fcl WHERE IdEmbarque ='" + Total.Text + "'", Mysql.conexion.obtenerConexion());
-                
-                //MySqlConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["SQL_Conection"].ConnectionString);
-                //MySqlCommand command = new MySqlCommand();
-                //connection.Open();
-                //command.Connection = connection;
-                //command.CommandText = "SELECT DISTINCT Codigo, Nombre, UnidadMedida, IGI, IGE FROM tigie WHERE Codigo = @codigo";
-                //command.Prepare();
-                //command.Parameters.AddWithValue("@codigo", Total.Text);
-
+                MySqlCommand comando = new MySqlCommand("SELECT SUM(Costo_Total) FROM fcl WHERE IdEmbarque ='" + Total.Text + "'", Mysql.conexion.obtenerConexion());                               
                 MySqlDataReader reader = comando.ExecuteReader();
 
-                if (reader.Read())
-                {
-                    Resultado = reader.GetDouble(0);
-                    //tigie.Nombre = reader.GetString(1);
-                    //tigie.UnidadMed = reader.GetString(2);
-                    //tigie.IGI = reader.GetString(3);
-                    //tigie.IGE = reader.GetString(4);
-                }
-                else
-                {
-                    Resultado = 0;
-                    //tigie.Nombre = string.Empty;
-                    //tigie.UnidadMed = string.Empty;
-                    //tigie.IGI = string.Empty;
-                    //tigie.IGE = string.Empty;
-                }
+                if (reader.Read())                
+                    Resultado = reader.GetDouble(0);                                    
+                else                
+                    Resultado = 0;                    
+                
                 return Resultado;
-
-
             }
             catch (Exception ex)
             {

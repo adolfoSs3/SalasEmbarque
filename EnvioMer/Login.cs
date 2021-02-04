@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using System.Configuration;
 
 namespace EnvioMer
 {
@@ -28,7 +27,6 @@ namespace EnvioMer
                 //) ENGINE=InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8 COLLATE=utf8_unicode_ci;
 
 
-
         public Login()
         {
             InitializeComponent();
@@ -43,16 +41,8 @@ namespace EnvioMer
             try
             {
                 //adapta esto a tu codigo es decir tu cadena de conexion plox por q truena culero
-
-
-                //MySqlConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["SQL_Conection"].ConnectionString);
-                MySqlCommand comando = new MySqlCommand();
-                connection.Open();
-                comando.Connection = connection;
-                comando.CommandText = "SELECT User FROM usuario WHERE User = @Usuario AND Pass = @pass";
-                comando.Prepare();
-                comando.Parameters.AddWithValue("@Usuario", user);
-                comando.Parameters.AddWithValue("@pass", pass);
+                
+                MySqlCommand comando = new MySqlCommand($"SELECT User FROM usuario WHERE User = '{user}' AND Pass = '{pass}'", Mysql.conexion.obtenerConexion());                               
 
                 MySqlDataReader reader = comando.ExecuteReader();
                 if (reader.Read())
@@ -60,10 +50,8 @@ namespace EnvioMer
                     new menu().Show();
                     Hide();
                 }
-                else
-                {
-                    MessageBox.Show("Revise los datos que ingreso", "ERROR");
-                }
+                else                
+                    MessageBox.Show("Revise los datos que ingreso", "ERROR");                
             }
             catch (Exception ex)
             {
