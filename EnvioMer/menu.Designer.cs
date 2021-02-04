@@ -30,22 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.BTNMapa = new System.Windows.Forms.Button();
-            this.BTNEmbarque = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.btnIncoterm = new System.Windows.Forms.Button();
             this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.picturMaximizar = new System.Windows.Forms.PictureBox();
             this.picturRestaurar = new System.Windows.Forms.PictureBox();
             this.picturMenos = new System.Windows.Forms.PictureBox();
             this.picturX = new System.Windows.Forms.PictureBox();
             this.pictureBoxCerrar = new System.Windows.Forms.PictureBox();
-            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.BTNMapa = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.BTNEmbarque = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelLogo.SuspendLayout();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturMaximizar)).BeginInit();
@@ -53,6 +51,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picturMenos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -67,59 +67,6 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(200, 720);
             this.MenuVertical.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox2.Location = new System.Drawing.Point(62, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(127, 49);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
-            // BTNMapa
-            // 
-            this.BTNMapa.FlatAppearance.BorderSize = 0;
-            this.BTNMapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNMapa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNMapa.ForeColor = System.Drawing.Color.White;
-            this.BTNMapa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNMapa.Location = new System.Drawing.Point(0, 174);
-            this.BTNMapa.Name = "BTNMapa";
-            this.BTNMapa.Size = new System.Drawing.Size(197, 49);
-            this.BTNMapa.TabIndex = 12;
-            this.BTNMapa.Text = "Mapa";
-            this.BTNMapa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTNMapa.UseVisualStyleBackColor = true;
-            this.BTNMapa.Click += new System.EventHandler(this.BTNMapa_Click);
-            // 
-            // BTNEmbarque
-            // 
-            this.BTNEmbarque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.BTNEmbarque.FlatAppearance.BorderSize = 0;
-            this.BTNEmbarque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNEmbarque.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNEmbarque.ForeColor = System.Drawing.Color.White;
-            this.BTNEmbarque.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNEmbarque.Location = new System.Drawing.Point(0, 100);
-            this.BTNEmbarque.Name = "BTNEmbarque";
-            this.BTNEmbarque.Size = new System.Drawing.Size(200, 70);
-            this.BTNEmbarque.TabIndex = 11;
-            this.BTNEmbarque.Text = "Embarque";
-            this.BTNEmbarque.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTNEmbarque.UseVisualStyleBackColor = false;
-            this.BTNEmbarque.Click += new System.EventHandler(this.BTNEmbarque_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
             // 
             // panelLogo
             // 
@@ -139,6 +86,7 @@
             this.btnIncoterm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIncoterm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIncoterm.ForeColor = System.Drawing.Color.White;
+            this.btnIncoterm.Image = global::EnvioMer.Properties.Resources.incoterms;
             this.btnIncoterm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnIncoterm.Location = new System.Drawing.Point(0, 234);
             this.btnIncoterm.Name = "btnIncoterm";
@@ -164,12 +112,21 @@
             this.BarraTitulo.TabIndex = 1;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(200, 50);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
+            this.panelContenedor.TabIndex = 2;
+            // 
             // picturMaximizar
             // 
             this.picturMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picturMaximizar.BackColor = System.Drawing.Color.Gray;
+            this.picturMaximizar.BackColor = System.Drawing.Color.Transparent;
             this.picturMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picturMaximizar.Location = new System.Drawing.Point(1032, 7);
+            this.picturMaximizar.Image = global::EnvioMer.Properties.Resources.maximize;
+            this.picturMaximizar.Location = new System.Drawing.Point(1030, 7);
             this.picturMaximizar.Name = "picturMaximizar";
             this.picturMaximizar.Size = new System.Drawing.Size(20, 20);
             this.picturMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -181,6 +138,7 @@
             // 
             this.picturRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.picturRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturRestaurar.Image = global::EnvioMer.Properties.Resources.restaurar;
             this.picturRestaurar.Location = new System.Drawing.Point(1032, 7);
             this.picturRestaurar.Name = "picturRestaurar";
             this.picturRestaurar.Size = new System.Drawing.Size(20, 20);
@@ -192,8 +150,9 @@
             // picturMenos
             // 
             this.picturMenos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picturMenos.BackColor = System.Drawing.Color.Gray;
+            this.picturMenos.BackColor = System.Drawing.Color.Transparent;
             this.picturMenos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturMenos.Image = global::EnvioMer.Properties.Resources.minimize;
             this.picturMenos.Location = new System.Drawing.Point(1007, 7);
             this.picturMenos.Name = "picturMenos";
             this.picturMenos.Size = new System.Drawing.Size(20, 20);
@@ -205,8 +164,9 @@
             // picturX
             // 
             this.picturX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picturX.BackColor = System.Drawing.Color.Gray;
+            this.picturX.BackColor = System.Drawing.Color.Transparent;
             this.picturX.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturX.Image = global::EnvioMer.Properties.Resources.eliminar;
             this.picturX.Location = new System.Drawing.Point(1056, 7);
             this.picturX.Name = "picturX";
             this.picturX.Size = new System.Drawing.Size(20, 20);
@@ -217,8 +177,9 @@
             // 
             // pictureBoxCerrar
             // 
-            this.pictureBoxCerrar.BackColor = System.Drawing.Color.Gray;
+            this.pictureBoxCerrar.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxCerrar.Image = global::EnvioMer.Properties.Resources.menuBarraWhite;
             this.pictureBoxCerrar.Location = new System.Drawing.Point(6, 3);
             this.pictureBoxCerrar.Name = "pictureBoxCerrar";
             this.pictureBoxCerrar.Size = new System.Drawing.Size(47, 44);
@@ -227,13 +188,61 @@
             this.pictureBoxCerrar.TabStop = false;
             this.pictureBoxCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
             // 
-            // panelContenedor
+            // BTNMapa
             // 
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(200, 50);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
-            this.panelContenedor.TabIndex = 2;
+            this.BTNMapa.FlatAppearance.BorderSize = 0;
+            this.BTNMapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNMapa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNMapa.ForeColor = System.Drawing.Color.White;
+            this.BTNMapa.Image = global::EnvioMer.Properties.Resources.mapa;
+            this.BTNMapa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNMapa.Location = new System.Drawing.Point(0, 174);
+            this.BTNMapa.Name = "BTNMapa";
+            this.BTNMapa.Size = new System.Drawing.Size(197, 49);
+            this.BTNMapa.TabIndex = 12;
+            this.BTNMapa.Text = "Mapa";
+            this.BTNMapa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNMapa.UseVisualStyleBackColor = true;
+            this.BTNMapa.Click += new System.EventHandler(this.BTNMapa_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(4, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::EnvioMer.Properties.Resources.nombre;
+            this.pictureBox2.Location = new System.Drawing.Point(62, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(127, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // BTNEmbarque
+            // 
+            this.BTNEmbarque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BTNEmbarque.FlatAppearance.BorderSize = 0;
+            this.BTNEmbarque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNEmbarque.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNEmbarque.ForeColor = System.Drawing.Color.White;
+            this.BTNEmbarque.Image = global::EnvioMer.Properties.Resources.embarcacion;
+            this.BTNEmbarque.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNEmbarque.Location = new System.Drawing.Point(0, 100);
+            this.BTNEmbarque.Name = "BTNEmbarque";
+            this.BTNEmbarque.Size = new System.Drawing.Size(200, 70);
+            this.BTNEmbarque.TabIndex = 11;
+            this.BTNEmbarque.Text = "Embarque";
+            this.BTNEmbarque.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNEmbarque.UseVisualStyleBackColor = false;
+            this.BTNEmbarque.Click += new System.EventHandler(this.BTNEmbarque_Click);
             // 
             // menu
             // 
@@ -248,8 +257,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.MenuVertical.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelLogo.ResumeLayout(false);
             this.BarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picturMaximizar)).EndInit();
@@ -257,6 +264,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picturMenos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
