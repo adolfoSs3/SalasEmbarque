@@ -116,7 +116,15 @@ namespace EnvioMer
             }
         }
 
-
+        //Aereos--------------------------------------------------------------
+        public static int AgregarAereos(DatosAereo add)
+        {
+            int retorno = 0;
+            MySqlCommand comando = new MySqlCommand(String.Format("INSERT INTO aereo(Origen,Destino,Pago_En,Cantidad,Peso(kg),Volumen(m3),Descripcion_Embarque,Seguro,Porcentaje,Tipo_Moneda,Costo_Envio)" +
+                "values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", add.Origen, add.Destino, add.Pago_en, add.Cantidad,add.Peso,add.Volumen,add.Descripcion,add.Seguro,add.Porcentaje,add.Moneda,add.CostoEnvio), Mysql.conexion.obtenerConexion());
+            retorno = comando.ExecuteNonQuery();
+            return retorno;
+        }
 
     }
 }

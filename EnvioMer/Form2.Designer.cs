@@ -69,6 +69,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBoxTipoEnvio = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -83,41 +84,37 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textVolumen = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.textValorDeclarado = new System.Windows.Forms.TextBox();
+            this.textPeso = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textCantidad = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.comboSeguriSN = new System.Windows.Forms.ComboBox();
+            this.comboPagoEn = new System.Windows.Forms.ComboBox();
+            this.textCostoEnvio = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textDestino = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.TxtDescripcion = new System.Windows.Forms.TextBox();
+            this.textOrigen = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.labelAEreo = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.combomonedaAEreo = new System.Windows.Forms.ComboBox();
+            this.Btngregar = new System.Windows.Forms.Button();
+            this.comboPorcentaje = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panelLCL.SuspendLayout();
@@ -126,16 +123,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTablaFCL)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel13.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -597,6 +594,16 @@
             this.panel6.Size = new System.Drawing.Size(199, 10);
             this.panel6.TabIndex = 41;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::EnvioMer.Properties.Resources.envarque;
+            this.pictureBox1.Location = new System.Drawing.Point(24, -3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 77);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // comboBoxTipoEnvio
             // 
             this.comboBoxTipoEnvio.FormattingEnabled = true;
@@ -724,12 +731,11 @@
             // 
             this.panel5.AutoScroll = true;
             this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.Controls.Add(this.Btngregar);
             this.panel5.Controls.Add(this.panel13);
             this.panel5.Controls.Add(this.panel12);
             this.panel5.Controls.Add(this.panel1);
-            this.panel5.Controls.Add(this.label31);
-            this.panel5.Controls.Add(this.label32);
-            this.panel5.Controls.Add(this.label26);
+            this.panel5.Controls.Add(this.labelAEreo);
             this.panel5.Controls.Add(this.label25);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(3, 51);
@@ -740,30 +746,30 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
-            this.panel13.Controls.Add(this.textBox11);
+            this.panel13.Controls.Add(this.textVolumen);
             this.panel13.Controls.Add(this.label28);
             this.panel13.Controls.Add(this.pictureBox5);
-            this.panel13.Controls.Add(this.textBox9);
-            this.panel13.Controls.Add(this.textBox10);
+            this.panel13.Controls.Add(this.textValorDeclarado);
+            this.panel13.Controls.Add(this.textPeso);
             this.panel13.Controls.Add(this.label27);
             this.panel13.Controls.Add(this.label29);
-            this.panel13.Controls.Add(this.textBox12);
+            this.panel13.Controls.Add(this.textCantidad);
             this.panel13.Controls.Add(this.label30);
             this.panel13.Location = new System.Drawing.Point(612, 47);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(248, 323);
             this.panel13.TabIndex = 19;
             // 
-            // textBox11
+            // textVolumen
             // 
-            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.ForeColor = System.Drawing.Color.White;
-            this.textBox11.Location = new System.Drawing.Point(32, 187);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(118, 20);
-            this.textBox11.TabIndex = 22;
-            this.textBox11.Text = "Volumen (m3)";
+            this.textVolumen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
+            this.textVolumen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textVolumen.ForeColor = System.Drawing.Color.White;
+            this.textVolumen.Location = new System.Drawing.Point(32, 187);
+            this.textVolumen.Name = "textVolumen";
+            this.textVolumen.Size = new System.Drawing.Size(118, 20);
+            this.textVolumen.TabIndex = 22;
+            this.textVolumen.Text = "Volumen (m3)";
             // 
             // label28
             // 
@@ -774,27 +780,35 @@
             this.label28.TabIndex = 21;
             this.label28.Text = "_____________________";
             // 
-            // textBox9
+            // pictureBox5
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.ForeColor = System.Drawing.Color.White;
-            this.textBox9.Location = new System.Drawing.Point(32, 222);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(131, 20);
-            this.textBox9.TabIndex = 24;
-            this.textBox9.Text = "Valor declarado";
+            this.pictureBox5.Location = new System.Drawing.Point(23, 12);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(184, 63);
+            this.pictureBox5.TabIndex = 19;
+            this.pictureBox5.TabStop = false;
             // 
-            // textBox10
+            // textValorDeclarado
             // 
-            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.ForeColor = System.Drawing.Color.White;
-            this.textBox10.Location = new System.Drawing.Point(35, 149);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 20;
-            this.textBox10.Text = "Peso(kg)";
+            this.textValorDeclarado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
+            this.textValorDeclarado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textValorDeclarado.ForeColor = System.Drawing.Color.White;
+            this.textValorDeclarado.Location = new System.Drawing.Point(32, 222);
+            this.textValorDeclarado.Name = "textValorDeclarado";
+            this.textValorDeclarado.Size = new System.Drawing.Size(131, 20);
+            this.textValorDeclarado.TabIndex = 24;
+            this.textValorDeclarado.Text = "Valor declarado";
+            // 
+            // textPeso
+            // 
+            this.textPeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
+            this.textPeso.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textPeso.ForeColor = System.Drawing.Color.White;
+            this.textPeso.Location = new System.Drawing.Point(35, 149);
+            this.textPeso.Name = "textPeso";
+            this.textPeso.Size = new System.Drawing.Size(100, 20);
+            this.textPeso.TabIndex = 20;
+            this.textPeso.Text = "Peso(kg)";
             // 
             // label27
             // 
@@ -814,16 +828,16 @@
             this.label29.TabIndex = 19;
             this.label29.Text = "_____________________";
             // 
-            // textBox12
+            // textCantidad
             // 
-            this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.ForeColor = System.Drawing.Color.White;
-            this.textBox12.Location = new System.Drawing.Point(35, 115);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 18;
-            this.textBox12.Text = "Cantidad";
+            this.textCantidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
+            this.textCantidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textCantidad.ForeColor = System.Drawing.Color.White;
+            this.textCantidad.Location = new System.Drawing.Point(35, 115);
+            this.textCantidad.Name = "textCantidad";
+            this.textCantidad.Size = new System.Drawing.Size(100, 20);
+            this.textCantidad.TabIndex = 18;
+            this.textCantidad.Text = "Cantidad";
             // 
             // label30
             // 
@@ -837,73 +851,68 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.LightGray;
-            this.panel12.Controls.Add(this.textBox6);
+            this.panel12.Controls.Add(this.comboPorcentaje);
+            this.panel12.Controls.Add(this.combomonedaAEreo);
             this.panel12.Controls.Add(this.pictureBox4);
-            this.panel12.Controls.Add(this.comboBox2);
-            this.panel12.Controls.Add(this.comboBox1);
-            this.panel12.Controls.Add(this.label24);
-            this.panel12.Controls.Add(this.textBox5);
+            this.panel12.Controls.Add(this.comboSeguriSN);
+            this.panel12.Controls.Add(this.comboPagoEn);
+            this.panel12.Controls.Add(this.textCostoEnvio);
             this.panel12.Controls.Add(this.label23);
             this.panel12.Location = new System.Drawing.Point(328, 47);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(248, 323);
             this.panel12.TabIndex = 9;
             // 
-            // textBox6
+            // pictureBox4
             // 
-            this.textBox6.BackColor = System.Drawing.Color.LightGray;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox6.Location = new System.Drawing.Point(13, 196);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 14;
-            this.textBox6.Text = "Porcentaje";
+            this.pictureBox4.Location = new System.Drawing.Point(30, 11);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(184, 63);
+            this.pictureBox4.TabIndex = 10;
+            this.pictureBox4.TabStop = false;
             // 
-            // comboBox2
+            // comboSeguriSN
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.LightGray;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(13, 150);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 29);
-            this.comboBox2.TabIndex = 18;
-            this.comboBox2.Text = "Seguro de mercancia";
+            this.comboSeguriSN.BackColor = System.Drawing.Color.LightGray;
+            this.comboSeguriSN.FormattingEnabled = true;
+            this.comboSeguriSN.Items.AddRange(new object[] {
+            "SI",
+            "NO"});
+            this.comboSeguriSN.Location = new System.Drawing.Point(29, 168);
+            this.comboSeguriSN.Name = "comboSeguriSN";
+            this.comboSeguriSN.Size = new System.Drawing.Size(168, 29);
+            this.comboSeguriSN.TabIndex = 18;
+            this.comboSeguriSN.Text = "Seguro de mercancia";
+            this.comboSeguriSN.SelectedIndexChanged += new System.EventHandler(this.comboSeguriSN_SelectedIndexChanged);
             // 
-            // comboBox1
+            // comboPagoEn
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.LightGray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(13, 110);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 29);
-            this.comboBox1.TabIndex = 17;
-            this.comboBox1.Text = "Pago en..";
+            this.comboPagoEn.BackColor = System.Drawing.Color.LightGray;
+            this.comboPagoEn.FormattingEnabled = true;
+            this.comboPagoEn.Items.AddRange(new object[] {
+            "Origen",
+            "Destino"});
+            this.comboPagoEn.Location = new System.Drawing.Point(29, 133);
+            this.comboPagoEn.Name = "comboPagoEn";
+            this.comboPagoEn.Size = new System.Drawing.Size(168, 29);
+            this.comboPagoEn.TabIndex = 17;
+            this.comboPagoEn.Text = "Pago en..";
             // 
-            // label24
+            // textCostoEnvio
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(3, 198);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(178, 21);
-            this.label24.TabIndex = 13;
-            this.label24.Text = "_____________________";
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.LightGray;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox5.Location = new System.Drawing.Point(11, 225);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 16;
-            this.textBox5.Text = "Costo del Flete";
+            this.textCostoEnvio.BackColor = System.Drawing.Color.LightGray;
+            this.textCostoEnvio.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textCostoEnvio.ForeColor = System.Drawing.Color.DimGray;
+            this.textCostoEnvio.Location = new System.Drawing.Point(27, 243);
+            this.textCostoEnvio.Name = "textCostoEnvio";
+            this.textCostoEnvio.Size = new System.Drawing.Size(124, 20);
+            this.textCostoEnvio.TabIndex = 16;
+            this.textCostoEnvio.Text = "Costo del envio";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(4, 229);
+            this.label23.Location = new System.Drawing.Point(20, 247);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(178, 21);
             this.label23.TabIndex = 15;
@@ -912,58 +921,64 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textDestino);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.TxtDescripcion);
+            this.panel1.Controls.Add(this.textOrigen);
             this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.label21);
             this.panel1.Location = new System.Drawing.Point(47, 47);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(248, 323);
             this.panel1.TabIndex = 7;
             // 
-            // textBox2
+            // textDestino
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(27, 168);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "Destino";
+            this.textDestino.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.textDestino.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textDestino.ForeColor = System.Drawing.Color.White;
+            this.textDestino.Location = new System.Drawing.Point(27, 168);
+            this.textDestino.Name = "textDestino";
+            this.textDestino.Size = new System.Drawing.Size(100, 20);
+            this.textDestino.TabIndex = 4;
+            this.textDestino.Text = "Destino";
             // 
-            // textBox4
+            // pictureBox3
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(23, 240);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(175, 20);
-            this.textBox4.TabIndex = 8;
-            this.textBox4.Text = "Descripción Embarque";
+            this.pictureBox3.Location = new System.Drawing.Point(23, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(184, 63);
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
             // 
-            // textBox1
+            // TxtDescripcion
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(26, 89);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Origen";
+            this.TxtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.TxtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtDescripcion.ForeColor = System.Drawing.Color.White;
+            this.TxtDescripcion.Location = new System.Drawing.Point(23, 205);
+            this.TxtDescripcion.Name = "TxtDescripcion";
+            this.TxtDescripcion.Size = new System.Drawing.Size(175, 20);
+            this.TxtDescripcion.TabIndex = 8;
+            this.TxtDescripcion.Text = "Descripción Embarque";
+            // 
+            // textOrigen
+            // 
+            this.textOrigen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.textOrigen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textOrigen.ForeColor = System.Drawing.Color.White;
+            this.textOrigen.Location = new System.Drawing.Point(26, 89);
+            this.textOrigen.Name = "textOrigen";
+            this.textOrigen.Size = new System.Drawing.Size(100, 20);
+            this.textOrigen.TabIndex = 2;
+            this.textOrigen.Text = "Origen";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(20, 242);
+            this.label22.Location = new System.Drawing.Point(20, 208);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(178, 21);
             this.label22.TabIndex = 7;
@@ -979,17 +994,6 @@
             this.label19.TabIndex = 1;
             this.label19.Text = "_____________________";
             // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(23, 205);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.Text = "Origen";
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -1000,59 +1004,27 @@
             this.label20.TabIndex = 3;
             this.label20.Text = "_____________________";
             // 
-            // label21
+            // labelAEreo
             // 
-            this.label21.AutoSize = true;
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(20, 207);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(178, 21);
-            this.label21.TabIndex = 5;
-            this.label21.Text = "_____________________";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
-            this.label31.ForeColor = System.Drawing.Color.Red;
-            this.label31.Location = new System.Drawing.Point(670, 423);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(50, 26);
-            this.label31.TabIndex = 6;
-            this.label31.Text = "00.0";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
-            this.label32.ForeColor = System.Drawing.Color.Red;
-            this.label32.Location = new System.Drawing.Point(470, 423);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(50, 26);
-            this.label32.TabIndex = 5;
-            this.label32.Text = "00.0";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
-            this.label26.Location = new System.Drawing.Point(621, 373);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(141, 26);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "Costo del seguro";
+            this.labelAEreo.AutoSize = true;
+            this.labelAEreo.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
+            this.labelAEreo.ForeColor = System.Drawing.Color.Red;
+            this.labelAEreo.Location = new System.Drawing.Point(656, 444);
+            this.labelAEreo.Name = "labelAEreo";
+            this.labelAEreo.Size = new System.Drawing.Size(50, 26);
+            this.labelAEreo.TabIndex = 5;
+            this.labelAEreo.Text = "00.0";
+            this.labelAEreo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
-            this.label25.Location = new System.Drawing.Point(421, 373);
+            this.label25.Location = new System.Drawing.Point(630, 394);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(131, 26);
+            this.label25.Size = new System.Drawing.Size(100, 26);
             this.label25.TabIndex = 3;
-            this.label25.Text = "Costo del envío";
+            this.label25.Text = "Costo Total";
             // 
             // panel4
             // 
@@ -1065,6 +1037,15 @@
             this.panel4.Size = new System.Drawing.Size(1054, 48);
             this.panel4.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(5, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(59, 45);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -1076,48 +1057,46 @@
             this.label18.TabIndex = 3;
             this.label18.Text = "Aéreo";
             // 
-            // pictureBox1
+            // combomonedaAEreo
             // 
-            this.pictureBox1.Image = global::EnvioMer.Properties.Resources.envarque;
-            this.pictureBox1.Location = new System.Drawing.Point(24, -3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 77);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.combomonedaAEreo.BackColor = System.Drawing.Color.LightGray;
+            this.combomonedaAEreo.FormattingEnabled = true;
+            this.combomonedaAEreo.Items.AddRange(new object[] {
+            "USA",
+            "EUR"});
+            this.combomonedaAEreo.Location = new System.Drawing.Point(29, 98);
+            this.combomonedaAEreo.Name = "combomonedaAEreo";
+            this.combomonedaAEreo.Size = new System.Drawing.Size(168, 29);
+            this.combomonedaAEreo.TabIndex = 19;
+            this.combomonedaAEreo.Text = "USA";
             // 
-            // pictureBox5
+            // Btngregar
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(23, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(184, 63);
-            this.pictureBox5.TabIndex = 19;
-            this.pictureBox5.TabStop = false;
+            this.Btngregar.Location = new System.Drawing.Point(99, 414);
+            this.Btngregar.Name = "Btngregar";
+            this.Btngregar.Size = new System.Drawing.Size(196, 56);
+            this.Btngregar.TabIndex = 20;
+            this.Btngregar.Text = "Agregar";
+            this.Btngregar.UseVisualStyleBackColor = true;
+            this.Btngregar.Click += new System.EventHandler(this.Btngregar_Click);
             // 
-            // pictureBox4
+            // comboPorcentaje
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(30, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(184, 63);
-            this.pictureBox4.TabIndex = 10;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(23, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(184, 63);
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(5, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(59, 45);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.comboPorcentaje.BackColor = System.Drawing.Color.LightGray;
+            this.comboPorcentaje.FormattingEnabled = true;
+            this.comboPorcentaje.Items.AddRange(new object[] {
+            "20",
+            "25",
+            "30",
+            "40",
+            "45",
+            "50"});
+            this.comboPorcentaje.Location = new System.Drawing.Point(29, 205);
+            this.comboPorcentaje.Name = "comboPorcentaje";
+            this.comboPorcentaje.Size = new System.Drawing.Size(168, 29);
+            this.comboPorcentaje.TabIndex = 20;
+            this.comboPorcentaje.Text = "Seleccione %";
+            this.comboPorcentaje.Visible = false;
             // 
             // FormCostos
             // 
@@ -1141,21 +1120,21 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -1184,31 +1163,25 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textOrigen;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textCostoEnvio;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textValorDeclarado;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textCantidad;
+        private System.Windows.Forms.TextBox textPeso;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textVolumen;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxtDescripcion;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textDestino;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.ComboBox comboSeguriSN;
+        private System.Windows.Forms.ComboBox comboPagoEn;
+        private System.Windows.Forms.Label labelAEreo;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel10;
@@ -1253,5 +1226,8 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.ComboBox combomonedaAEreo;
+        private System.Windows.Forms.Button Btngregar;
+        private System.Windows.Forms.ComboBox comboPorcentaje;
     }
 }

@@ -13,18 +13,7 @@ namespace EnvioMer
 {
     public partial class Login : Form
     {
-        //crea esta tabla en tu BD y pon tu usuario pa probar
-                //  CREATE TABLE `usuario` (
-                //  `ID` int (11) NOT NULL AUTO_INCREMENT,
-                //  `Nombre` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
-                //  `ApellidoP` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-                //  `ApellidoM` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-                //  `User` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-                //  `Pass` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-                //  `Tipo` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-                //  `Institucion` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-                //  PRIMARY KEY(`ID`)
-                //) ENGINE=InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8 COLLATE=utf8_unicode_ci;
+        
 
 
         public Login()

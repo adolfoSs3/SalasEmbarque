@@ -17,6 +17,7 @@ namespace EnvioMer
         DatosFCL DatosFCL = new DatosFCL();
         funciones Funciones = new funciones();
         DatosLCL DatosLCL = new DatosLCL();
+        DatosAereo DatosAereo = new DatosAereo();
        
         
         public FormCostos()
@@ -180,5 +181,57 @@ namespace EnvioMer
                 MessageBox.Show("Error" + EX.Message);
             }
         }
+
+        //----------------Aereo---------------------------------------------
+
+        private void comboSeguriSN_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            combomonedaAEreo.DropDownStyle = ComboBoxStyle.DropDownList;//no se cambie el contenido del combo
+            comboPagoEn.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboSeguriSN.DropDownStyle = ComboBoxStyle.DropDownList;
+            combomonedaAEreo.DropDownStyle = ComboBoxStyle.DropDownList;
+            string a = Convert.ToString(comboSeguriSN.SelectedItem); ;
+
+            if (a == "SI")
+            {
+                comboPorcentaje.Visible = true;
+                DatosAereo.Seguro = a;
+               
+            }
+            else if (a == "NO")
+            {
+                comboPorcentaje.Visible = false;
+                DatosAereo.Porcentaje = 0;
+            }
+        }
+
+        private void Btngregar_Click(object sender, EventArgs e)
+        {
+          
+
+            {
+                
+                DatosAereo.Origen = textOrigen.Text;
+                DatosAereo.Destino = textDestino.Text;
+                DatosAereo.Pago_en = comboPagoEn.Text;
+                DatosAereo.Cantidad = int.Parse(textCantidad.Text);
+                DatosAereo.Peso = double.Parse(textPeso.Text);
+                DatosAereo.Volumen = double.Parse(textVolumen.Text);
+                DatosAereo.Descripcion = TxtDescripcion.Text;
+               
+                DatosAereo.Moneda = combomonedaAEreo.Text;
+                DatosAereo.CostoEnvio = double.Parse(textCostoEnvio.Text);
+
+                funciones.AgregarAereos(DatosAereo);
+                MessageBox.Show("Agregado");
+
+            }
+          
+
+
+
+        }
+
+       
     }
 }

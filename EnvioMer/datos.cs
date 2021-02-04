@@ -66,5 +66,38 @@ namespace EnvioMer
             this.Costo_Total = costoTotal;
         }
     }
+    //AEREo---------------------------------------------------------------------
+    public class DatosAereo
+    {
+
+        public string Origen { get; set; }
+        public string Destino { get; set; }
+        public string Pago_en { get; set; }
+        public int Cantidad { get; set; }
+        public double Peso { get; set; }
+        public double Volumen { get; set; }
+        public string Descripcion { get; set; }
+        public string Seguro { get; set; }
+        public int Porcentaje { get; set; }
+        public string Moneda { get; set; }
+        public double CostoEnvio { get; set; }
+        public DatosAereo() {}
+        public DatosAereo(string Origen, string Destino,string Pago_en,int Cantidad,double Peso,double Volumen,string Descrip,string Seguro,int Porcentaje,string Moneda,double CostoEnvio)
+        {
+            this.Origen = Origen;
+            this.Destino = Destino;
+            this.Pago_en = Pago_en;
+            this.Cantidad = Cantidad;
+            this.Peso = Peso;
+            this.Volumen = Volumen;
+            this.Descripcion = Descrip;
+            this.Seguro = Seguro;
+            this.Porcentaje = Porcentaje;
+            this.Moneda = Moneda;
+            this.CostoEnvio = CostoEnvio;
+
+        }
+
+    }
 
 }
