@@ -40,12 +40,14 @@ namespace EnvioMer
             if (dato == "FCL Contenedor Completo")
             {
                 panelFCL.Visible = true;
+                panelLCL.Visible = false;
                 labelFCL.Visible = true;
             }
             else
                 if (dato == "LCL Contenedor Compartido")
             {
-                // Abrirform(new FormLCL());
+                panelLCL.Visible = true;
+                panelFCL.Visible = false;
                 labelLCL.Visible = true;
             }
 
@@ -102,6 +104,7 @@ namespace EnvioMer
                         {
                             TXTidCompra.Clear();
                             panelFCL.Visible = false;
+                                panelLCL.Visible = true;
                             textCantidadPaquetesFCL.Clear();
                             textCostoXcontenedor.Clear();
                             }
@@ -124,26 +127,78 @@ namespace EnvioMer
             catch (Exception EX)
             {
                 MessageBox.Show("Error" + EX.Message);
-                //MessageBox.Show("che Culo we XD");
+                
             }
 
 
         }
         //------------------Campos LCL-----------------------------------
+        
+       
         private void BtnAgregarLCL_Click(object sender, EventArgs e)
         {
             try
             {
-                DatosLCL.NPaquetes = int.Parse(TxtNPaquetesLCL.Text);
-                DatosLCL.peso = double.Parse(TxtPesoLCL.Text);
-                DatosLCL.Volumen = double.Parse(TxtVolumenLCL.Text);
-                DatosLCL.costo = double.Parse(TxtCostoLCL.Text);
-                DatosLCL.idEmbarque = Convert.ToInt32(TXTidCompra.Text);
+                   double Volumen = double.Parse(TxtVolumenLCL.Text);
+                //.-----------------------------
+                DatosLCL.PaqueteN = int.Parse(TxtNPaquetesLCL.Text);           
+                    DatosLCL.peso = double.Parse(TxtPesoLCL.Text);
+                DatosLCL.Volumen = Volumen;
+                    DatosLCL.costo = double.Parse(TxtCostoLCL.Text);
+                    DatosLCL.idEmbarque = Convert.ToInt32(TXTidCompra.Text);
+                if (Volumen>=14.0) {
+                    MessageBox.Show("DEMASIADO VOLUMEN PARA UN ENVÍO LCL, El volumen cotizado es demasiado alto para que el envío tenga un precio óptimo. Por favor cotiza un contenedor completo para optimizar tu envío.");
+                    TxtVolumenLCL.Clear();
+                }
+                else
+                {
+                    DialogResult result = MessageBox.Show("¿Quieres agregar un contenedor(LCL)?", "Agregar", MessageBoxButtons.YesNo);
+                    {
+                        if (result == DialogResult.Yes)
+                        {
+
+                            TxtCostoLCL.Clear();
+                            TxtVolumenLCL.Clear();
+                            TxtPesoLCL.Clear();
+                            int retorno = funciones.agregar(DatosLCL);
+                            MessageBox.Show("Agregado");
+                        }
+                        else if (result == DialogResult.No)
+                        {
+
+                            DialogResult r2 = MessageBox.Show("¿Quieres Cambiar de contenedor?", "", MessageBoxButtons.YesNo);
+                            {
+                                if (r2 == DialogResult.Yes)
+                                {
+                                    TXTidCompra.Clear();
+                                    panelFCL.Visible = true;
+                                    panelLCL.Visible = false;
+                                    TxtCostoLCL.Clear();
+                                    TxtVolumenLCL.Clear();
+                                    TxtPesoLCL.Clear();
+
+                                }
+                                else if (r2 == DialogResult.No)
+                                {
+
+                                }
+
+                            }
+
+                        }
+                        //Se muestran los datos de la tabla FCL
+                        Funciones.ConsultaLCL(dataGridTablaLCL, TXTidCompra);
+                        //se muestra el costo total de los contenedores
+                        labelLCLTotal.Text = Funciones.CostoFinalLCL(TXTidCompra).ToString();
+
+
+                    }
+                }                
             }
-            catch (Exception)
+            catch (Exception EX)
             {
 
-                throw;
+                MessageBox.Show("Error" + EX.Message);
             }
         }
     }

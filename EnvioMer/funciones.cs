@@ -15,8 +15,8 @@ namespace EnvioMer
         public static int agregar(DatosLCL add)
         {
             int retorno = 0;
-            MySqlCommand comando = new MySqlCommand(String.Format("insert into Lcl (Cantidad,Peso_kg,Volumen_m3,Costo,idEmbarque)" +
-                "values('{0}','{1}','{2}','{3}','{4}',)", add.NPaquetes, add.peso, add.Volumen, add.costo, add.idEmbarque), Mysql.conexion.obtenerConexion());
+            MySqlCommand comando = new MySqlCommand(String.Format("insert into Lcl (Paquete_N,Peso_kg,Volumen_m3,Costo,idEmbarque)" +
+                "values('{0}','{1}','{2}','{3}','{4}')", add.PaqueteN, add.peso, add.Volumen, add.costo, add.idEmbarque), Mysql.conexion.obtenerConexion());
             retorno = comando.ExecuteNonQuery();
             return retorno;
         }
@@ -50,8 +50,26 @@ namespace EnvioMer
 
         }
         //------------------------------------------------------------------------------------------------------------
+
+
+        //------------------------------------------------------------------------------------------------------------
+        //Mostramos los datos en el DataGritView especificos dependiendo de la orden de compra
+        public void ConsultaLCL(DataGridView dt, TextBox txtid)
+        {
+            MySqlCommand comando = new MySqlCommand("SELECT Peso_kg, Volumen_m3,Costo,idEmbarque from lcl WHERE IdEmbarque ='" + txtid.Text + "'", Mysql.conexion.obtenerConexion());
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dt.DataSource = tabla;
+
+        }
+        //--------------------------------------------------------------------------------------------
+
+
+
         //metodo para calcular el precio final del FCL
-        
+
 
         public Double CostoFinalFCL(TextBox Total)
         {
@@ -96,5 +114,31 @@ namespace EnvioMer
                 throw;
             }
         }
+        public Double CostoFinalLCL(TextBox Total)
+        {
+            Double Resultado;
+            try
+            {
+                MySqlCommand comando = new MySqlCommand("SELECT SUM(Costo) FROM lcl WHERE idEmbarque ='" + Total.Text + "'", Mysql.conexion.obtenerConexion());
+                MySqlDataReader reader = comando.ExecuteReader();
+                if (reader.Read())
+                {
+                    Resultado = reader.GetDouble(0);          
+                }
+                else
+                {
+                    Resultado = 0;                
+                }
+                return Resultado;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                throw;
+            }
+        }
+
+
+
     }
 }

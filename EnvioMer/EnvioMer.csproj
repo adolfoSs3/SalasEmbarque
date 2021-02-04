@@ -113,19 +113,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -133,85 +133,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Menu2SF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MenuSF.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cuadrado.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menos.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minimizar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\multiplicacion.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\multiplicacion1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menos1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\21.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pagos.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menuN.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\nombre.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\maritimo.jpg" />
+    <None Include="Resources\nombre1.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\envarque.png" />
+    <None Include="Resources\registroTiempo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cerrar.png" />
+    <None Include="Resources\avanceRapido.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\maxi.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minimazar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\res.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\compras.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pagos1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\empleados.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\aereo.png" />
+    <None Include="Resources\analisis.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
