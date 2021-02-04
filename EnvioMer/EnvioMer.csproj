@@ -157,35 +157,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\nombre.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nombre1.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\registroTiempo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\avanceRapido.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\analisis.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eliminarBlack.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menuBarraWhite.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\embarcacion.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mapa.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\incoterms.png" />
+    <None Include="Resources\envarque.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

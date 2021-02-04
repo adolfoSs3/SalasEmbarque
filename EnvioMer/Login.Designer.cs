@@ -96,15 +96,12 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Image = global::EnvioMer.Properties.Resources.eliminarBlack;
-            this.btnCerrar.Location = new System.Drawing.Point(492, 8);
+            this.btnCerrar.BackColor = System.Drawing.Color.Black;
+            this.btnCerrar.Location = new System.Drawing.Point(481, 12);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(32, 32);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btnCerrar.TabIndex = 14;
+            this.btnCerrar.Size = new System.Drawing.Size(43, 50);
+            this.btnCerrar.TabIndex = 17;
             this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // pictureBox2
             // 
