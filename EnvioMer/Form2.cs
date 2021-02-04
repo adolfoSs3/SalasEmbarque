@@ -26,15 +26,11 @@ namespace EnvioMer
 
         private void labelCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-    
-          
+            Close();
+        }              
 
         private void btnaceptar_Click(object sender, EventArgs e)
-        {
-            
-                  
+        {                              
             string dato = comboBoxTipoEnvio.Text;
 
             if (dato == "FCL Contenedor Completo")
@@ -43,8 +39,8 @@ namespace EnvioMer
                 panelLCL.Visible = false;
                 labelFCL.Visible = true;
             }
-            else
-                if (dato == "LCL Contenedor Compartido")
+            else            
+            if (dato == "LCL Contenedor Compartido")
             {
                 panelLCL.Visible = true;
                 panelFCL.Visible = false;
@@ -64,16 +60,13 @@ namespace EnvioMer
             }
             catch (Exception EX) {
                 MessageBox.Show("Detalles" + EX);
-            }
-            
-
+            }            
         }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
             try
             {
-
                 DatosFCL.Cantidad = int.Parse(textCantidadPaquetesFCL.Text);
                 DatosFCL.Tipo_Contenedor = comboTipoCont.Text;
                 DatosFCL.Costo_Contenedor = double.Parse(textCostoXcontenedor.Text);
@@ -107,8 +100,9 @@ namespace EnvioMer
                                 panelLCL.Visible = true;
                             textCantidadPaquetesFCL.Clear();
                             textCostoXcontenedor.Clear();
-                            }
-                        else if (r2 == DialogResult.No) {
+                        }
+                        else if (r2 == DialogResult.No)
+                        {
                             
                         }
 
@@ -119,33 +113,26 @@ namespace EnvioMer
                     Funciones.ConsultaFCL(dataGridTablaFCL,TXTidCompra);
                     //se muestra el costo total de los contenedores
                     LblTotal.Text = Funciones.CostoFinalFCL(TXTidCompra).ToString();
-
-
                 }
-
             }
             catch (Exception EX)
             {
-                MessageBox.Show("Error" + EX.Message);
-                
+                MessageBox.Show("Error" + EX.Message);                
             }
-
-
         }
-        //------------------Campos LCL-----------------------------------
-        
+        //------------------Campos LCL-----------------------------------        
        
         private void BtnAgregarLCL_Click(object sender, EventArgs e)
         {
             try
             {
-                   double Volumen = double.Parse(TxtVolumenLCL.Text);
+                double Volumen = double.Parse(TxtVolumenLCL.Text);
                 //.-----------------------------
                 DatosLCL.PaqueteN = int.Parse(TxtNPaquetesLCL.Text);           
-                    DatosLCL.peso = double.Parse(TxtPesoLCL.Text);
+                DatosLCL.peso = double.Parse(TxtPesoLCL.Text);
                 DatosLCL.Volumen = Volumen;
-                    DatosLCL.costo = double.Parse(TxtCostoLCL.Text);
-                    DatosLCL.idEmbarque = Convert.ToInt32(TXTidCompra.Text);
+                DatosLCL.costo = double.Parse(TxtCostoLCL.Text);
+                DatosLCL.idEmbarque = Convert.ToInt32(TXTidCompra.Text);
                 if (Volumen>=14.0) {
                     MessageBox.Show("DEMASIADO VOLUMEN PARA UN ENVÍO LCL, El volumen cotizado es demasiado alto para que el envío tenga un precio óptimo. Por favor cotiza un contenedor completo para optimizar tu envío.");
                     TxtVolumenLCL.Clear();
@@ -156,7 +143,6 @@ namespace EnvioMer
                     {
                         if (result == DialogResult.Yes)
                         {
-
                             TxtCostoLCL.Clear();
                             TxtVolumenLCL.Clear();
                             TxtPesoLCL.Clear();
@@ -165,7 +151,6 @@ namespace EnvioMer
                         }
                         else if (result == DialogResult.No)
                         {
-
                             DialogResult r2 = MessageBox.Show("¿Quieres Cambiar de contenedor?", "", MessageBoxButtons.YesNo);
                             {
                                 if (r2 == DialogResult.Yes)
@@ -176,28 +161,22 @@ namespace EnvioMer
                                     TxtCostoLCL.Clear();
                                     TxtVolumenLCL.Clear();
                                     TxtPesoLCL.Clear();
-
                                 }
                                 else if (r2 == DialogResult.No)
                                 {
 
                                 }
-
                             }
-
                         }
                         //Se muestran los datos de la tabla FCL
                         Funciones.ConsultaLCL(dataGridTablaLCL, TXTidCompra);
                         //se muestra el costo total de los contenedores
                         labelLCLTotal.Text = Funciones.CostoFinalLCL(TXTidCompra).ToString();
-
-
                     }
                 }                
             }
             catch (Exception EX)
             {
-
                 MessageBox.Show("Error" + EX.Message);
             }
         }

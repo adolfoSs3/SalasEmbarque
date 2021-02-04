@@ -30,29 +30,29 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.BTNMapa = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnIncoterm = new System.Windows.Forms.Button();
+            this.BTNEmbarque = new System.Windows.Forms.Button();
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.panelContenedor = new System.Windows.Forms.Panel();
             this.picturMaximizar = new System.Windows.Forms.PictureBox();
             this.picturRestaurar = new System.Windows.Forms.PictureBox();
             this.picturMenos = new System.Windows.Forms.PictureBox();
             this.picturX = new System.Windows.Forms.PictureBox();
             this.pictureBoxCerrar = new System.Windows.Forms.PictureBox();
-            this.BTNMapa = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.BTNEmbarque = new System.Windows.Forms.Button();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturMenos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -68,126 +68,6 @@
             this.MenuVertical.Size = new System.Drawing.Size(200, 720);
             this.MenuVertical.TabIndex = 0;
             // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
-            this.panelLogo.Controls.Add(this.pictureBox1);
-            this.panelLogo.Controls.Add(this.pictureBox2);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(200, 100);
-            this.panelLogo.TabIndex = 14;
-            // 
-            // btnIncoterm
-            // 
-            this.btnIncoterm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnIncoterm.FlatAppearance.BorderSize = 0;
-            this.btnIncoterm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIncoterm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIncoterm.ForeColor = System.Drawing.Color.White;
-            this.btnIncoterm.Image = global::EnvioMer.Properties.Resources.incoterms;
-            this.btnIncoterm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIncoterm.Location = new System.Drawing.Point(0, 234);
-            this.btnIncoterm.Name = "btnIncoterm";
-            this.btnIncoterm.Size = new System.Drawing.Size(200, 70);
-            this.btnIncoterm.TabIndex = 13;
-            this.btnIncoterm.Text = "Incoterm";
-            this.btnIncoterm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnIncoterm.UseVisualStyleBackColor = false;
-            this.btnIncoterm.Click += new System.EventHandler(this.btnIncoterm_Click);
-            // 
-            // BarraTitulo
-            // 
-            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
-            this.BarraTitulo.Controls.Add(this.picturMaximizar);
-            this.BarraTitulo.Controls.Add(this.picturRestaurar);
-            this.BarraTitulo.Controls.Add(this.picturMenos);
-            this.BarraTitulo.Controls.Add(this.picturX);
-            this.BarraTitulo.Controls.Add(this.pictureBoxCerrar);
-            this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BarraTitulo.Location = new System.Drawing.Point(200, 0);
-            this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1080, 50);
-            this.BarraTitulo.TabIndex = 1;
-            this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(200, 50);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
-            this.panelContenedor.TabIndex = 2;
-            // 
-            // picturMaximizar
-            // 
-            this.picturMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picturMaximizar.BackColor = System.Drawing.Color.Transparent;
-            this.picturMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picturMaximizar.Image = global::EnvioMer.Properties.Resources.maximize;
-            this.picturMaximizar.Location = new System.Drawing.Point(1030, 7);
-            this.picturMaximizar.Name = "picturMaximizar";
-            this.picturMaximizar.Size = new System.Drawing.Size(20, 20);
-            this.picturMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picturMaximizar.TabIndex = 2;
-            this.picturMaximizar.TabStop = false;
-            this.picturMaximizar.Click += new System.EventHandler(this.picturMaximizar_Click);
-            // 
-            // picturRestaurar
-            // 
-            this.picturRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picturRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picturRestaurar.Image = global::EnvioMer.Properties.Resources.restaurar;
-            this.picturRestaurar.Location = new System.Drawing.Point(1032, 7);
-            this.picturRestaurar.Name = "picturRestaurar";
-            this.picturRestaurar.Size = new System.Drawing.Size(20, 20);
-            this.picturRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picturRestaurar.TabIndex = 4;
-            this.picturRestaurar.TabStop = false;
-            this.picturRestaurar.Click += new System.EventHandler(this.picturRestaurar_Click);
-            // 
-            // picturMenos
-            // 
-            this.picturMenos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picturMenos.BackColor = System.Drawing.Color.Transparent;
-            this.picturMenos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picturMenos.Image = global::EnvioMer.Properties.Resources.minimize;
-            this.picturMenos.Location = new System.Drawing.Point(1007, 7);
-            this.picturMenos.Name = "picturMenos";
-            this.picturMenos.Size = new System.Drawing.Size(20, 20);
-            this.picturMenos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picturMenos.TabIndex = 3;
-            this.picturMenos.TabStop = false;
-            this.picturMenos.Click += new System.EventHandler(this.picturMenos_Click);
-            // 
-            // picturX
-            // 
-            this.picturX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picturX.BackColor = System.Drawing.Color.Transparent;
-            this.picturX.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picturX.Image = global::EnvioMer.Properties.Resources.eliminar;
-            this.picturX.Location = new System.Drawing.Point(1056, 7);
-            this.picturX.Name = "picturX";
-            this.picturX.Size = new System.Drawing.Size(20, 20);
-            this.picturX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picturX.TabIndex = 0;
-            this.picturX.TabStop = false;
-            this.picturX.Click += new System.EventHandler(this.picturX_Click);
-            // 
-            // pictureBoxCerrar
-            // 
-            this.pictureBoxCerrar.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxCerrar.Image = global::EnvioMer.Properties.Resources.menuBarraWhite;
-            this.pictureBoxCerrar.Location = new System.Drawing.Point(6, 3);
-            this.pictureBoxCerrar.Name = "pictureBoxCerrar";
-            this.pictureBoxCerrar.Size = new System.Drawing.Size(47, 44);
-            this.pictureBoxCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCerrar.TabIndex = 0;
-            this.pictureBoxCerrar.TabStop = false;
-            this.pictureBoxCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
-            // 
             // BTNMapa
             // 
             this.BTNMapa.FlatAppearance.BorderSize = 0;
@@ -198,12 +78,23 @@
             this.BTNMapa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNMapa.Location = new System.Drawing.Point(0, 174);
             this.BTNMapa.Name = "BTNMapa";
-            this.BTNMapa.Size = new System.Drawing.Size(197, 49);
+            this.BTNMapa.Size = new System.Drawing.Size(200, 70);
             this.BTNMapa.TabIndex = 12;
             this.BTNMapa.Text = "Mapa";
             this.BTNMapa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTNMapa.UseVisualStyleBackColor = true;
             this.BTNMapa.Click += new System.EventHandler(this.BTNMapa_Click);
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
+            this.panelLogo.Controls.Add(this.pictureBox1);
+            this.panelLogo.Controls.Add(this.pictureBox2);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(200, 100);
+            this.panelLogo.TabIndex = 14;
             // 
             // pictureBox1
             // 
@@ -226,6 +117,24 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
+            // btnIncoterm
+            // 
+            this.btnIncoterm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnIncoterm.FlatAppearance.BorderSize = 0;
+            this.btnIncoterm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIncoterm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIncoterm.ForeColor = System.Drawing.Color.White;
+            this.btnIncoterm.Image = global::EnvioMer.Properties.Resources.incoterms;
+            this.btnIncoterm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIncoterm.Location = new System.Drawing.Point(0, 248);
+            this.btnIncoterm.Name = "btnIncoterm";
+            this.btnIncoterm.Size = new System.Drawing.Size(200, 70);
+            this.btnIncoterm.TabIndex = 13;
+            this.btnIncoterm.Text = "Incoterm";
+            this.btnIncoterm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnIncoterm.UseVisualStyleBackColor = false;
+            this.btnIncoterm.Click += new System.EventHandler(this.btnIncoterm_Click);
+            // 
             // BTNEmbarque
             // 
             this.BTNEmbarque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
@@ -244,6 +153,98 @@
             this.BTNEmbarque.UseVisualStyleBackColor = false;
             this.BTNEmbarque.Click += new System.EventHandler(this.BTNEmbarque_Click);
             // 
+            // BarraTitulo
+            // 
+            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
+            this.BarraTitulo.Controls.Add(this.picturMaximizar);
+            this.BarraTitulo.Controls.Add(this.picturRestaurar);
+            this.BarraTitulo.Controls.Add(this.picturMenos);
+            this.BarraTitulo.Controls.Add(this.picturX);
+            this.BarraTitulo.Controls.Add(this.pictureBoxCerrar);
+            this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BarraTitulo.Location = new System.Drawing.Point(200, 0);
+            this.BarraTitulo.Name = "BarraTitulo";
+            this.BarraTitulo.Size = new System.Drawing.Size(1080, 50);
+            this.BarraTitulo.TabIndex = 1;
+            this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            // 
+            // picturMaximizar
+            // 
+            this.picturMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturMaximizar.BackColor = System.Drawing.Color.Transparent;
+            this.picturMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturMaximizar.Image = global::EnvioMer.Properties.Resources.maximize;
+            this.picturMaximizar.Location = new System.Drawing.Point(1006, 7);
+            this.picturMaximizar.Name = "picturMaximizar";
+            this.picturMaximizar.Size = new System.Drawing.Size(32, 32);
+            this.picturMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picturMaximizar.TabIndex = 2;
+            this.picturMaximizar.TabStop = false;
+            this.picturMaximizar.Click += new System.EventHandler(this.picturMaximizar_Click);
+            // 
+            // picturRestaurar
+            // 
+            this.picturRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturRestaurar.BackColor = System.Drawing.Color.Transparent;
+            this.picturRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturRestaurar.Image = global::EnvioMer.Properties.Resources.restaurar;
+            this.picturRestaurar.Location = new System.Drawing.Point(1006, 7);
+            this.picturRestaurar.Name = "picturRestaurar";
+            this.picturRestaurar.Size = new System.Drawing.Size(32, 32);
+            this.picturRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picturRestaurar.TabIndex = 4;
+            this.picturRestaurar.TabStop = false;
+            this.picturRestaurar.Click += new System.EventHandler(this.picturRestaurar_Click);
+            // 
+            // picturMenos
+            // 
+            this.picturMenos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturMenos.BackColor = System.Drawing.Color.Transparent;
+            this.picturMenos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturMenos.Image = global::EnvioMer.Properties.Resources.minimize;
+            this.picturMenos.Location = new System.Drawing.Point(968, 7);
+            this.picturMenos.Name = "picturMenos";
+            this.picturMenos.Size = new System.Drawing.Size(32, 32);
+            this.picturMenos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picturMenos.TabIndex = 3;
+            this.picturMenos.TabStop = false;
+            this.picturMenos.Click += new System.EventHandler(this.picturMenos_Click);
+            // 
+            // picturX
+            // 
+            this.picturX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturX.BackColor = System.Drawing.Color.Transparent;
+            this.picturX.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturX.Image = global::EnvioMer.Properties.Resources.eliminar;
+            this.picturX.Location = new System.Drawing.Point(1044, 7);
+            this.picturX.Name = "picturX";
+            this.picturX.Size = new System.Drawing.Size(32, 32);
+            this.picturX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picturX.TabIndex = 0;
+            this.picturX.TabStop = false;
+            this.picturX.Click += new System.EventHandler(this.picturX_Click);
+            // 
+            // pictureBoxCerrar
+            // 
+            this.pictureBoxCerrar.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxCerrar.Image = global::EnvioMer.Properties.Resources.menuBarraWhite;
+            this.pictureBoxCerrar.Location = new System.Drawing.Point(6, 3);
+            this.pictureBoxCerrar.Name = "pictureBoxCerrar";
+            this.pictureBoxCerrar.Size = new System.Drawing.Size(47, 44);
+            this.pictureBoxCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCerrar.TabIndex = 0;
+            this.pictureBoxCerrar.TabStop = false;
+            this.pictureBoxCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
+            // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(200, 50);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
+            this.panelContenedor.TabIndex = 2;
+            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,14 +259,15 @@
             this.Text = "Form1";
             this.MenuVertical.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.BarraTitulo.ResumeLayout(false);
+            this.BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturMenos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
