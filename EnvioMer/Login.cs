@@ -14,7 +14,7 @@ namespace EnvioMer
     public partial class Login : Form
     {
         //crea esta tabla en tu BD y pon tu usuario pa probar
-                //        CREATE TABLE `usuario` (
+                //  CREATE TABLE `usuario` (
                 //  `ID` int (11) NOT NULL AUTO_INCREMENT,
                 //  `Nombre` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
                 //  `ApellidoP` varchar(30) COLLATE utf8_unicode_ci NOT NULL,

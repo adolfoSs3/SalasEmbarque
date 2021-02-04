@@ -93,6 +93,7 @@ namespace EnvioMer
             }
             catch (Exception )
             {
+                Dispose();
                 Application.Exit();                
             }                        
         }
