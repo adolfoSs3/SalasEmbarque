@@ -69,7 +69,6 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBoxTipoEnvio = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -83,10 +82,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.Btngregar = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.textVolumen = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textValorDeclarado = new System.Windows.Forms.TextBox();
             this.textPeso = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -94,27 +93,33 @@
             this.textCantidad = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.comboPorcentaje = new System.Windows.Forms.ComboBox();
+            this.combomonedaAEreo = new System.Windows.Forms.ComboBox();
             this.comboSeguriSN = new System.Windows.Forms.ComboBox();
             this.comboPagoEn = new System.Windows.Forms.ComboBox();
             this.textCostoEnvio = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textDestino = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.TxtDescripcion = new System.Windows.Forms.TextBox();
             this.textOrigen = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.labelAEreo = new System.Windows.Forms.Label();
+            this.labelSeguro = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.combomonedaAEreo = new System.Windows.Forms.ComboBox();
-            this.Btngregar = new System.Windows.Forms.Button();
-            this.comboPorcentaje = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.dataGridAereo = new System.Windows.Forms.DataGridView();
+            this.labelCEnvio = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboServicio = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panelLCL.SuspendLayout();
@@ -123,17 +128,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTablaFCL)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAereo)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -158,7 +164,6 @@
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tabPage1.Controls.Add(this.panelLCL);
             this.tabPage1.Controls.Add(this.panelFCL);
-            this.tabPage1.Controls.Add(this.btnaceptar);
             this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -184,7 +189,7 @@
             this.panelLCL.Controls.Add(this.TxtNPaquetesLCL);
             this.panelLCL.Controls.Add(this.label9);
             this.panelLCL.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.panelLCL.Location = new System.Drawing.Point(199, 83);
+            this.panelLCL.Location = new System.Drawing.Point(208, 83);
             this.panelLCL.Name = "panelLCL";
             this.panelLCL.Size = new System.Drawing.Size(710, 375);
             this.panelLCL.TabIndex = 54;
@@ -310,7 +315,7 @@
             this.panelFCL.Controls.Add(this.label17);
             this.panelFCL.Controls.Add(this.textCostoXcontenedor);
             this.panelFCL.Controls.Add(this.label16);
-            this.panelFCL.Location = new System.Drawing.Point(915, 83);
+            this.panelFCL.Location = new System.Drawing.Point(202, 80);
             this.panelFCL.Name = "panelFCL";
             this.panelFCL.Size = new System.Drawing.Size(716, 375);
             this.panelFCL.TabIndex = 53;
@@ -419,9 +424,9 @@
             // 
             // btnaceptar
             // 
-            this.btnaceptar.Location = new System.Drawing.Point(215, 465);
+            this.btnaceptar.Location = new System.Drawing.Point(20, 521);
             this.btnaceptar.Name = "btnaceptar";
-            this.btnaceptar.Size = new System.Drawing.Size(138, 46);
+            this.btnaceptar.Size = new System.Drawing.Size(173, 53);
             this.btnaceptar.TabIndex = 0;
             this.btnaceptar.Text = "Aceptar";
             this.btnaceptar.UseVisualStyleBackColor = true;
@@ -514,6 +519,7 @@
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.TXTidCompra);
             this.panel2.Controls.Add(this.panel10);
+            this.panel2.Controls.Add(this.btnaceptar);
             this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.panel9);
             this.panel2.Controls.Add(this.panel8);
@@ -593,16 +599,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(199, 10);
             this.panel6.TabIndex = 41;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::EnvioMer.Properties.Resources.envarque;
-            this.pictureBox1.Location = new System.Drawing.Point(24, -3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 77);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // comboBoxTipoEnvio
             // 
@@ -731,17 +727,32 @@
             // 
             this.panel5.AutoScroll = true;
             this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.Controls.Add(this.comboServicio);
+            this.panel5.Controls.Add(this.label13);
+            this.panel5.Controls.Add(this.labelCEnvio);
+            this.panel5.Controls.Add(this.label21);
+            this.panel5.Controls.Add(this.dataGridAereo);
             this.panel5.Controls.Add(this.Btngregar);
             this.panel5.Controls.Add(this.panel13);
             this.panel5.Controls.Add(this.panel12);
             this.panel5.Controls.Add(this.panel1);
-            this.panel5.Controls.Add(this.labelAEreo);
+            this.panel5.Controls.Add(this.labelSeguro);
             this.panel5.Controls.Add(this.label25);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(3, 51);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1054, 570);
             this.panel5.TabIndex = 1;
+            // 
+            // Btngregar
+            // 
+            this.Btngregar.Location = new System.Drawing.Point(5, 226);
+            this.Btngregar.Name = "Btngregar";
+            this.Btngregar.Size = new System.Drawing.Size(196, 56);
+            this.Btngregar.TabIndex = 20;
+            this.Btngregar.Text = "Agregar";
+            this.Btngregar.UseVisualStyleBackColor = true;
+            this.Btngregar.Click += new System.EventHandler(this.Btngregar_Click);
             // 
             // panel13
             // 
@@ -755,7 +766,7 @@
             this.panel13.Controls.Add(this.label29);
             this.panel13.Controls.Add(this.textCantidad);
             this.panel13.Controls.Add(this.label30);
-            this.panel13.Location = new System.Drawing.Point(612, 47);
+            this.panel13.Location = new System.Drawing.Point(773, 14);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(248, 323);
             this.panel13.TabIndex = 19;
@@ -779,14 +790,6 @@
             this.label28.Size = new System.Drawing.Size(178, 21);
             this.label28.TabIndex = 21;
             this.label28.Text = "_____________________";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(23, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(184, 63);
-            this.pictureBox5.TabIndex = 19;
-            this.pictureBox5.TabStop = false;
             // 
             // textValorDeclarado
             // 
@@ -858,18 +861,41 @@
             this.panel12.Controls.Add(this.comboPagoEn);
             this.panel12.Controls.Add(this.textCostoEnvio);
             this.panel12.Controls.Add(this.label23);
-            this.panel12.Location = new System.Drawing.Point(328, 47);
+            this.panel12.Location = new System.Drawing.Point(497, 14);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(248, 323);
             this.panel12.TabIndex = 9;
             // 
-            // pictureBox4
+            // comboPorcentaje
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(30, 11);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(184, 63);
-            this.pictureBox4.TabIndex = 10;
-            this.pictureBox4.TabStop = false;
+            this.comboPorcentaje.BackColor = System.Drawing.Color.LightGray;
+            this.comboPorcentaje.FormattingEnabled = true;
+            this.comboPorcentaje.Items.AddRange(new object[] {
+            "20",
+            "25",
+            "30",
+            "40",
+            "45",
+            "50"});
+            this.comboPorcentaje.Location = new System.Drawing.Point(29, 205);
+            this.comboPorcentaje.Name = "comboPorcentaje";
+            this.comboPorcentaje.Size = new System.Drawing.Size(168, 29);
+            this.comboPorcentaje.TabIndex = 20;
+            this.comboPorcentaje.Text = "Seleccione %";
+            this.comboPorcentaje.Visible = false;
+            // 
+            // combomonedaAEreo
+            // 
+            this.combomonedaAEreo.BackColor = System.Drawing.Color.LightGray;
+            this.combomonedaAEreo.FormattingEnabled = true;
+            this.combomonedaAEreo.Items.AddRange(new object[] {
+            "USA",
+            "EUR"});
+            this.combomonedaAEreo.Location = new System.Drawing.Point(29, 98);
+            this.combomonedaAEreo.Name = "combomonedaAEreo";
+            this.combomonedaAEreo.Size = new System.Drawing.Size(168, 29);
+            this.combomonedaAEreo.TabIndex = 19;
+            this.combomonedaAEreo.Text = "USA";
             // 
             // comboSeguriSN
             // 
@@ -928,7 +954,7 @@
             this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label20);
-            this.panel1.Location = new System.Drawing.Point(47, 47);
+            this.panel1.Location = new System.Drawing.Point(225, 14);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(248, 323);
             this.panel1.TabIndex = 7;
@@ -944,16 +970,11 @@
             this.textDestino.TabIndex = 4;
             this.textDestino.Text = "Destino";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(23, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(184, 63);
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
             // TxtDescripcion
             // 
+            this.TxtDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.TxtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtDescripcion.ForeColor = System.Drawing.Color.White;
@@ -1004,27 +1025,27 @@
             this.label20.TabIndex = 3;
             this.label20.Text = "_____________________";
             // 
-            // labelAEreo
+            // labelSeguro
             // 
-            this.labelAEreo.AutoSize = true;
-            this.labelAEreo.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
-            this.labelAEreo.ForeColor = System.Drawing.Color.Red;
-            this.labelAEreo.Location = new System.Drawing.Point(656, 444);
-            this.labelAEreo.Name = "labelAEreo";
-            this.labelAEreo.Size = new System.Drawing.Size(50, 26);
-            this.labelAEreo.TabIndex = 5;
-            this.labelAEreo.Text = "00.0";
-            this.labelAEreo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelSeguro.AutoSize = true;
+            this.labelSeguro.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
+            this.labelSeguro.ForeColor = System.Drawing.Color.Red;
+            this.labelSeguro.Location = new System.Drawing.Point(64, 356);
+            this.labelSeguro.Name = "labelSeguro";
+            this.labelSeguro.Size = new System.Drawing.Size(50, 26);
+            this.labelSeguro.TabIndex = 5;
+            this.labelSeguro.Text = "00.0";
+            this.labelSeguro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
-            this.label25.Location = new System.Drawing.Point(630, 394);
+            this.label25.Location = new System.Drawing.Point(26, 306);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(100, 26);
+            this.label25.Size = new System.Drawing.Size(144, 26);
             this.label25.TabIndex = 3;
-            this.label25.Text = "Costo Total";
+            this.label25.Text = "Costo del Seguro";
             // 
             // panel4
             // 
@@ -1037,15 +1058,6 @@
             this.panel4.Size = new System.Drawing.Size(1054, 48);
             this.panel4.TabIndex = 0;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(5, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(59, 45);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -1057,46 +1069,115 @@
             this.label18.TabIndex = 3;
             this.label18.Text = "Aéreo";
             // 
-            // combomonedaAEreo
+            // pictureBox1
             // 
-            this.combomonedaAEreo.BackColor = System.Drawing.Color.LightGray;
-            this.combomonedaAEreo.FormattingEnabled = true;
-            this.combomonedaAEreo.Items.AddRange(new object[] {
-            "USA",
-            "EUR"});
-            this.combomonedaAEreo.Location = new System.Drawing.Point(29, 98);
-            this.combomonedaAEreo.Name = "combomonedaAEreo";
-            this.combomonedaAEreo.Size = new System.Drawing.Size(168, 29);
-            this.combomonedaAEreo.TabIndex = 19;
-            this.combomonedaAEreo.Text = "USA";
+            this.pictureBox1.Image = global::EnvioMer.Properties.Resources.envarque;
+            this.pictureBox1.Location = new System.Drawing.Point(24, -3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 77);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
-            // Btngregar
+            // pictureBox5
             // 
-            this.Btngregar.Location = new System.Drawing.Point(99, 414);
-            this.Btngregar.Name = "Btngregar";
-            this.Btngregar.Size = new System.Drawing.Size(196, 56);
-            this.Btngregar.TabIndex = 20;
-            this.Btngregar.Text = "Agregar";
-            this.Btngregar.UseVisualStyleBackColor = true;
-            this.Btngregar.Click += new System.EventHandler(this.Btngregar_Click);
+            this.pictureBox5.Image = global::EnvioMer.Properties.Resources.incoterms1;
+            this.pictureBox5.Location = new System.Drawing.Point(23, 12);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(184, 63);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 19;
+            this.pictureBox5.TabStop = false;
             // 
-            // comboPorcentaje
+            // pictureBox4
             // 
-            this.comboPorcentaje.BackColor = System.Drawing.Color.LightGray;
-            this.comboPorcentaje.FormattingEnabled = true;
-            this.comboPorcentaje.Items.AddRange(new object[] {
-            "20",
-            "25",
-            "30",
-            "40",
-            "45",
-            "50"});
-            this.comboPorcentaje.Location = new System.Drawing.Point(29, 205);
-            this.comboPorcentaje.Name = "comboPorcentaje";
-            this.comboPorcentaje.Size = new System.Drawing.Size(168, 29);
-            this.comboPorcentaje.TabIndex = 20;
-            this.comboPorcentaje.Text = "Seleccione %";
-            this.comboPorcentaje.Visible = false;
+            this.pictureBox4.Image = global::EnvioMer.Properties.Resources.pagos;
+            this.pictureBox4.Location = new System.Drawing.Point(30, 11);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(200, 81);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 10;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::EnvioMer.Properties.Resources.analisis;
+            this.pictureBox3.Location = new System.Drawing.Point(23, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(184, 63);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(5, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(59, 45);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // dataGridAereo
+            // 
+            this.dataGridAereo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridAereo.Location = new System.Drawing.Point(228, 369);
+            this.dataGridAereo.Name = "dataGridAereo";
+            this.dataGridAereo.Size = new System.Drawing.Size(793, 171);
+            this.dataGridAereo.TabIndex = 21;
+            this.dataGridAereo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridAereo_CellContentClick);
+            // 
+            // labelCEnvio
+            // 
+            this.labelCEnvio.AutoSize = true;
+            this.labelCEnvio.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
+            this.labelCEnvio.ForeColor = System.Drawing.Color.Red;
+            this.labelCEnvio.Location = new System.Drawing.Point(64, 483);
+            this.labelCEnvio.Name = "labelCEnvio";
+            this.labelCEnvio.Size = new System.Drawing.Size(50, 26);
+            this.labelCEnvio.TabIndex = 23;
+            this.labelCEnvio.Text = "00.0";
+            this.labelCEnvio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
+            this.label21.Location = new System.Drawing.Point(-1, 420);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(220, 26);
+            this.label21.TabIndex = 22;
+            this.label21.Text = "Costo del envio con seguro";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
+            this.label13.Location = new System.Drawing.Point(5, 14);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(135, 26);
+            this.label13.TabIndex = 24;
+            this.label13.Text = "Tipo de Servicio";
+            // 
+            // comboServicio
+            // 
+            this.comboServicio.BackColor = System.Drawing.Color.LightGray;
+            this.comboServicio.FormattingEnabled = true;
+            this.comboServicio.Items.AddRange(new object[] {
+            "Mensajería",
+            "Contenedor",
+            "Precedero",
+            "Animales",
+            "Alto valor",
+            "Alta tecnología",
+            "Envío express"});
+            this.comboServicio.Location = new System.Drawing.Point(10, 43);
+            this.comboServicio.Name = "comboServicio";
+            this.comboServicio.Size = new System.Drawing.Size(168, 29);
+            this.comboServicio.TabIndex = 21;
+            this.comboServicio.Text = "Mensajería";
+            this.comboServicio.SelectedIndexChanged += new System.EventHandler(this.comboServicio_SelectedIndexChanged);
             // 
             // FormCostos
             // 
@@ -1120,22 +1201,23 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAereo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1181,7 +1263,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ComboBox comboSeguriSN;
         private System.Windows.Forms.ComboBox comboPagoEn;
-        private System.Windows.Forms.Label labelAEreo;
+        private System.Windows.Forms.Label labelSeguro;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel10;
@@ -1229,5 +1311,10 @@
         private System.Windows.Forms.ComboBox combomonedaAEreo;
         private System.Windows.Forms.Button Btngregar;
         private System.Windows.Forms.ComboBox comboPorcentaje;
+        private System.Windows.Forms.DataGridView dataGridAereo;
+        private System.Windows.Forms.Label labelCEnvio;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox comboServicio;
+        private System.Windows.Forms.Label label13;
     }
 }

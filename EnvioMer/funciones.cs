@@ -120,10 +120,22 @@ namespace EnvioMer
         public static int AgregarAereos(DatosAereo add)
         {
             int retorno = 0;
-            MySqlCommand comando = new MySqlCommand(String.Format("INSERT INTO aereo(Origen,Destino,Pago_En,Cantidad,Peso(kg),Volumen(m3),Descripcion_Embarque,Seguro,Porcentaje,Tipo_Moneda,Costo_Envio)" +
-                "values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", add.Origen, add.Destino, add.Pago_en, add.Cantidad,add.Peso,add.Volumen,add.Descripcion,add.Seguro,add.Porcentaje,add.Moneda,add.CostoEnvio), Mysql.conexion.obtenerConexion());
+            MySqlCommand comando = new MySqlCommand(String.Format("INSERT INTO aereo(Origen,Destino,Pago_En,Cantidad,Peso,Volumen,Descripcion_Embarque,Seguro,Porcentaje,Tipo_Moneda,Costo_Envio,ValorDeclarado,TipoServicio)" +
+                "values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}')", add.Origen, add.Destino, add.Pago_en, add.Cantidad,add.Peso,add.Volumen,add.Descripcion,add.Seguro,add.Porcentaje,add.Moneda,add.CostoEnvio,add.ValorDeclarado,add.TipoServicio), Mysql.conexion.obtenerConexion());
             retorno = comando.ExecuteNonQuery();
             return retorno;
+        }
+
+        //Mostramos los datos de la tabla Aereo
+        public void ConsultaAereo(DataGridView dt)
+        {
+            MySqlCommand comando = new MySqlCommand("SELECT * from aereo", Mysql.conexion.obtenerConexion());
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dt.DataSource = tabla;
+
         }
 
     }

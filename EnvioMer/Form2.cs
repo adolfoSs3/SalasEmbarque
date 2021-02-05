@@ -185,32 +185,38 @@ namespace EnvioMer
         //----------------Aereo---------------------------------------------
 
         private void comboSeguriSN_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            combomonedaAEreo.DropDownStyle = ComboBoxStyle.DropDownList;//no se cambie el contenido del combo
-            comboPagoEn.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboSeguriSN.DropDownStyle = ComboBoxStyle.DropDownList;
-            combomonedaAEreo.DropDownStyle = ComboBoxStyle.DropDownList;
+        {           //valida si el usuario decea tener Seguro
             string a = Convert.ToString(comboSeguriSN.SelectedItem); ;
-
             if (a == "SI")
             {
                 comboPorcentaje.Visible = true;
-                DatosAereo.Seguro = a;
-               
+                comboSeguriSN.Text = a;               
             }
             else if (a == "NO")
             {
                 comboPorcentaje.Visible = false;
-                DatosAereo.Porcentaje = 0;
+                comboPorcentaje.Text = 0.ToString();
             }
         }
 
         private void Btngregar_Click(object sender, EventArgs e)
         {
-          
+          try
 
             {
-                
+                //variables para realisa el calcular el precio del envio
+                double precio = double.Parse(textValorDeclarado.Text);
+                int cantidad = int.Parse(textCantidad.Text);
+                double envio = double.Parse(textCostoEnvio.Text);
+                int porcentaje = int.Parse(comboPorcentaje.Text);
+                double total, seguro;
+                seguro = (((precio * cantidad) + envio)*porcentaje)/100;
+                total= (precio * cantidad) + envio+seguro;
+                //-------------------------------------------------------
+                labelSeguro.Text = seguro.ToString();
+                labelCEnvio.Text = total.ToString();
+                //----------------------------------------------------
+
                 DatosAereo.Origen = textOrigen.Text;
                 DatosAereo.Destino = textDestino.Text;
                 DatosAereo.Pago_en = comboPagoEn.Text;
@@ -218,13 +224,31 @@ namespace EnvioMer
                 DatosAereo.Peso = double.Parse(textPeso.Text);
                 DatosAereo.Volumen = double.Parse(textVolumen.Text);
                 DatosAereo.Descripcion = TxtDescripcion.Text;
-               
+                DatosAereo.Porcentaje = int.Parse(comboPorcentaje.Text);
                 DatosAereo.Moneda = combomonedaAEreo.Text;
                 DatosAereo.CostoEnvio = double.Parse(textCostoEnvio.Text);
-
+                DatosAereo.ValorDeclarado = double.Parse(textValorDeclarado.Text);
+                DatosAereo.Seguro = comboSeguriSN.Text;
+                DatosAereo.TipoServicio = comboServicio.Text;
                 funciones.AgregarAereos(DatosAereo);
                 MessageBox.Show("Agregado");
+                Funciones.ConsultaAereo(dataGridAereo);
 
+                textOrigen.Text="Origen";
+                textDestino.Text="Destino";
+                comboPagoEn.Text="Pago en ";
+                textCantidad.Text="Cantidad";
+                textPeso.Text="Peso Kg";
+                textVolumen.Text="olumen m3";
+                TxtDescripcion.Text="Descripción";
+                comboPorcentaje.Text="Cantidad";
+                combomonedaAEreo.Text="Moneda";
+                textCostoEnvio.Text="Costo Del Envio";
+                textValorDeclarado.Text="Valor declarado";
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error en " + ex.Message);
             }
           
 
@@ -232,6 +256,17 @@ namespace EnvioMer
 
         }
 
-       
+        private void dataGridAereo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void comboServicio_SelectedIndexChanged(object sender, EventArgs e)
+        {//no se cambie el contenido del combo
+            
+           
+            combomonedaAEreo.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboServicio.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
     }
 }

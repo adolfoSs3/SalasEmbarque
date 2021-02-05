@@ -190,6 +190,15 @@
   <ItemGroup>
     <None Include="Resources\eliminarBlack.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analisis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incoterms1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

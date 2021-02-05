@@ -81,8 +81,10 @@ namespace EnvioMer
         public int Porcentaje { get; set; }
         public string Moneda { get; set; }
         public double CostoEnvio { get; set; }
+        public double ValorDeclarado { get; set; }
+        public string TipoServicio { get; set; }
         public DatosAereo() {}
-        public DatosAereo(string Origen, string Destino,string Pago_en,int Cantidad,double Peso,double Volumen,string Descrip,string Seguro,int Porcentaje,string Moneda,double CostoEnvio)
+        public DatosAereo(string Origen, string Destino,string Pago_en,int Cantidad,double Peso,double Volumen,string Descrip,string Seguro,int Porcentaje,string Moneda,double CostoEnvio,double ValorD,string TipoServicio)
         {
             this.Origen = Origen;
             this.Destino = Destino;
@@ -95,7 +97,8 @@ namespace EnvioMer
             this.Porcentaje = Porcentaje;
             this.Moneda = Moneda;
             this.CostoEnvio = CostoEnvio;
-
+            this.ValorDeclarado = ValorD;
+            this.TipoServicio = TipoServicio;
         }
 
     }
