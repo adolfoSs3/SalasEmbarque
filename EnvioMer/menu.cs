@@ -15,7 +15,7 @@ namespace EnvioMer
     {
         private Button currentBtn;
         internal Panel leftBorderBtn;
-        //private frmMenuP vistaMenuP;
+       
         public menu()
         {
             InitializeComponent();
@@ -89,12 +89,12 @@ namespace EnvioMer
         {
             try
             {
-              Application.Exit();
+              Application.ExitThread();
             }
             catch (Exception )
             {
                 Dispose();
-                Application.Exit();                
+                Application.ExitThread();             
             }                        
         }
 
