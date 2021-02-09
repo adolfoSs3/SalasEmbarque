@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtLatitud = new System.Windows.Forms.TextBox();
+            this.txtLongitud = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewMapa = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMapa)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,24 +69,24 @@
             this.gMapControl1.TabIndex = 0;
             this.gMapControl1.Zoom = 0D;
             // 
-            // textBox1
+            // txtLatitud
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtLatitud.Location = new System.Drawing.Point(13, 78);
+            this.txtLatitud.Name = "txtLatitud";
+            this.txtLatitud.Size = new System.Drawing.Size(166, 20);
+            this.txtLatitud.TabIndex = 3;
             // 
-            // textBox2
+            // txtLongitud
             // 
-            this.textBox2.Location = new System.Drawing.Point(13, 107);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtLongitud.Location = new System.Drawing.Point(13, 118);
+            this.txtLongitud.Name = "txtLongitud";
+            this.txtLongitud.Size = new System.Drawing.Size(166, 20);
+            this.txtLongitud.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 9);
+            this.label1.Location = new System.Drawing.Point(13, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 5;
@@ -93,30 +95,50 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 91);
+            this.label2.Location = new System.Drawing.Point(13, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Longitud";
             // 
-            // dataGridView1
+            // dataGridViewMapa
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(486, 342);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(206, 150);
-            this.dataGridView1.TabIndex = 9;
+            this.dataGridViewMapa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMapa.Location = new System.Drawing.Point(486, 342);
+            this.dataGridViewMapa.Name = "dataGridViewMapa";
+            this.dataGridViewMapa.ReadOnly = true;
+            this.dataGridViewMapa.Size = new System.Drawing.Size(206, 150);
+            this.dataGridViewMapa.TabIndex = 9;
+            this.dataGridViewMapa.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Seleccionar);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtDescripcion);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.txtLatitud);
+            this.panel1.Controls.Add(this.txtLongitud);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(12, 342);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(195, 150);
             this.panel1.TabIndex = 14;
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Location = new System.Drawing.Point(10, 34);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(166, 20);
+            this.txtDescripcion.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Descripción";
             // 
             // Mapa
             // 
@@ -125,7 +147,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(835, 498);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewMapa);
             this.Controls.Add(this.gMapControl1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -133,7 +155,8 @@
             this.Text = "Mapa";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Mapa_FormClosing);
             this.Load += new System.EventHandler(this.Mapa_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.DoubleClick += new System.EventHandler(this.Mapa_DoubleClick);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMapa)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -143,11 +166,13 @@
         #endregion
 
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtLatitud;
+        private System.Windows.Forms.TextBox txtLongitud;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewMapa;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.Label label3;
     }
 }
