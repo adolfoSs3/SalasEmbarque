@@ -192,3 +192,4 @@ C:\Users\ANGEL\Documents\GitHub\embarqueSalvado\SalasEmbarque\EnvioMer\obj\x64\D
 C:\Users\ANGEL\Documents\GitHub\embarqueSalvado\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.exe
 C:\Users\ANGEL\Documents\GitHub\embarqueSalvado\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.pdb
 C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.NuevoUsuario.resources
+C:\Users\ANGEL\Documents\GitHub\embarqueSalvado\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.NuevoUsuario.resources

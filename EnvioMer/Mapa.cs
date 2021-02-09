@@ -42,8 +42,8 @@ namespace EnvioMer
             dataGridViewMapa.DataSource = td;
 
             //hacer que el usuario no pueda visualizar las columnas Latitud y longitud
-            dataGridViewMapa.Columns[1].Visible = false;
-            dataGridViewMapa.Columns[2].Visible = false;
+            //dataGridViewMapa.Columns[1].Visible = false;
+            //dataGridViewMapa.Columns[2].Visible = false;
             //-----------------------------------------------
             gMapControl1.DragButton = MouseButtons.Left;
             gMapControl1.CanDragMap = true;
@@ -90,9 +90,23 @@ namespace EnvioMer
         {
             double lat = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lat;
             double lng = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lng;
+            //se posiciona en el txt en la latitud y la longitud
+            txtLatitud.Text = lat.ToString();
+            txtLongitud.Text = lng.ToString();
 
             marker.Position = new PointLatLng(lat, lng);
-            marker.ToolTipText = string.Format("Ubicación: \n Latitud: {0} \n Longitud: {1}", lat, lng);
+            marker.ToolTipText = string.Format("Ubicación: \n Latitud: {0} \n Longitud: {1}", lat, lng);                      
+            
+        }
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            td.Rows.Add(txtDescripcion.Text, txtLatitud.Text, txtLongitud.Text);
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            dataGridViewMapa.Rows.RemoveAt(filaseleccionada);
         }
     }
 }

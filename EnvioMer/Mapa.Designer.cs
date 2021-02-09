@@ -37,6 +37,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.BtnAgregar = new System.Windows.Forms.Button();
+            this.BtnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMapa)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -108,7 +110,7 @@
             this.dataGridViewMapa.Location = new System.Drawing.Point(486, 342);
             this.dataGridViewMapa.Name = "dataGridViewMapa";
             this.dataGridViewMapa.ReadOnly = true;
-            this.dataGridViewMapa.Size = new System.Drawing.Size(206, 150);
+            this.dataGridViewMapa.Size = new System.Drawing.Size(309, 150);
             this.dataGridViewMapa.TabIndex = 9;
             this.dataGridViewMapa.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Seleccionar);
             // 
@@ -141,12 +143,34 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Descripción";
             // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.Location = new System.Drawing.Point(247, 354);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(165, 53);
+            this.BtnAgregar.TabIndex = 15;
+            this.BtnAgregar.Text = "Agregar";
+            this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.Location = new System.Drawing.Point(247, 433);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(165, 53);
+            this.BtnEliminar.TabIndex = 16;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            // 
             // Mapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(835, 498);
+            this.Controls.Add(this.BtnEliminar);
+            this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridViewMapa);
             this.Controls.Add(this.gMapControl1);
@@ -156,7 +180,6 @@
             this.Text = "Mapa";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Mapa_FormClosing);
             this.Load += new System.EventHandler(this.Mapa_Load);
-           
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMapa)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -175,5 +198,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button BtnAgregar;
+        private System.Windows.Forms.Button BtnEliminar;
     }
 }
