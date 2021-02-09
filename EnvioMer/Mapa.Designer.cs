@@ -68,6 +68,7 @@
             this.gMapControl1.Size = new System.Drawing.Size(822, 324);
             this.gMapControl1.TabIndex = 0;
             this.gMapControl1.Zoom = 0D;
+            this.gMapControl1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.gMapControl1_MouseDoubleClick);
             // 
             // txtLatitud
             // 
@@ -155,7 +156,7 @@
             this.Text = "Mapa";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Mapa_FormClosing);
             this.Load += new System.EventHandler(this.Mapa_Load);
-            this.DoubleClick += new System.EventHandler(this.Mapa_DoubleClick);
+           
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMapa)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
