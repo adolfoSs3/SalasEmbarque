@@ -86,8 +86,8 @@ namespace EnvioMer
 
         private void Mapa_DoubleClick(object sender, EventArgs e)
         {
-            double lat = gMapControl1.FromLocalToLatLng(e.X , e.Y).Lat;//checar error
-            double lng = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lng;//chcar error
+            //double lat = gMapControl1.FromLocalToLatLng(e.X , e.Y).Lat;//checar error
+            //double lng = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lng;//chcar error
         }
     }
 }

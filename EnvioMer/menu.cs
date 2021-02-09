@@ -28,6 +28,12 @@ namespace EnvioMer
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(3, 70);
             MenuVertical.Controls.Add(leftBorderBtn);
+
+            if (Login.tipo.Equals("Profesor"))
+                btnNewUser.Visible = true;
+            else
+                btnNewUser.Visible = false;
+                    
         }
         //codigo para Arrastrar Formulario
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -72,7 +78,7 @@ namespace EnvioMer
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(43, 45, 66);
+                currentBtn.BackColor = Color.FromArgb(37, 46, 59);
                 currentBtn.ForeColor = Color.Gainsboro;
             }
         }
@@ -89,12 +95,12 @@ namespace EnvioMer
         {
             try
             {
-              Application.ExitThread();
+              Application.Exit();
             }
             catch (Exception )
             {
                 Dispose();
-                Application.ExitThread();             
+                Application.ExitThread();            
             }                        
         }
 
@@ -151,6 +157,12 @@ namespace EnvioMer
         private void btnIncoterm_Click(object sender, EventArgs e)
         {
             AbrirFCostos(new Incotems());
+            ActivateButton(sender, RGBcolores.colorB);
+        }
+
+        private void btnNewUser_Click(object sender, EventArgs e)
+        {
+            AbrirFCostos(new NuevoUsuario());
             ActivateButton(sender, RGBcolores.colorB);
         }
     }
