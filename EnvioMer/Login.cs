@@ -13,9 +13,7 @@ namespace EnvioMer
 {
     public partial class Login : Form
     {
-        
-
-
+        public static string institucion, tipo;
         public Login()
         {
             InitializeComponent();
@@ -31,11 +29,14 @@ namespace EnvioMer
             {
                 //adapta esto a tu codigo es decir tu cadena de conexion plox por q truena culero
                 
-                MySqlCommand comando = new MySqlCommand($"SELECT User FROM usuario WHERE User = '{user}' AND Pass = '{pass}'", Mysql.conexion.obtenerConexion());                               
+                MySqlCommand comando = new MySqlCommand($"SELECT * FROM usuario WHERE User = '{user}' AND Pass = '{pass}'", Mysql.conexion.obtenerConexion());                               
 
                 MySqlDataReader reader = comando.ExecuteReader();
                 if (reader.Read())
                 {
+                    tipo = reader.GetString(6);
+                    institucion = reader.GetString(7);
+                    MessageBox.Show(institucion);
                     new menu().Show();
                     Hide();
                 }

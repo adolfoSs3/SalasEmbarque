@@ -32,18 +32,19 @@
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.picturMaximizar = new System.Windows.Forms.PictureBox();
             this.picturRestaurar = new System.Windows.Forms.PictureBox();
             this.picturMenos = new System.Windows.Forms.PictureBox();
             this.picturX = new System.Windows.Forms.PictureBox();
             this.pictureBoxCerrar = new System.Windows.Forms.PictureBox();
+            this.btnNewUser = new System.Windows.Forms.Button();
             this.BTNMapa = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnIncoterm = new System.Windows.Forms.Button();
             this.BTNEmbarque = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.BarraTitulo.SuspendLayout();
@@ -59,15 +60,16 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.MenuVertical.Controls.Add(this.btnNewUser);
             this.MenuVertical.Controls.Add(this.BTNMapa);
             this.MenuVertical.Controls.Add(this.panelLogo);
             this.MenuVertical.Controls.Add(this.btnIncoterm);
             this.MenuVertical.Controls.Add(this.BTNEmbarque);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MenuVertical.Location = new System.Drawing.Point(0, 0);
+            this.MenuVertical.Location = new System.Drawing.Point(0, 50);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(200, 720);
-            this.MenuVertical.TabIndex = 0;
+            this.MenuVertical.Size = new System.Drawing.Size(200, 670);
+            this.MenuVertical.TabIndex = 2;
             // 
             // panelLogo
             // 
@@ -82,7 +84,7 @@
             // 
             // BarraTitulo
             // 
-            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
+            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.BarraTitulo.Controls.Add(this.label1);
             this.BarraTitulo.Controls.Add(this.picturMaximizar);
             this.BarraTitulo.Controls.Add(this.picturRestaurar);
@@ -90,19 +92,23 @@
             this.BarraTitulo.Controls.Add(this.picturX);
             this.BarraTitulo.Controls.Add(this.pictureBoxCerrar);
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BarraTitulo.Location = new System.Drawing.Point(200, 0);
+            this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1080, 50);
+            this.BarraTitulo.Size = new System.Drawing.Size(1280, 50);
             this.BarraTitulo.TabIndex = 1;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
             // 
-            // panelContenedor
+            // label1
             // 
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(200, 50);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
-            this.panelContenedor.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(95, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(451, 36);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Gestión y Envio de Mercancias";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // picturMaximizar
             // 
@@ -110,7 +116,7 @@
             this.picturMaximizar.BackColor = System.Drawing.Color.Transparent;
             this.picturMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picturMaximizar.Image = global::EnvioMer.Properties.Resources.maximize;
-            this.picturMaximizar.Location = new System.Drawing.Point(1006, 7);
+            this.picturMaximizar.Location = new System.Drawing.Point(1206, 7);
             this.picturMaximizar.Name = "picturMaximizar";
             this.picturMaximizar.Size = new System.Drawing.Size(32, 32);
             this.picturMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -124,7 +130,7 @@
             this.picturRestaurar.BackColor = System.Drawing.Color.Transparent;
             this.picturRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picturRestaurar.Image = global::EnvioMer.Properties.Resources.restaurar;
-            this.picturRestaurar.Location = new System.Drawing.Point(1006, 7);
+            this.picturRestaurar.Location = new System.Drawing.Point(1206, 7);
             this.picturRestaurar.Name = "picturRestaurar";
             this.picturRestaurar.Size = new System.Drawing.Size(32, 32);
             this.picturRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -138,7 +144,7 @@
             this.picturMenos.BackColor = System.Drawing.Color.Transparent;
             this.picturMenos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picturMenos.Image = global::EnvioMer.Properties.Resources.minimize;
-            this.picturMenos.Location = new System.Drawing.Point(968, 7);
+            this.picturMenos.Location = new System.Drawing.Point(1168, 7);
             this.picturMenos.Name = "picturMenos";
             this.picturMenos.Size = new System.Drawing.Size(32, 32);
             this.picturMenos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -152,7 +158,7 @@
             this.picturX.BackColor = System.Drawing.Color.Transparent;
             this.picturX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picturX.Image = global::EnvioMer.Properties.Resources.eliminar;
-            this.picturX.Location = new System.Drawing.Point(1044, 7);
+            this.picturX.Location = new System.Drawing.Point(1244, 7);
             this.picturX.Name = "picturX";
             this.picturX.Size = new System.Drawing.Size(32, 32);
             this.picturX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -172,6 +178,24 @@
             this.pictureBoxCerrar.TabIndex = 0;
             this.pictureBoxCerrar.TabStop = false;
             this.pictureBoxCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
+            // 
+            // btnNewUser
+            // 
+            this.btnNewUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnNewUser.FlatAppearance.BorderSize = 0;
+            this.btnNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewUser.ForeColor = System.Drawing.Color.White;
+            this.btnNewUser.Image = global::EnvioMer.Properties.Resources.usuario;
+            this.btnNewUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewUser.Location = new System.Drawing.Point(0, 325);
+            this.btnNewUser.Name = "btnNewUser";
+            this.btnNewUser.Size = new System.Drawing.Size(200, 70);
+            this.btnNewUser.TabIndex = 15;
+            this.btnNewUser.Text = "Nuevo Usuario";
+            this.btnNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNewUser.UseVisualStyleBackColor = false;
+            this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
             // 
             // BTNMapa
             // 
@@ -247,17 +271,13 @@
             this.BTNEmbarque.UseVisualStyleBackColor = false;
             this.BTNEmbarque.Click += new System.EventHandler(this.BTNEmbarque_Click);
             // 
-            // label1
+            // panelContenedor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(95, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(451, 36);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Gestión y Envio de Mercancias";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(200, 50);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
+            this.panelContenedor.TabIndex = 3;
             // 
             // menu
             // 
@@ -265,8 +285,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.panelContenedor);
-            this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.MenuVertical);
+            this.Controls.Add(this.BarraTitulo);
             this.DoubleBuffered = true;
             this.Name = "menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -291,7 +311,6 @@
         private System.Windows.Forms.Panel MenuVertical;
         private System.Windows.Forms.Panel BarraTitulo;
         private System.Windows.Forms.PictureBox pictureBoxCerrar;
-        private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.PictureBox picturX;
         private System.Windows.Forms.PictureBox picturMenos;
         private System.Windows.Forms.PictureBox picturMaximizar;
@@ -303,5 +322,7 @@
         private System.Windows.Forms.Button btnIncoterm;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnNewUser;
+        private System.Windows.Forms.Panel panelContenedor;
     }
 }
