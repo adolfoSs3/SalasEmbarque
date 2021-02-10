@@ -113,6 +113,16 @@ namespace EnvioMer.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap escaneoCodigo {
+            get {
+                object obj = ResourceManager.GetObject("escaneoCodigo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap incoterms {
             get {
                 object obj = ResourceManager.GetObject("incoterms", resourceCulture);

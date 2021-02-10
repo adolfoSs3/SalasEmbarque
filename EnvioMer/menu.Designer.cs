@@ -33,33 +33,35 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.picturMaximizar = new System.Windows.Forms.PictureBox();
-            this.picturRestaurar = new System.Windows.Forms.PictureBox();
-            this.picturMenos = new System.Windows.Forms.PictureBox();
-            this.picturX = new System.Windows.Forms.PictureBox();
-            this.pictureBoxCerrar = new System.Windows.Forms.PictureBox();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.btnRastreoProd = new System.Windows.Forms.Button();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.BTNMapa = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnIncoterm = new System.Windows.Forms.Button();
             this.BTNEmbarque = new System.Windows.Forms.Button();
-            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.picturMaximizar = new System.Windows.Forms.PictureBox();
+            this.picturRestaurar = new System.Windows.Forms.PictureBox();
+            this.picturMenos = new System.Windows.Forms.PictureBox();
+            this.picturX = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCerrar = new System.Windows.Forms.PictureBox();
             this.MenuVertical.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.BarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturMenos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.MenuVertical.Controls.Add(this.btnRastreoProd);
             this.MenuVertical.Controls.Add(this.btnNewUser);
             this.MenuVertical.Controls.Add(this.BTNMapa);
             this.MenuVertical.Controls.Add(this.panelLogo);
@@ -70,6 +72,7 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(200, 670);
             this.MenuVertical.TabIndex = 2;
+            this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
             // 
             // panelLogo
             // 
@@ -110,74 +113,30 @@
             this.label1.Text = "Gestión y Envio de Mercancias";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // picturMaximizar
+            // panelContenedor
             // 
-            this.picturMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picturMaximizar.BackColor = System.Drawing.Color.Transparent;
-            this.picturMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picturMaximizar.Image = global::EnvioMer.Properties.Resources.maximize;
-            this.picturMaximizar.Location = new System.Drawing.Point(1206, 7);
-            this.picturMaximizar.Name = "picturMaximizar";
-            this.picturMaximizar.Size = new System.Drawing.Size(32, 32);
-            this.picturMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picturMaximizar.TabIndex = 2;
-            this.picturMaximizar.TabStop = false;
-            this.picturMaximizar.Click += new System.EventHandler(this.picturMaximizar_Click);
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(200, 50);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
+            this.panelContenedor.TabIndex = 3;
             // 
-            // picturRestaurar
+            // btnRastreoProd
             // 
-            this.picturRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picturRestaurar.BackColor = System.Drawing.Color.Transparent;
-            this.picturRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picturRestaurar.Image = global::EnvioMer.Properties.Resources.restaurar;
-            this.picturRestaurar.Location = new System.Drawing.Point(1206, 7);
-            this.picturRestaurar.Name = "picturRestaurar";
-            this.picturRestaurar.Size = new System.Drawing.Size(32, 32);
-            this.picturRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picturRestaurar.TabIndex = 4;
-            this.picturRestaurar.TabStop = false;
-            this.picturRestaurar.Click += new System.EventHandler(this.picturRestaurar_Click);
-            // 
-            // picturMenos
-            // 
-            this.picturMenos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picturMenos.BackColor = System.Drawing.Color.Transparent;
-            this.picturMenos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picturMenos.Image = global::EnvioMer.Properties.Resources.minimize;
-            this.picturMenos.Location = new System.Drawing.Point(1168, 7);
-            this.picturMenos.Name = "picturMenos";
-            this.picturMenos.Size = new System.Drawing.Size(32, 32);
-            this.picturMenos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picturMenos.TabIndex = 3;
-            this.picturMenos.TabStop = false;
-            this.picturMenos.Click += new System.EventHandler(this.picturMenos_Click);
-            // 
-            // picturX
-            // 
-            this.picturX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picturX.BackColor = System.Drawing.Color.Transparent;
-            this.picturX.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picturX.Image = global::EnvioMer.Properties.Resources.eliminar;
-            this.picturX.Location = new System.Drawing.Point(1244, 7);
-            this.picturX.Name = "picturX";
-            this.picturX.Size = new System.Drawing.Size(32, 32);
-            this.picturX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picturX.TabIndex = 0;
-            this.picturX.TabStop = false;
-            this.picturX.Click += new System.EventHandler(this.picturX_Click);
-            // 
-            // pictureBoxCerrar
-            // 
-            this.pictureBoxCerrar.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxCerrar.Image = global::EnvioMer.Properties.Resources.menuBarraWhite;
-            this.pictureBoxCerrar.Location = new System.Drawing.Point(6, 3);
-            this.pictureBoxCerrar.Name = "pictureBoxCerrar";
-            this.pictureBoxCerrar.Size = new System.Drawing.Size(47, 44);
-            this.pictureBoxCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCerrar.TabIndex = 0;
-            this.pictureBoxCerrar.TabStop = false;
-            this.pictureBoxCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
+            this.btnRastreoProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnRastreoProd.FlatAppearance.BorderSize = 0;
+            this.btnRastreoProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRastreoProd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRastreoProd.ForeColor = System.Drawing.Color.White;
+            this.btnRastreoProd.Image = global::EnvioMer.Properties.Resources.escaneoCodigo;
+            this.btnRastreoProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRastreoProd.Location = new System.Drawing.Point(0, 323);
+            this.btnRastreoProd.Name = "btnRastreoProd";
+            this.btnRastreoProd.Size = new System.Drawing.Size(200, 70);
+            this.btnRastreoProd.TabIndex = 16;
+            this.btnRastreoProd.Text = "Rastreo del\r\nProducto";
+            this.btnRastreoProd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRastreoProd.UseVisualStyleBackColor = false;
             // 
             // btnNewUser
             // 
@@ -188,9 +147,9 @@
             this.btnNewUser.ForeColor = System.Drawing.Color.White;
             this.btnNewUser.Image = global::EnvioMer.Properties.Resources.usuario;
             this.btnNewUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewUser.Location = new System.Drawing.Point(0, 325);
+            this.btnNewUser.Location = new System.Drawing.Point(0, 398);
             this.btnNewUser.Name = "btnNewUser";
-            this.btnNewUser.Size = new System.Drawing.Size(200, 70);
+            this.btnNewUser.Size = new System.Drawing.Size(198, 70);
             this.btnNewUser.TabIndex = 15;
             this.btnNewUser.Text = "Nuevo Usuario";
             this.btnNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -271,13 +230,74 @@
             this.BTNEmbarque.UseVisualStyleBackColor = false;
             this.BTNEmbarque.Click += new System.EventHandler(this.BTNEmbarque_Click);
             // 
-            // panelContenedor
+            // picturMaximizar
             // 
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(200, 50);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
-            this.panelContenedor.TabIndex = 3;
+            this.picturMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturMaximizar.BackColor = System.Drawing.Color.Transparent;
+            this.picturMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturMaximizar.Image = global::EnvioMer.Properties.Resources.maximize;
+            this.picturMaximizar.Location = new System.Drawing.Point(1206, 7);
+            this.picturMaximizar.Name = "picturMaximizar";
+            this.picturMaximizar.Size = new System.Drawing.Size(32, 32);
+            this.picturMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picturMaximizar.TabIndex = 2;
+            this.picturMaximizar.TabStop = false;
+            this.picturMaximizar.Click += new System.EventHandler(this.picturMaximizar_Click);
+            // 
+            // picturRestaurar
+            // 
+            this.picturRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturRestaurar.BackColor = System.Drawing.Color.Transparent;
+            this.picturRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturRestaurar.Image = global::EnvioMer.Properties.Resources.restaurar;
+            this.picturRestaurar.Location = new System.Drawing.Point(1206, 7);
+            this.picturRestaurar.Name = "picturRestaurar";
+            this.picturRestaurar.Size = new System.Drawing.Size(32, 32);
+            this.picturRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picturRestaurar.TabIndex = 4;
+            this.picturRestaurar.TabStop = false;
+            this.picturRestaurar.Click += new System.EventHandler(this.picturRestaurar_Click);
+            // 
+            // picturMenos
+            // 
+            this.picturMenos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturMenos.BackColor = System.Drawing.Color.Transparent;
+            this.picturMenos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturMenos.Image = global::EnvioMer.Properties.Resources.minimize;
+            this.picturMenos.Location = new System.Drawing.Point(1168, 7);
+            this.picturMenos.Name = "picturMenos";
+            this.picturMenos.Size = new System.Drawing.Size(32, 32);
+            this.picturMenos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picturMenos.TabIndex = 3;
+            this.picturMenos.TabStop = false;
+            this.picturMenos.Click += new System.EventHandler(this.picturMenos_Click);
+            // 
+            // picturX
+            // 
+            this.picturX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturX.BackColor = System.Drawing.Color.Transparent;
+            this.picturX.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturX.Image = global::EnvioMer.Properties.Resources.eliminar;
+            this.picturX.Location = new System.Drawing.Point(1244, 7);
+            this.picturX.Name = "picturX";
+            this.picturX.Size = new System.Drawing.Size(32, 32);
+            this.picturX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picturX.TabIndex = 0;
+            this.picturX.TabStop = false;
+            this.picturX.Click += new System.EventHandler(this.picturX_Click);
+            // 
+            // pictureBoxCerrar
+            // 
+            this.pictureBoxCerrar.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxCerrar.Image = global::EnvioMer.Properties.Resources.menuBarraWhite;
+            this.pictureBoxCerrar.Location = new System.Drawing.Point(6, 3);
+            this.pictureBoxCerrar.Name = "pictureBoxCerrar";
+            this.pictureBoxCerrar.Size = new System.Drawing.Size(47, 44);
+            this.pictureBoxCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCerrar.TabIndex = 0;
+            this.pictureBoxCerrar.TabStop = false;
+            this.pictureBoxCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
             // 
             // menu
             // 
@@ -295,13 +315,13 @@
             this.panelLogo.ResumeLayout(false);
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturMenos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -324,5 +344,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnNewUser;
         private System.Windows.Forms.Panel panelContenedor;
+        private System.Windows.Forms.Button btnRastreoProd;
     }
 }
