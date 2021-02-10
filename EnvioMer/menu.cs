@@ -165,5 +165,10 @@ namespace EnvioMer
             AbrirFCostos(new NuevoUsuario());
             ActivateButton(sender, RGBcolores.colorB);
         }
+
+        private void MenuVertical_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
