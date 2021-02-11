@@ -30,27 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelContenedor = new System.Windows.Forms.Panel();
             this.btnRastreoProd = new System.Windows.Forms.Button();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.BTNMapa = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnIncoterm = new System.Windows.Forms.Button();
             this.BTNEmbarque = new System.Windows.Forms.Button();
+            this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.picturMaximizar = new System.Windows.Forms.PictureBox();
             this.picturRestaurar = new System.Windows.Forms.PictureBox();
             this.picturMenos = new System.Windows.Forms.PictureBox();
             this.picturX = new System.Windows.Forms.PictureBox();
             this.pictureBoxCerrar = new System.Windows.Forms.PictureBox();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturMenos)).BeginInit();
@@ -74,53 +74,6 @@
             this.MenuVertical.TabIndex = 2;
             this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
             // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
-            this.panelLogo.Controls.Add(this.pictureBox1);
-            this.panelLogo.Controls.Add(this.pictureBox2);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(200, 100);
-            this.panelLogo.TabIndex = 14;
-            // 
-            // BarraTitulo
-            // 
-            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.BarraTitulo.Controls.Add(this.label1);
-            this.BarraTitulo.Controls.Add(this.picturMaximizar);
-            this.BarraTitulo.Controls.Add(this.picturRestaurar);
-            this.BarraTitulo.Controls.Add(this.picturMenos);
-            this.BarraTitulo.Controls.Add(this.picturX);
-            this.BarraTitulo.Controls.Add(this.pictureBoxCerrar);
-            this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1280, 50);
-            this.BarraTitulo.TabIndex = 1;
-            this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(95, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(451, 36);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Gestión y Envio de Mercancias";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(200, 50);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
-            this.panelContenedor.TabIndex = 3;
-            // 
             // btnRastreoProd
             // 
             this.btnRastreoProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
@@ -137,6 +90,7 @@
             this.btnRastreoProd.Text = "Rastreo del\r\nProducto";
             this.btnRastreoProd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRastreoProd.UseVisualStyleBackColor = false;
+            this.btnRastreoProd.Click += new System.EventHandler(this.btnRastreoProd_Click);
             // 
             // btnNewUser
             // 
@@ -172,6 +126,17 @@
             this.BTNMapa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTNMapa.UseVisualStyleBackColor = true;
             this.BTNMapa.Click += new System.EventHandler(this.BTNMapa_Click);
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
+            this.panelLogo.Controls.Add(this.pictureBox1);
+            this.panelLogo.Controls.Add(this.pictureBox2);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(200, 100);
+            this.panelLogo.TabIndex = 14;
             // 
             // pictureBox1
             // 
@@ -229,6 +194,34 @@
             this.BTNEmbarque.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTNEmbarque.UseVisualStyleBackColor = false;
             this.BTNEmbarque.Click += new System.EventHandler(this.BTNEmbarque_Click);
+            // 
+            // BarraTitulo
+            // 
+            this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BarraTitulo.Controls.Add(this.label1);
+            this.BarraTitulo.Controls.Add(this.picturMaximizar);
+            this.BarraTitulo.Controls.Add(this.picturRestaurar);
+            this.BarraTitulo.Controls.Add(this.picturMenos);
+            this.BarraTitulo.Controls.Add(this.picturX);
+            this.BarraTitulo.Controls.Add(this.pictureBoxCerrar);
+            this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.BarraTitulo.Name = "BarraTitulo";
+            this.BarraTitulo.Size = new System.Drawing.Size(1280, 50);
+            this.BarraTitulo.TabIndex = 1;
+            this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(95, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(451, 36);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Gestión y Envio de Mercancias";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // picturMaximizar
             // 
@@ -299,6 +292,14 @@
             this.pictureBoxCerrar.TabStop = false;
             this.pictureBoxCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(200, 50);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
+            this.panelContenedor.TabIndex = 3;
+            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,10 +314,10 @@
             this.Text = "Form1";
             this.MenuVertical.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            this.BarraTitulo.ResumeLayout(false);
-            this.BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.BarraTitulo.ResumeLayout(false);
+            this.BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturMenos)).EndInit();
