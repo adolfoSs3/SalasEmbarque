@@ -152,19 +152,21 @@ namespace EnvioMer
 
             
 
-            double r = 6378.0F;
+            double r = 6371D;
             double Latitud1 = double.Parse(txtLat1.Text);
             double Latitud2 = double.Parse(txtLat2.Text);
             double Longitud1 = double.Parse(txtLong1.Text);
             double Longitud2 = double.Parse(txtLong2.Text);
             double Alat = Latitud1-Latitud2;
             double ALong = Longitud1 - Longitud2;
+            double radianes = (Math.PI / 1800);
             //--------Fórmula del Haversine----------------------
-            double a = Math.Sin(Alat / 2) * Math.Sin(Alat / 2) +
-                  Math.Cos(Latitud1) * Math.Cos(Latitud2)*
-                  Math.Sin(ALong / 2) * Math.Sin(ALong / 2);
 
-            double h2 = 2 * Math.Asin(Math.Min(1, Math.Sqrt(a)));
+            double a = Math.Sin(Alat / 2D) * Math.Sin(Alat / 2D) +
+                  Math.Cos(Latitud1*radianes) * Math.Cos( Latitud2*radianes)*
+                  Math.Sin(ALong / 2D) * Math.Sin(ALong / 2D);
+
+            double h2 = 2D * Math.Asin(Math.Min(1D, Math.Sqrt(a)));
 
             double Resultado = r * h2;
             //------------------------------------------------------
