@@ -138,14 +138,20 @@ namespace EnvioMer
 
         }
         //--------------------------------------Mapa----------------------------
-       public static double AlCuadrado(this double valor)
-        {
-            return Math.Pow(valor, 2);
-        }
+      
 
 
-        public void CalcularDistancia(TextBox txtLat1,TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
+        public void CalcularDistancia(TextBox Descrip,DataGridView dt, TextBox txtLat1,TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
         {
+            DataTable td;
+            td = new DataTable();
+            td.Columns.Add(new DataColumn("Descripción", typeof(string)));
+            td.Columns.Add(new DataColumn("Distancia", typeof(double)));
+            //td.Columns.Add(new DataColumn("Longitud", typeof(double)));
+
+
+            
+
             double r = 6378.0F;
             double Latitud1 = double.Parse(txtLat1.Text);
             double Latitud2 = double.Parse(txtLat2.Text);
@@ -161,6 +167,9 @@ namespace EnvioMer
             double h2 = 2 * Math.Asin(Math.Min(1, Math.Sqrt(a)));
 
             double Resultado = r * h2;
+            //------------------------------------------------------
+            td.Rows.Add(Descrip, Resultado);
+            dt.DataSource = td;
         }
 
     }

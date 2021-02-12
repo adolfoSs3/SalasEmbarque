@@ -17,6 +17,7 @@ namespace EnvioMer
 {
     public partial class Mapa : Form
     {
+        funciones Funcionnnes = new funciones();
         GMarkerGoogle marker;
         GMapOverlay markerOverlay;
         DataTable td;
@@ -107,7 +108,19 @@ namespace EnvioMer
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
+            //agrega los datos al DatiGrid...
             td.Rows.Add(txtDescripcion.Text, txtLatitud.Text, txtLongitud.Text);
+            //manda nuevamente los datos al otro grupo de Textbox 
+            txtdescripcion2.Text=txtDescripcion.Text;
+            txtlatitud2.Text= txtLatitud.Text;
+            txtLongitud2.Text= txtLongitud.Text;
+            //------------Prueba------------------------------
+            Funcionnnes.CalcularDistancia(txtdescripcion2,dataGridViewPrueba,txtLatitud,txtLongitud2,txtLongitud,txtLongitud2);
+            // al mismo tiempo limpia lisde el primer grupo
+            txtDescripcion.Clear();
+            txtLatitud.Clear();
+            txtLongitud.Clear();
+
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
