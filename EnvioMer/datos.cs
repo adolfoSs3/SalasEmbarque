@@ -102,5 +102,20 @@ namespace EnvioMer
         }
 
     }
-
+    //Mapa--------------------------------------------------
+    public class Coordenadas
+    {
+        public double LatitudInicial { get; set; }
+        public double LatitudFinal { get; set; }
+        public double LongitudInicial { get; set; }
+        public double LongitudFinal { get; set; }
+        public Coordenadas() { }
+        public Coordenadas(double LatitudInicial, double LatitudFinal,double LongitudInicial, double LongitudFinal)
+        {
+            this.LatitudInicial = LatitudInicial;
+            this.LongitudFinal = LatitudFinal;
+            this.LongitudInicial = LongitudInicial;
+            this.LongitudFinal = LongitudFinal;
+        }
+    }
 }

@@ -137,6 +137,31 @@ namespace EnvioMer
             dt.DataSource = tabla;
 
         }
+        //--------------------------------------Mapa----------------------------
+       public static double AlCuadrado(this double valor)
+        {
+            return Math.Pow(valor, 2);
+        }
+
+
+        public void CalcularDistancia(TextBox txtLat1,TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
+        {
+            double r = 6378.0F;
+            double Latitud1 = double.Parse(txtLat1.Text);
+            double Latitud2 = double.Parse(txtLat2.Text);
+            double Longitud1 = double.Parse(txtLong1.Text);
+            double Longitud2 = double.Parse(txtLong2.Text);
+            double Alat = Latitud1-Latitud2;
+            double ALong = Longitud1 - Longitud2;
+            //--------Fórmula del Haversine----------------------
+            double a = Math.Sin(Alat / 2) * Math.Sin(Alat / 2) +
+                  Math.Cos(Latitud1) * Math.Cos(Latitud2)*
+                  Math.Sin(ALong / 2) * Math.Sin(ALong / 2);
+
+            double h2 = 2 * Math.Asin(Math.Min(1, Math.Sqrt(a)));
+
+            double Resultado = r * h2;
+        }
 
     }
 }
