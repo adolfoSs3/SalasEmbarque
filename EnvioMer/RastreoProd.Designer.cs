@@ -31,16 +31,33 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtCodEmbarque1 = new System.Windows.Forms.TextBox();
+            this.btnAgregar1 = new System.Windows.Forms.Button();
+            this.cbxSentidoMov1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCodTransporte1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtCodEmbarque2 = new System.Windows.Forms.TextBox();
+            this.btnAgregar2 = new System.Windows.Forms.Button();
+            this.cbxSentidoMov2 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCodTransporte2 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtCodEmbarque3 = new System.Windows.Forms.TextBox();
+            this.btnAgregar3 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtCodTransporte3 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtSentidoMov3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,97 +86,257 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.btnAgregar);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.txtCodEmbarque1);
+            this.groupBox1.Controls.Add(this.btnAgregar1);
+            this.groupBox1.Controls.Add(this.cbxSentidoMov1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtCodTransporte1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(25, 92);
+            this.groupBox1.Location = new System.Drawing.Point(25, 80);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(641, 284);
+            this.groupBox1.Size = new System.Drawing.Size(395, 231);
             this.groupBox1.TabIndex = 53;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Gestión de Embarcaciones y Envios Internacionales";
+            this.groupBox1.Text = "Estacion1: Gestión de Embarcaciones y Envios Internacionales";
             // 
-            // label1
+            // label4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Transporte/Contenedor";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(22, 136);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(159, 20);
+            this.label4.TabIndex = 53;
+            this.label4.Text = "Codigo de Embarque";
             // 
-            // textBox1
+            // txtCodEmbarque1
             // 
-            this.textBox1.Location = new System.Drawing.Point(24, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 26);
-            this.textBox1.TabIndex = 1;
+            this.txtCodEmbarque1.Location = new System.Drawing.Point(187, 136);
+            this.txtCodEmbarque1.Name = "txtCodEmbarque1";
+            this.txtCodEmbarque1.Size = new System.Drawing.Size(169, 26);
+            this.txtCodEmbarque1.TabIndex = 52;
+            // 
+            // btnAgregar1
+            // 
+            this.btnAgregar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.btnAgregar1.FlatAppearance.BorderSize = 0;
+            this.btnAgregar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar1.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar1.Location = new System.Drawing.Point(187, 179);
+            this.btnAgregar1.Name = "btnAgregar1";
+            this.btnAgregar1.Size = new System.Drawing.Size(169, 44);
+            this.btnAgregar1.TabIndex = 51;
+            this.btnAgregar1.Text = "Aceptar";
+            this.btnAgregar1.UseVisualStyleBackColor = false;
+            // 
+            // cbxSentidoMov1
+            // 
+            this.cbxSentidoMov1.FormattingEnabled = true;
+            this.cbxSentidoMov1.Items.AddRange(new object[] {
+            "Llegada",
+            "Salida"});
+            this.cbxSentidoMov1.Location = new System.Drawing.Point(187, 94);
+            this.cbxSentidoMov1.Name = "cbxSentidoMov1";
+            this.cbxSentidoMov1.Size = new System.Drawing.Size(169, 28);
+            this.cbxSentidoMov1.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(236, 55);
+            this.label2.Location = new System.Drawing.Point(8, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(173, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Sentido del Movimiento";
             // 
-            // comboBox1
+            // txtCodTransporte1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(240, 92);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(169, 28);
-            this.comboBox1.TabIndex = 3;
+            this.txtCodTransporte1.Location = new System.Drawing.Point(187, 53);
+            this.txtCodTransporte1.Name = "txtCodTransporte1";
+            this.txtCodTransporte1.Size = new System.Drawing.Size(136, 26);
+            this.txtCodTransporte1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(174, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Transporte/Contenedor";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.txtCodEmbarque2);
+            this.groupBox2.Controls.Add(this.btnAgregar2);
+            this.groupBox2.Controls.Add(this.cbxSentidoMov2);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.txtCodTransporte2);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(493, 80);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(395, 231);
+            this.groupBox2.TabIndex = 54;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Estacion2: Logistica de Desembarque y Distribución Nacional";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(462, 55);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 136);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 107);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Estación:\r\n\r\nGestión de Embarcaciones y\r\nEnvios Internacionale";
+            this.label3.Size = new System.Drawing.Size(159, 20);
+            this.label3.TabIndex = 53;
+            this.label3.Text = "Codigo de Embarque";
             // 
-            // btnAgregar
+            // txtCodEmbarque2
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
-            this.btnAgregar.FlatAppearance.BorderSize = 0;
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(240, 225);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(169, 44);
-            this.btnAgregar.TabIndex = 51;
-            this.btnAgregar.Text = "Aceptar";
-            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.txtCodEmbarque2.Location = new System.Drawing.Point(187, 136);
+            this.txtCodEmbarque2.Name = "txtCodEmbarque2";
+            this.txtCodEmbarque2.Size = new System.Drawing.Size(169, 26);
+            this.txtCodEmbarque2.TabIndex = 52;
             // 
-            // textBox2
+            // btnAgregar2
             // 
-            this.textBox2.Location = new System.Drawing.Point(240, 162);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(169, 26);
-            this.textBox2.TabIndex = 52;
+            this.btnAgregar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.btnAgregar2.FlatAppearance.BorderSize = 0;
+            this.btnAgregar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar2.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar2.Location = new System.Drawing.Point(187, 179);
+            this.btnAgregar2.Name = "btnAgregar2";
+            this.btnAgregar2.Size = new System.Drawing.Size(169, 44);
+            this.btnAgregar2.TabIndex = 51;
+            this.btnAgregar2.Text = "Aceptar";
+            this.btnAgregar2.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // cbxSentidoMov2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(75, 165);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 20);
-            this.label4.TabIndex = 53;
-            this.label4.Text = "Codigo de Embarque";
+            this.cbxSentidoMov2.FormattingEnabled = true;
+            this.cbxSentidoMov2.Items.AddRange(new object[] {
+            "Llegada",
+            "Salida"});
+            this.cbxSentidoMov2.Location = new System.Drawing.Point(187, 94);
+            this.cbxSentidoMov2.Name = "cbxSentidoMov2";
+            this.cbxSentidoMov2.Size = new System.Drawing.Size(169, 28);
+            this.cbxSentidoMov2.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(8, 102);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(173, 20);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Sentido del Movimiento";
+            // 
+            // txtCodTransporte2
+            // 
+            this.txtCodTransporte2.Location = new System.Drawing.Point(187, 53);
+            this.txtCodTransporte2.Name = "txtCodTransporte2";
+            this.txtCodTransporte2.Size = new System.Drawing.Size(136, 26);
+            this.txtCodTransporte2.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 56);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(174, 20);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Transporte/Contenedor";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtSentidoMov3);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.txtCodEmbarque3);
+            this.groupBox3.Controls.Add(this.btnAgregar3);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.txtCodTransporte3);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(25, 350);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(395, 231);
+            this.groupBox3.TabIndex = 55;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Estacion3: Distribución Regional y Entrega al Cliente";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(60, 124);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(121, 20);
+            this.label8.TabIndex = 53;
+            this.label8.Text = "Codigo de Flete";
+            // 
+            // txtCodEmbarque3
+            // 
+            this.txtCodEmbarque3.Location = new System.Drawing.Point(187, 121);
+            this.txtCodEmbarque3.Name = "txtCodEmbarque3";
+            this.txtCodEmbarque3.Size = new System.Drawing.Size(169, 26);
+            this.txtCodEmbarque3.TabIndex = 52;
+            // 
+            // btnAgregar3
+            // 
+            this.btnAgregar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.btnAgregar3.FlatAppearance.BorderSize = 0;
+            this.btnAgregar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar3.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar3.Location = new System.Drawing.Point(187, 164);
+            this.btnAgregar3.Name = "btnAgregar3";
+            this.btnAgregar3.Size = new System.Drawing.Size(169, 44);
+            this.btnAgregar3.TabIndex = 51;
+            this.btnAgregar3.Text = "Aceptar";
+            this.btnAgregar3.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 87);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(173, 20);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Sentido del Movimiento";
+            // 
+            // txtCodTransporte3
+            // 
+            this.txtCodTransporte3.Location = new System.Drawing.Point(187, 38);
+            this.txtCodTransporte3.Name = "txtCodTransporte3";
+            this.txtCodTransporte3.Size = new System.Drawing.Size(136, 26);
+            this.txtCodTransporte3.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 41);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(174, 20);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Transporte/Contenedor";
+            // 
+            // txtSentidoMov3
+            // 
+            this.txtSentidoMov3.Enabled = false;
+            this.txtSentidoMov3.Location = new System.Drawing.Point(187, 81);
+            this.txtSentidoMov3.Name = "txtSentidoMov3";
+            this.txtSentidoMov3.Size = new System.Drawing.Size(136, 26);
+            this.txtSentidoMov3.TabIndex = 54;
+            this.txtSentidoMov3.Text = "Llegada";
             // 
             // RastreoProd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1080, 670);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -169,6 +346,10 @@
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -178,13 +359,28 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxSentidoMov1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodTransporte1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.TextBox txtCodEmbarque1;
+        private System.Windows.Forms.Button btnAgregar1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtCodEmbarque2;
+        private System.Windows.Forms.Button btnAgregar2;
+        private System.Windows.Forms.ComboBox cbxSentidoMov2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCodTransporte2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtCodEmbarque3;
+        private System.Windows.Forms.Button btnAgregar3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtCodTransporte3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtSentidoMov3;
     }
 }

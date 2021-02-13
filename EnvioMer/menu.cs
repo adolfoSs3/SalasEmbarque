@@ -170,5 +170,11 @@ namespace EnvioMer
         {
 
         }
+
+        private void btnRastreoProd_Click(object sender, EventArgs e)
+        {
+            AbrirFCostos(new RastreoProd());
+            ActivateButton(sender, RGBcolores.colorB);
+        }
     }
 }

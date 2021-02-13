@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.btnRastreoProd = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.btnRastreoProd = new System.Windows.Forms.Button();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.BTNMapa = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -73,6 +73,24 @@
             this.MenuVertical.Size = new System.Drawing.Size(200, 670);
             this.MenuVertical.TabIndex = 2;
             this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
+            // 
+            // btnRastreoProd
+            // 
+            this.btnRastreoProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnRastreoProd.FlatAppearance.BorderSize = 0;
+            this.btnRastreoProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRastreoProd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRastreoProd.ForeColor = System.Drawing.Color.White;
+            this.btnRastreoProd.Image = global::EnvioMer.Properties.Resources.escaneoCodigo;
+            this.btnRastreoProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRastreoProd.Location = new System.Drawing.Point(0, 323);
+            this.btnRastreoProd.Name = "btnRastreoProd";
+            this.btnRastreoProd.Size = new System.Drawing.Size(200, 70);
+            this.btnRastreoProd.TabIndex = 16;
+            this.btnRastreoProd.Text = "Rastreo del\r\nProducto";
+            this.btnRastreoProd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRastreoProd.UseVisualStyleBackColor = false;
+            this.btnRastreoProd.Click += new System.EventHandler(this.btnRastreoProd_Click);
             // 
             // panelLogo
             // 
@@ -120,23 +138,6 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
             this.panelContenedor.TabIndex = 3;
-            // 
-            // btnRastreoProd
-            // 
-            this.btnRastreoProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnRastreoProd.FlatAppearance.BorderSize = 0;
-            this.btnRastreoProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRastreoProd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRastreoProd.ForeColor = System.Drawing.Color.White;
-            this.btnRastreoProd.Image = global::EnvioMer.Properties.Resources.escaneoCodigo;
-            this.btnRastreoProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRastreoProd.Location = new System.Drawing.Point(0, 323);
-            this.btnRastreoProd.Name = "btnRastreoProd";
-            this.btnRastreoProd.Size = new System.Drawing.Size(200, 70);
-            this.btnRastreoProd.TabIndex = 16;
-            this.btnRastreoProd.Text = "Rastreo del\r\nProducto";
-            this.btnRastreoProd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRastreoProd.UseVisualStyleBackColor = false;
             // 
             // btnNewUser
             // 
