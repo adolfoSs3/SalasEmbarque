@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using System.Data;
 using System.Configuration;
-
+using System.Device.Location;
 namespace EnvioMer
 {
     class funciones
@@ -141,7 +141,7 @@ namespace EnvioMer
       
 
 
-        public void CalcularDistancia(TextBox Descrip,DataGridView dt, TextBox txtLat1,TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
+        public void CalcularDistancia( TextBox txtLat1,TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
         {
             DataTable td;
             td = new DataTable();
@@ -152,26 +152,25 @@ namespace EnvioMer
 
             
 
-            double r = 6371D;
+            //string descripcion = Convert.ToString(Descrip.Text);
             double Latitud1 = double.Parse(txtLat1.Text);
             double Latitud2 = double.Parse(txtLat2.Text);
             double Longitud1 = double.Parse(txtLong1.Text);
             double Longitud2 = double.Parse(txtLong2.Text);
-            double Alat = Latitud1-Latitud2;
-            double ALong = Longitud1 - Longitud2;
-            double radianes = (Math.PI / 1800);
+
             //--------Fórmula del Haversine----------------------
 
-            double a = Math.Sin(Alat / 2D) * Math.Sin(Alat / 2D) +
-                  Math.Cos(Latitud1*radianes) * Math.Cos( Latitud2*radianes)*
-                  Math.Sin(ALong / 2D) * Math.Sin(ALong / 2D);
+            GeoCoordinate pin1 = new GeoCoordinate(Latitud1,Longitud1);
+            GeoCoordinate pin2 = new GeoCoordinate(Latitud2,Longitud2);
 
-            double h2 = 2D * Math.Asin(Math.Min(1D, Math.Sqrt(a)));
+            double distanceBetween = pin1.GetDistanceTo(pin2);
+            MessageBox.Show("resultado" + distanceBetween);
 
-            double Resultado = r * h2;
+
+
             //------------------------------------------------------
-            td.Rows.Add(Descrip, Resultado);
-            dt.DataSource = td;
+           // td.Rows.Add(descripcion,distanceBetween);
+           // dt.DataSource = td;
         }
 
     }
