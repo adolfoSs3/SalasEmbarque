@@ -47,13 +47,13 @@
             this.txtCodTransporte2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtSentidoMov3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtCodEmbarque3 = new System.Windows.Forms.TextBox();
             this.btnAgregar3 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtCodTransporte3 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtSentidoMov3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -129,9 +129,11 @@
             this.btnAgregar1.TabIndex = 51;
             this.btnAgregar1.Text = "Aceptar";
             this.btnAgregar1.UseVisualStyleBackColor = false;
+            this.btnAgregar1.Click += new System.EventHandler(this.btnAgregar1_Click);
             // 
             // cbxSentidoMov1
             // 
+            this.cbxSentidoMov1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxSentidoMov1.FormattingEnabled = true;
             this.cbxSentidoMov1.Items.AddRange(new object[] {
             "Llegada",
@@ -140,6 +142,7 @@
             this.cbxSentidoMov1.Name = "cbxSentidoMov1";
             this.cbxSentidoMov1.Size = new System.Drawing.Size(169, 28);
             this.cbxSentidoMov1.TabIndex = 3;
+            this.cbxSentidoMov1.SelectedIndexChanged += new System.EventHandler(this.cbxSentidoMov1_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -212,9 +215,11 @@
             this.btnAgregar2.TabIndex = 51;
             this.btnAgregar2.Text = "Aceptar";
             this.btnAgregar2.UseVisualStyleBackColor = false;
+            this.btnAgregar2.Click += new System.EventHandler(this.btnAgregar2_Click);
             // 
             // cbxSentidoMov2
             // 
+            this.cbxSentidoMov2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxSentidoMov2.FormattingEnabled = true;
             this.cbxSentidoMov2.Items.AddRange(new object[] {
             "Llegada",
@@ -223,6 +228,7 @@
             this.cbxSentidoMov2.Name = "cbxSentidoMov2";
             this.cbxSentidoMov2.Size = new System.Drawing.Size(169, 28);
             this.cbxSentidoMov2.TabIndex = 3;
+            this.cbxSentidoMov2.SelectedIndexChanged += new System.EventHandler(this.cbxSentidoMov2_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -265,6 +271,15 @@
             this.groupBox3.TabIndex = 55;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Estacion3: Distribución Regional y Entrega al Cliente";
+            // 
+            // txtSentidoMov3
+            // 
+            this.txtSentidoMov3.Enabled = false;
+            this.txtSentidoMov3.Location = new System.Drawing.Point(187, 81);
+            this.txtSentidoMov3.Name = "txtSentidoMov3";
+            this.txtSentidoMov3.Size = new System.Drawing.Size(136, 26);
+            this.txtSentidoMov3.TabIndex = 54;
+            this.txtSentidoMov3.Text = "Llegada";
             // 
             // label8
             // 
@@ -320,15 +335,6 @@
             this.label10.Size = new System.Drawing.Size(174, 20);
             this.label10.TabIndex = 0;
             this.label10.Text = "Transporte/Contenedor";
-            // 
-            // txtSentidoMov3
-            // 
-            this.txtSentidoMov3.Enabled = false;
-            this.txtSentidoMov3.Location = new System.Drawing.Point(187, 81);
-            this.txtSentidoMov3.Name = "txtSentidoMov3";
-            this.txtSentidoMov3.Size = new System.Drawing.Size(136, 26);
-            this.txtSentidoMov3.TabIndex = 54;
-            this.txtSentidoMov3.Text = "Llegada";
             // 
             // RastreoProd
             // 

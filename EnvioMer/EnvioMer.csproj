@@ -184,6 +184,30 @@
     <Compile Include="RastreoProd.Designer.cs">
       <DependentUpon>RastreoProd.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistaEstaciones\Est1\frmEst1Llegada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistaEstaciones\Est1\frmEst1Llegada.Designer.cs">
+      <DependentUpon>frmEst1Llegada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistaEstaciones\Est1\frmEst1Salida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistaEstaciones\Est1\frmEst1Salida.Designer.cs">
+      <DependentUpon>frmEst1Salida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistaEstaciones\Est2\frmEst2Llegada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistaEstaciones\Est2\frmEst2Llegada.Designer.cs">
+      <DependentUpon>frmEst2Llegada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistaEstaciones\Est2\frmEst2Salida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistaEstaciones\Est2\frmEst2Salida.Designer.cs">
+      <DependentUpon>frmEst2Salida.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Incotems.resx">
       <DependentUpon>Incotems.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,9 +299,7 @@
   <ItemGroup>
     <None Include="Resources\escaneoCodigo.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="vistaEstaciones\Estacion1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
