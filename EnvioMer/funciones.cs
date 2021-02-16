@@ -154,8 +154,11 @@ namespace EnvioMer
 
             string descripcion = Convert.ToString(Descrip.Text);
             double Latitud1 = double.Parse(txtLat1.Text);
+
             double Latitud2 = double.Parse(txtLat2.Text);
+
             double Longitud1 = double.Parse(txtLong1.Text);
+
             double Longitud2 = double.Parse(txtLong2.Text);
 
             //--------Fórmula del Haversine----------------------

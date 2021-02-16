@@ -98,6 +98,18 @@ namespace EnvioMer
             double lat = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lat;
             double lng = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lng;
             //se posiciona en el txt en la latitud y la longitud
+            string la = Convert.ToString(txtlatitud2.Text);
+            string lg = Convert.ToString(txtLongitud2.Text);
+            if (la == ""& lg=="") {
+                txtdescripcion2.Text = txtDescripcion.Text;
+                txtlatitud2.Text = txtLatitud.Text;
+                txtLongitud2.Text = txtLongitud.Text;
+
+                txtDescripcion.Clear();
+                txtLatitud.Clear();
+                txtLongitud.Clear();
+
+            }
             txtLatitud.Text = lat.ToString();
             txtLongitud.Text = lng.ToString();
 
@@ -112,14 +124,14 @@ namespace EnvioMer
             td.Rows.Add(txtDescripcion.Text, txtLatitud.Text, txtLongitud.Text);
             //manda nuevamente los datos al otro grupo de Textbox 
             txtdescripcion2.Text=txtDescripcion.Text;
+
             txtlatitud2.Text= txtLatitud.Text;
+
             txtLongitud2.Text= txtLongitud.Text;
             //------------Prueba------------------------------
             Funcionnnes.CalcularDistancia(txtdescripcion2,dataGridViewPrueba,txtLatitud,txtlatitud2,txtLongitud,txtLongitud2);
             // al mismo tiempo limpia lisde el primer grupo
-            txtDescripcion.Clear();
-            txtLatitud.Clear();
-            txtLongitud.Clear();
+           
 
         }
 
