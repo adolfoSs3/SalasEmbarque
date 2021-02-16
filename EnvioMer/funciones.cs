@@ -141,7 +141,7 @@ namespace EnvioMer
       
 
 
-        public void CalcularDistancia( TextBox txtLat1,TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
+        public void CalcularDistancia(TextBox Descrip,DataGridView dt, TextBox txtLat1,TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
         {
             DataTable td;
             td = new DataTable();
@@ -150,9 +150,9 @@ namespace EnvioMer
             //td.Columns.Add(new DataColumn("Longitud", typeof(double)));
 
 
-            
 
-            //string descripcion = Convert.ToString(Descrip.Text);
+
+            string descripcion = Convert.ToString(Descrip.Text);
             double Latitud1 = double.Parse(txtLat1.Text);
             double Latitud2 = double.Parse(txtLat2.Text);
             double Longitud1 = double.Parse(txtLong1.Text);
@@ -164,13 +164,9 @@ namespace EnvioMer
             GeoCoordinate pin2 = new GeoCoordinate(Latitud2,Longitud2);
 
             double distanceBetween = pin1.GetDistanceTo(pin2);
-            MessageBox.Show("resultado" + distanceBetween);
-
-
-
             //------------------------------------------------------
-           // td.Rows.Add(descripcion,distanceBetween);
-           // dt.DataSource = td;
+            td.Rows.Add(descripcion,distanceBetween);
+            dt.DataSource = td;
         }
 
     }

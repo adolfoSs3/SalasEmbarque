@@ -115,7 +115,7 @@ namespace EnvioMer
             txtlatitud2.Text= txtLatitud.Text;
             txtLongitud2.Text= txtLongitud.Text;
             //------------Prueba------------------------------
-            //Funcionnnes.CalcularDistancia(txtdescripcion2,dataGridViewPrueba,txtLatitud,txtlatitud2,txtLongitud,txtLongitud2);
+            Funcionnnes.CalcularDistancia(txtdescripcion2,dataGridViewPrueba,txtLatitud,txtlatitud2,txtLongitud,txtLongitud2);
             // al mismo tiempo limpia lisde el primer grupo
             txtDescripcion.Clear();
             txtLatitud.Clear();
@@ -130,7 +130,7 @@ namespace EnvioMer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Funcionnnes.CalcularDistancia(TXTL1,TXTL2,TXTLG1,TXTLG2);
+
         }
     }
 }
