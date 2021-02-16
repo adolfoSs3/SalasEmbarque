@@ -95,11 +95,13 @@ namespace EnvioMer
 
         private void gMapControl1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            //se posiciona en el txt en la latitud y la longitud
             double lat = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lat;
             double lng = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lng;
-            //se posiciona en el txt en la latitud y la longitud
+            //validacion para que se llenen los datos del destino
             string la = Convert.ToString(txtlatitud2.Text);
             string lg = Convert.ToString(txtLongitud2.Text);
+            string la2 = Convert.ToString(txtLongitud.Text);
             if (la == ""& lg=="") {
                 txtdescripcion2.Text = txtDescripcion.Text;
                 txtlatitud2.Text = txtLatitud.Text;
@@ -109,6 +111,12 @@ namespace EnvioMer
                 txtLatitud.Clear();
                 txtLongitud.Clear();
 
+            }else
+                if (la2 == la)
+            {
+                txtDescripcion.Clear();
+                txtLatitud.Clear();
+                txtLongitud.Clear();
             }
             txtLatitud.Text = lat.ToString();
             txtLongitud.Text = lng.ToString();
@@ -124,10 +132,7 @@ namespace EnvioMer
             td.Rows.Add(txtDescripcion.Text, txtLatitud.Text, txtLongitud.Text);
             //manda nuevamente los datos al otro grupo de Textbox 
             txtdescripcion2.Text=txtDescripcion.Text;
-
-            txtlatitud2.Text= txtLatitud.Text;
-
-            txtLongitud2.Text= txtLongitud.Text;
+            
             //------------Prueba------------------------------
             Funcionnnes.CalcularDistancia(txtdescripcion2,dataGridViewPrueba,txtLatitud,txtlatitud2,txtLongitud,txtLongitud2);
             // al mismo tiempo limpia lisde el primer grupo
