@@ -21,11 +21,9 @@ namespace EnvioMer
         GMarkerGoogle marker;
         GMapOverlay markerOverlay;
         DataTable td;
-        //------------------------------------
-        double[] ArrLatidud = new double[10]; // Declaración del array
-        double[] ArrLongitud = new double[10];
-        
 
+        //------------------------------------
+       
         //------------------------------------
 
         int filaseleccionada = 0;
@@ -57,8 +55,8 @@ namespace EnvioMer
             gMapControl1.MapProvider = GMapProviders.GoogleMap;
             gMapControl1.Position = new PointLatLng(Latitudinicial, lninicial);
             gMapControl1.MinZoom = 0; //lo minimo para el usuario
-            gMapControl1.MaxZoom = 20;//lo maximo para el usuario
-            gMapControl1.Zoom = 50; //es el zoom inicial
+            gMapControl1.MaxZoom = 5;//lo maximo para el usuario
+            gMapControl1.Zoom = 30; //es el zoom inicial
             gMapControl1.AutoScroll = true;
 
             markerOverlay = new GMapOverlay("Marcador");
