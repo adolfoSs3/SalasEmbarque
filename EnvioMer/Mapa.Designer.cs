@@ -78,7 +78,7 @@
             this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(836, 324);
+            this.gMapControl1.Size = new System.Drawing.Size(1038, 338);
             this.gMapControl1.TabIndex = 0;
             this.gMapControl1.Zoom = 0D;
             this.gMapControl1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.gMapControl1_MouseDoubleClick);
@@ -118,7 +118,7 @@
             // dataGridViewMapa
             // 
             this.dataGridViewMapa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewMapa.Location = new System.Drawing.Point(646, 351);
+            this.dataGridViewMapa.Location = new System.Drawing.Point(649, 412);
             this.dataGridViewMapa.Name = "dataGridViewMapa";
             this.dataGridViewMapa.ReadOnly = true;
             this.dataGridViewMapa.Size = new System.Drawing.Size(191, 150);
@@ -128,20 +128,18 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txtDescripcion);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtLatitud);
             this.panel1.Controls.Add(this.txtLongitud);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(12, 351);
+            this.panel1.Location = new System.Drawing.Point(15, 412);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(195, 150);
             this.panel1.TabIndex = 14;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(10, 34);
+            this.txtDescripcion.Location = new System.Drawing.Point(160, 375);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(166, 20);
             this.txtDescripcion.TabIndex = 7;
@@ -149,7 +147,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 12);
+            this.label3.Location = new System.Drawing.Point(160, 353);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 8;
@@ -157,7 +155,7 @@
             // 
             // BtnAgregar
             // 
-            this.BtnAgregar.Location = new System.Drawing.Point(435, 351);
+            this.BtnAgregar.Location = new System.Drawing.Point(438, 412);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(120, 53);
             this.BtnAgregar.TabIndex = 15;
@@ -167,7 +165,7 @@
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(435, 429);
+            this.BtnEliminar.Location = new System.Drawing.Point(438, 490);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(120, 53);
             this.BtnEliminar.TabIndex = 16;
@@ -183,7 +181,7 @@
             this.panel2.Controls.Add(this.txtLongitud2);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(234, 351);
+            this.panel2.Location = new System.Drawing.Point(237, 412);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(195, 150);
             this.panel2.TabIndex = 15;
@@ -195,6 +193,7 @@
             this.txtdescripcion2.Size = new System.Drawing.Size(166, 20);
             this.txtdescripcion2.TabIndex = 7;
             this.txtdescripcion2.Text = "..";
+            this.txtdescripcion2.Visible = false;
             // 
             // label4
             // 
@@ -204,6 +203,7 @@
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Descripción";
+            this.label4.Visible = false;
             // 
             // txtlatitud2
             // 
@@ -243,7 +243,7 @@
             this.dataGridViewPrueba.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewPrueba.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPrueba.EnableHeadersVisualStyles = false;
-            this.dataGridViewPrueba.Location = new System.Drawing.Point(572, 351);
+            this.dataGridViewPrueba.Location = new System.Drawing.Point(575, 412);
             this.dataGridViewPrueba.Name = "dataGridViewPrueba";
             this.dataGridViewPrueba.ReadOnly = true;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
@@ -251,7 +251,7 @@
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
             this.dataGridViewPrueba.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewPrueba.Size = new System.Drawing.Size(288, 150);
+            this.dataGridViewPrueba.Size = new System.Drawing.Size(464, 150);
             this.dataGridViewPrueba.TabIndex = 17;
             // 
             // Mapa
@@ -259,8 +259,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(849, 574);
+            this.ClientSize = new System.Drawing.Size(1051, 574);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.dataGridViewPrueba);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnAgregar);
@@ -280,6 +282,7 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrueba)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

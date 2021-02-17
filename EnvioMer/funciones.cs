@@ -138,38 +138,44 @@ namespace EnvioMer
 
         }
         //--------------------------------------Mapa----------------------------
-      
 
 
-        public void CalcularDistancia(TextBox Descrip,DataGridView dt, TextBox txtLat1,TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
+
+        public void CalcularDistancia(DataTable td, TextBox Descrip, DataGridView dt, TextBox txtLat1, TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
         {
-            DataTable td;
-            td = new DataTable();
-            td.Columns.Add(new DataColumn("Descripción", typeof(string)));
-            td.Columns.Add(new DataColumn("Distancia", typeof(double)));
-            //td.Columns.Add(new DataColumn("Longitud", typeof(double)));
+            try
+            {
+                string descripcion = Convert.ToString(Descrip.Text);
+                double Latitud1 = double.Parse(txtLat1.Text);
 
+                double Latitud2 = double.Parse(txtLat2.Text);
 
+                double Longitud1 = double.Parse(txtLong1.Text);
 
+                double Longitud2 = double.Parse(txtLong2.Text);
 
-            string descripcion = Convert.ToString(Descrip.Text);
-            double Latitud1 = double.Parse(txtLat1.Text);
+                //--------Fórmula del Haversine----------------------
 
-            double Latitud2 = double.Parse(txtLat2.Text);
+                GeoCoordinate pin1 = new GeoCoordinate(Latitud1, Longitud1);
+                GeoCoordinate pin2 = new GeoCoordinate(Latitud2, Longitud2);
 
-            double Longitud1 = double.Parse(txtLong1.Text);
+                double distanceBetween = pin1.GetDistanceTo(pin2);
+                double tiempo = distanceBetween / 85;
+                double dias = (tiempo * 1) / 800;
 
-            double Longitud2 = double.Parse(txtLong2.Text);
+                //------------------------------------------------------
+                td.Rows.Add(descripcion, distanceBetween, dias, tiempo);
+                dt.DataSource = td;
+            }
+            catch (Exception ex)
+            {
 
-            //--------Fórmula del Haversine----------------------
+                Console.WriteLine(ex.ToString());
+                throw;
+            }
+            
 
-            GeoCoordinate pin1 = new GeoCoordinate(Latitud1,Longitud1);
-            GeoCoordinate pin2 = new GeoCoordinate(Latitud2,Longitud2);
-
-            double distanceBetween = pin1.GetDistanceTo(pin2);
-            //------------------------------------------------------
-            td.Rows.Add(descripcion,distanceBetween);
-            dt.DataSource = td;
+            
         }
 
     }

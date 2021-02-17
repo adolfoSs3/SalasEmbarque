@@ -39,12 +39,13 @@ namespace EnvioMer
         {
             td = new DataTable();           
             td.Columns.Add(new DataColumn("Descripción", typeof(string)));
-            td.Columns.Add(new DataColumn("Latitud", typeof(double)));
-            td.Columns.Add(new DataColumn("Longitud",typeof(double)));
-          
+            td.Columns.Add(new DataColumn("Distancia (Km)", typeof(double)));
+            td.Columns.Add(new DataColumn("Días",typeof(double)));
+            td.Columns.Add(new DataColumn("Horas Totales", typeof(double)));
 
-            td.Rows.Add("Ubicación 1", Latitudinicial, lninicial);
-            dataGridViewMapa.DataSource = td;
+
+            // td.Rows.Add("Ubicación 1", Latitudinicial, lninicial);
+            dataGridViewPrueba.DataSource = td;
 
             //hacer que el usuario no pueda visualizar las columnas Latitud y longitud
             //dataGridViewMapa.Columns[1].Visible = false;
@@ -55,7 +56,7 @@ namespace EnvioMer
             gMapControl1.MapProvider = GMapProviders.GoogleMap;
             gMapControl1.Position = new PointLatLng(Latitudinicial, lninicial);
             gMapControl1.MinZoom = 0; //lo minimo para el usuario
-            gMapControl1.MaxZoom = 5;//lo maximo para el usuario
+            gMapControl1.MaxZoom = 20;//lo maximo para el usuario
             gMapControl1.Zoom = 30; //es el zoom inicial
             gMapControl1.AutoScroll = true;
 
@@ -112,9 +113,9 @@ namespace EnvioMer
             }else
                 if (la2 == la)
             {
-                txtDescripcion.Clear();
-                txtLatitud.Clear();
-                txtLongitud.Clear();
+                txtdescripcion2.Clear();
+                txtlatitud2.Clear();
+                txtLongitud2.Clear();
             }
             txtLatitud.Text = lat.ToString();
             txtLongitud.Text = lng.ToString();
@@ -127,20 +128,22 @@ namespace EnvioMer
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
             //agrega los datos al DatiGrid...
-            td.Rows.Add(txtDescripcion.Text, txtLatitud.Text, txtLongitud.Text);
+           // td.Rows.Add(txtDescripcion.Text, txtLatitud.Text, txtLongitud.Text);
             //manda nuevamente los datos al otro grupo de Textbox 
             txtdescripcion2.Text=txtDescripcion.Text;
             
             //------------Prueba------------------------------
-            Funcionnnes.CalcularDistancia(txtdescripcion2,dataGridViewPrueba,txtLatitud,txtlatitud2,txtLongitud,txtLongitud2);
+            Funcionnnes.CalcularDistancia(td,txtdescripcion2,dataGridViewPrueba,txtLatitud,txtlatitud2,txtLongitud,txtLongitud2);
             // al mismo tiempo limpia lisde el primer grupo
-           
+            txtdescripcion2.Clear();
+            txtlatitud2.Clear();
+            txtLongitud2.Clear();
 
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            dataGridViewMapa.Rows.RemoveAt(filaseleccionada);
+            dataGridViewPrueba.Rows.RemoveAt(filaseleccionada);
         }
 
         private void button1_Click(object sender, EventArgs e)
