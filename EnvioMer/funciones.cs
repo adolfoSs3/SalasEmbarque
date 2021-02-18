@@ -141,7 +141,7 @@ namespace EnvioMer
 
 
 
-        public void CalcularDistancia(DataTable td, TextBox Descrip, DataGridView dt, TextBox txtLat1, TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
+        public void CalcularDistancia(RadioButton RAvion, RadioButton RCamion, RadioButton RBarco, DataTable td, TextBox Descrip, DataGridView dt, TextBox txtLat1, TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
         {
             try
             {
@@ -158,25 +158,39 @@ namespace EnvioMer
 
                 GeoCoordinate pin1 = new GeoCoordinate(Latitud1, Longitud1);
                 GeoCoordinate pin2 = new GeoCoordinate(Latitud2, Longitud2);
-
-                double distanceBetween = pin1.GetDistanceTo(pin2);
-                double tiempo = distanceBetween / 85;
-                double dias = (tiempo * 1) / 800;
+                //----------caldulo del tiempo segun la velocidad
+                double Velocidad = 0;
+                double distancia = pin1.GetDistanceTo(pin2);
+                double distanceBetween = distancia / 1000;
+                if (RAvion.Checked == true)
+                {
+                    Velocidad = 964.604;
+                }
+                if (RCamion.Checked == true)
+                {
+                    Velocidad = 90;
+                }
+                if (RBarco.Checked == true)
+                {
+                    Velocidad = 56;
+                }
+                double tiempoDias = (distanceBetween) / Velocidad;
+                double Horas = (Math.Round(tiempoDias) * 24) / 1;
 
                 //------------------------------------------------------
-                td.Rows.Add(descripcion, distanceBetween, dias, tiempo);
+                td.Rows.Add(descripcion,distanceBetween,Math.Round(tiempoDias),Math.Round(Horas));
                 dt.DataSource = td;
             }
-            catch (Exception ex)
+            catch (Exception Ex)
             {
 
-                Console.WriteLine(ex.ToString());
-                throw;
+                MessageBox.Show(Ex.Message);
             }
             
 
             
         }
+        
 
     }
 }
