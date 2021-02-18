@@ -141,7 +141,7 @@ namespace EnvioMer
 
 
 
-        public void CalcularDistancia(ComboBox nudos,RadioButton RAvion, RadioButton RCamion, RadioButton RBarco, DataTable td, TextBox Descrip, DataGridView dt, TextBox txtLat1, TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
+        public void CalcularDistancia(RadioButton RAvion, RadioButton RCamion, RadioButton RBarco, DataTable td, TextBox Descrip, DataGridView dt, TextBox txtLat1, TextBox txtLat2, TextBox txtLong1, TextBox txtLong2)
         {
             try
             {
@@ -190,10 +190,7 @@ namespace EnvioMer
 
             
         }
-        public void RadiButtons(RadioButton RAvion,RadioButton RCamion,RadioButton RBarco)
-        {
-            
-        }
+        
 
     }
 }

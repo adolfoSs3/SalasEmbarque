@@ -130,7 +130,7 @@ namespace EnvioMer
             
             
             //------------Prueba------------------------------
-            Funcionnnes.CalcularDistancia(comboBoxNudos,radioBAvion,radioBCamion,radioBBarco,td, txtDescripcion, dataGridViewPrueba,txtLatitud,txtlatitud2,txtLongitud,txtLongitud2);
+            Funcionnnes.CalcularDistancia(radioBAvion,radioBCamion,radioBBarco,td, txtDescripcion, dataGridViewPrueba,txtLatitud,txtlatitud2,txtLongitud,txtLongitud2);
             // al mismo tiempo limpia lisde el primer grupo
             txtlatitud2.Clear();
             txtLongitud2.Clear();
