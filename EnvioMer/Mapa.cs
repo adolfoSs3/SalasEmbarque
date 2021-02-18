@@ -80,10 +80,10 @@ namespace EnvioMer
         private void Seleccionar(object sender, DataGridViewCellMouseEventArgs e)
         {
             //asignamos valores a las cajas de texto y despues mandamos a la bd
-            filaseleccionada = e.RowIndex;
-            txtDescripcion.Text = dataGridViewMapa.Rows[filaseleccionada].Cells[0].Value.ToString();
-            txtLatitud.Text = dataGridViewMapa.Rows[filaseleccionada].Cells[1].Value.ToString();
-            txtLongitud.Text = dataGridViewMapa.Rows[filaseleccionada].Cells[2].Value.ToString();
+            //filaseleccionada = e.RowIndex;
+            //txtDescripcion.Text = dataGridViewMapa.Rows[filaseleccionada].Cells[0].Value.ToString();
+            //txtLatitud.Text = dataGridViewMapa.Rows[filaseleccionada].Cells[1].Value.ToString();
+            //txtLongitud.Text = dataGridViewMapa.Rows[filaseleccionada].Cells[2].Value.ToString();
 
             marker.Position = new PointLatLng(Convert.ToDouble(txtLatitud.Text), Convert.ToDouble(txtLongitud.Text));
             //se posicione el foco del mapa en ese punto 
@@ -102,7 +102,7 @@ namespace EnvioMer
             string lg = Convert.ToString(txtLongitud2.Text);
             string la2 = Convert.ToString(txtLongitud.Text);
             if (la == ""& lg=="") {
-                txtdescripcion2.Text = txtDescripcion.Text;
+                
                 txtlatitud2.Text = txtLatitud.Text;
                 txtLongitud2.Text = txtLongitud.Text;
 
@@ -113,7 +113,7 @@ namespace EnvioMer
             }else
                 if (la2 == la)
             {
-                txtdescripcion2.Clear();
+                
                 txtlatitud2.Clear();
                 txtLongitud2.Clear();
             }
@@ -127,15 +127,11 @@ namespace EnvioMer
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            //agrega los datos al DatiGrid...
-           // td.Rows.Add(txtDescripcion.Text, txtLatitud.Text, txtLongitud.Text);
-            //manda nuevamente los datos al otro grupo de Textbox 
-            txtdescripcion2.Text=txtDescripcion.Text;
+            
             
             //------------Prueba------------------------------
-            Funcionnnes.CalcularDistancia(td,txtdescripcion2,dataGridViewPrueba,txtLatitud,txtlatitud2,txtLongitud,txtLongitud2);
+            Funcionnnes.CalcularDistancia(comboBoxNudos,radioBAvion,radioBCamion,radioBBarco,td, txtDescripcion, dataGridViewPrueba,txtLatitud,txtlatitud2,txtLongitud,txtLongitud2);
             // al mismo tiempo limpia lisde el primer grupo
-            txtdescripcion2.Clear();
             txtlatitud2.Clear();
             txtLongitud2.Clear();
 

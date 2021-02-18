@@ -41,17 +41,20 @@
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtdescripcion2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtlatitud2 = new System.Windows.Forms.TextBox();
             this.txtLongitud2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridViewPrueba = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioBAvion = new System.Windows.Forms.RadioButton();
+            this.radioBCamion = new System.Windows.Forms.RadioButton();
+            this.radioBBarco = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMapa)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrueba)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gMapControl1
@@ -85,14 +88,14 @@
             // 
             // txtLatitud
             // 
-            this.txtLatitud.Location = new System.Drawing.Point(13, 78);
+            this.txtLatitud.Location = new System.Drawing.Point(3, 34);
             this.txtLatitud.Name = "txtLatitud";
             this.txtLatitud.Size = new System.Drawing.Size(166, 20);
             this.txtLatitud.TabIndex = 3;
             // 
             // txtLongitud
             // 
-            this.txtLongitud.Location = new System.Drawing.Point(13, 118);
+            this.txtLongitud.Location = new System.Drawing.Point(3, 74);
             this.txtLongitud.Name = "txtLongitud";
             this.txtLongitud.Size = new System.Drawing.Size(166, 20);
             this.txtLongitud.TabIndex = 4;
@@ -100,7 +103,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 56);
+            this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 5;
@@ -109,7 +112,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 102);
+            this.label2.Location = new System.Drawing.Point(3, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 6;
@@ -132,9 +135,9 @@
             this.panel1.Controls.Add(this.txtLongitud);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(15, 412);
+            this.panel1.Location = new System.Drawing.Point(15, 464);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(195, 150);
+            this.panel1.Size = new System.Drawing.Size(195, 98);
             this.panel1.TabIndex = 14;
             // 
             // txtDescripcion
@@ -143,6 +146,7 @@
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(166, 20);
             this.txtDescripcion.TabIndex = 7;
+            this.txtDescripcion.Text = "Del punto A al Punto B";
             // 
             // label3
             // 
@@ -175,46 +179,25 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.txtdescripcion2);
-            this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txtlatitud2);
             this.panel2.Controls.Add(this.txtLongitud2);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(237, 412);
+            this.panel2.Location = new System.Drawing.Point(237, 464);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(195, 150);
+            this.panel2.Size = new System.Drawing.Size(195, 98);
             this.panel2.TabIndex = 15;
-            // 
-            // txtdescripcion2
-            // 
-            this.txtdescripcion2.Location = new System.Drawing.Point(10, 34);
-            this.txtdescripcion2.Name = "txtdescripcion2";
-            this.txtdescripcion2.Size = new System.Drawing.Size(166, 20);
-            this.txtdescripcion2.TabIndex = 7;
-            this.txtdescripcion2.Text = "..";
-            this.txtdescripcion2.Visible = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Descripción";
-            this.label4.Visible = false;
             // 
             // txtlatitud2
             // 
-            this.txtlatitud2.Location = new System.Drawing.Point(13, 78);
+            this.txtlatitud2.Location = new System.Drawing.Point(15, 34);
             this.txtlatitud2.Name = "txtlatitud2";
             this.txtlatitud2.Size = new System.Drawing.Size(166, 20);
             this.txtlatitud2.TabIndex = 3;
             // 
             // txtLongitud2
             // 
-            this.txtLongitud2.Location = new System.Drawing.Point(13, 118);
+            this.txtLongitud2.Location = new System.Drawing.Point(15, 74);
             this.txtLongitud2.Name = "txtLongitud2";
             this.txtLongitud2.Size = new System.Drawing.Size(166, 20);
             this.txtLongitud2.TabIndex = 4;
@@ -222,7 +205,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 56);
+            this.label5.Location = new System.Drawing.Point(15, 12);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 13);
             this.label5.TabIndex = 5;
@@ -231,7 +214,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 102);
+            this.label6.Location = new System.Drawing.Point(15, 58);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 13);
             this.label6.TabIndex = 6;
@@ -254,12 +237,57 @@
             this.dataGridViewPrueba.Size = new System.Drawing.Size(464, 150);
             this.dataGridViewPrueba.TabIndex = 17;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioBBarco);
+            this.groupBox1.Controls.Add(this.radioBCamion);
+            this.groupBox1.Controls.Add(this.radioBAvion);
+            this.groupBox1.Location = new System.Drawing.Point(60, 400);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(254, 42);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // radioBAvion
+            // 
+            this.radioBAvion.AutoSize = true;
+            this.radioBAvion.Checked = true;
+            this.radioBAvion.Location = new System.Drawing.Point(7, 20);
+            this.radioBAvion.Name = "radioBAvion";
+            this.radioBAvion.Size = new System.Drawing.Size(52, 17);
+            this.radioBAvion.TabIndex = 0;
+            this.radioBAvion.TabStop = true;
+            this.radioBAvion.Text = "Avión";
+            this.radioBAvion.UseVisualStyleBackColor = true;
+            // 
+            // radioBCamion
+            // 
+            this.radioBCamion.AutoSize = true;
+            this.radioBCamion.Location = new System.Drawing.Point(99, 20);
+            this.radioBCamion.Name = "radioBCamion";
+            this.radioBCamion.Size = new System.Drawing.Size(60, 17);
+            this.radioBCamion.TabIndex = 1;
+            this.radioBCamion.Text = "Camión";
+            this.radioBCamion.UseVisualStyleBackColor = true;
+            // 
+            // radioBBarco
+            // 
+            this.radioBBarco.AutoSize = true;
+            this.radioBBarco.Location = new System.Drawing.Point(191, 20);
+            this.radioBBarco.Name = "radioBBarco";
+            this.radioBBarco.Size = new System.Drawing.Size(53, 17);
+            this.radioBBarco.TabIndex = 2;
+            this.radioBBarco.Text = "Barco";
+            this.radioBBarco.UseVisualStyleBackColor = true;
+            // 
             // Mapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1051, 574);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.dataGridViewPrueba);
             this.Controls.Add(this.label3);
@@ -281,6 +309,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrueba)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,12 +330,14 @@
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtdescripcion2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtlatitud2;
         private System.Windows.Forms.TextBox txtLongitud2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dataGridViewPrueba;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton radioBBarco;
+        private System.Windows.Forms.RadioButton radioBCamion;
+        private System.Windows.Forms.RadioButton radioBAvion;
     }
 }
