@@ -23,7 +23,7 @@ namespace EnvioMer
             pdf.Location = new Point(10, 40);
 
             Controls.Add(pdf);           
-            PdfDocument pdfDocument = PdfDocument.Load(Application.StartupPath + "/tabla-europea-incoterms-2020.pdf");
+            PdfDocument pdfDocument = PdfDocument.Load(Application.StartupPath + "/tabla-europea.pdf");
             pdf.Document = pdfDocument;
         }
     }
