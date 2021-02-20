@@ -159,6 +159,7 @@
             this.txtCodTransporte1.Name = "txtCodTransporte1";
             this.txtCodTransporte1.Size = new System.Drawing.Size(136, 26);
             this.txtCodTransporte1.TabIndex = 1;
+            
             // 
             // label1
             // 
@@ -370,7 +371,6 @@
         private System.Windows.Forms.TextBox txtCodTransporte1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtCodEmbarque1;
         private System.Windows.Forms.Button btnAgregar1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label3;
@@ -388,5 +388,6 @@
         private System.Windows.Forms.TextBox txtCodTransporte3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtSentidoMov3;
+        public System.Windows.Forms.TextBox txtCodEmbarque1;
     }
 }

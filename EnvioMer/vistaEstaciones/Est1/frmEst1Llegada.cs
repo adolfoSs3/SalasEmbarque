@@ -12,9 +12,37 @@ namespace EnvioMer.vistaEstaciones.Est1
 {
     public partial class frmEst1Llegada : Form
     {
+        LlegadaEstacion1Propiedades LlegadaEstacion1 = new LlegadaEstacion1Propiedades();
         public frmEst1Llegada()
         {
             InitializeComponent();
+        }
+
+        private void btnAgregar1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                LlegadaEstacion1.Cod_Barra = txtCod_Barra.Text;
+                LlegadaEstacion1.Operador = txtOperador.Text;
+                LlegadaEstacion1.Origen = txtOrigen.Text;
+                LlegadaEstacion1.Puerto_Salida = txtPuSalida.Text;
+                LlegadaEstacion1.Factura = int.Parse(txtFactura.Text);
+                LlegadaEstacion1.Incoterms = txtIncoterm.Text;
+                LlegadaEstacion1.Bill_Of_Lading = txtBillLadinf.Text;
+                LlegadaEstacion1.Producto = txtProducto.Text;
+                LlegadaEstacion1.Packing_List = txtPacking.Text;
+                LlegadaEstacion1.Pedimento = int.Parse(txtPedimento.Text);
+                LlegadaEstacion1.Cantidad = int.Parse(txtCantidad.Text);
+                funciones.LlegadaEstacion1Add(LlegadaEstacion1);
+                MessageBox.Show("Listo");
+            }
+            catch (Exception Ex)
+            {
+
+                MessageBox.Show("ERROR " + Ex.Message);
+            }
+            
+
         }
     }
 }

@@ -186,11 +186,35 @@ namespace EnvioMer
 
                 MessageBox.Show(Ex.Message);
             }
-            
-
-            
+          
         }
-        
+        //-----------------------Estacion1-------------------------------
+        public static int Estacion1Add (Estacion1Propiedades add)
+        {
+            int retorno = 0;
+            MySqlCommand Comando = new MySqlCommand(String.Format("insert into estacion1(TransporteContenedor,SentidoMovimiento)" +
+                "Values('{0}','{1}')", add.TansporteContenedor, add.SentidoMovimiento), Mysql.conexion.obtenerConexion());
+            retorno = Comando.ExecuteNonQuery();
+            return retorno;
+        }
+       //-------------------Salida de Estacion 1--------------------
+       public static int SalidaEst1Add(SalidaEstacion1Propiedades add)
+        {
+            int retorno;
+            MySqlCommand Comado = new MySqlCommand(String.Format("insert into salida_estacion1(Cod_Embarque,Transporte_Contenedor_Salida,Destino,Puerdo_Llegada,fecha_Salida)" +
+                "values('{0}','{1}','{2}','{3}','{4}')", add.Cod_Embarque, add.T_C_Salida, add.Destino, add.Puerto_Llegada, add.Fecha_Salida), Mysql.conexion.obtenerConexion());
+            retorno = Comado.ExecuteNonQuery();
+            return retorno;
+        }
+        //-----------------Llegada de la estacion 1-----------------------
+        public static int LlegadaEstacion1Add(LlegadaEstacion1Propiedades add)
+        {
+            int retorno;
+            MySqlCommand Comando = new MySqlCommand(String.Format("insert into llegada_estacion1(Cod_Barra,Operador,Origen,Puerto_Salida,Factura,Incoterms,Bill_Of_Lading,Producto,Packing_List,Pedimento,Cantidad)" +
+                "values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", add.Cod_Barra, add.Operador,add.Origen,add.Puerto_Salida, add.Factura, add.Incoterms, add.Bill_Of_Lading, add.Producto, add.Packing_List, add.Pedimento, add.Cantidad), Mysql.conexion.obtenerConexion());
+            retorno = Comando.ExecuteNonQuery();
+            return retorno;
+        }
 
     }
 }

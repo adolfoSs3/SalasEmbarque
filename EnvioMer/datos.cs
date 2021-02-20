@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace EnvioMer
 {
-   public class datos
+    public class datos
     {
         public int OrCompra { get; set; }
         public string Incoterm { get; set; }
@@ -37,9 +37,9 @@ namespace EnvioMer
         public double Volumen { get; set; }
         public double costo { get; set; }
         public int idEmbarque { get; set; }
-        
+
         public DatosLCL() { }
-        public DatosLCL(int PaqueteNum, double peso, double Volumen, double costo,int idEmbarque)
+        public DatosLCL(int PaqueteNum, double peso, double Volumen, double costo, int idEmbarque)
         {
             this.PaqueteN = PaqueteNum;
             this.peso = peso;
@@ -57,7 +57,7 @@ namespace EnvioMer
         public int idEmbarque { get; set; }
         public double Costo_Total { get; set; }
         public DatosFCL() { }
-        public DatosFCL(int Cantidad, string Tipo_Contenedor,double Costo_Contenedor,int idEmbarque, double costoTotal)
+        public DatosFCL(int Cantidad, string Tipo_Contenedor, double Costo_Contenedor, int idEmbarque, double costoTotal)
         {
             this.Cantidad = Cantidad;
             this.Tipo_Contenedor = Tipo_Contenedor;
@@ -83,8 +83,8 @@ namespace EnvioMer
         public double CostoEnvio { get; set; }
         public double ValorDeclarado { get; set; }
         public string TipoServicio { get; set; }
-        public DatosAereo() {}
-        public DatosAereo(string Origen, string Destino,string Pago_en,int Cantidad,double Peso,double Volumen,string Descrip,string Seguro,int Porcentaje,string Moneda,double CostoEnvio,double ValorD,string TipoServicio)
+        public DatosAereo() { }
+        public DatosAereo(string Origen, string Destino, string Pago_en, int Cantidad, double Peso, double Volumen, string Descrip, string Seguro, int Porcentaje, string Moneda, double CostoEnvio, double ValorD, string TipoServicio)
         {
             this.Origen = Origen;
             this.Destino = Destino;
@@ -102,7 +102,7 @@ namespace EnvioMer
         }
 
     }
-    //Mapa--------------------------------------------------
+    //Mapa--------------------------------------------------Pendiente
     public class Coordenadas
     {
         public double LatitudInicial { get; set; }
@@ -110,12 +110,76 @@ namespace EnvioMer
         public double LongitudInicial { get; set; }
         public double LongitudFinal { get; set; }
         public Coordenadas() { }
-        public Coordenadas(double LatitudInicial, double LatitudFinal,double LongitudInicial, double LongitudFinal)
+        public Coordenadas(double LatitudInicial, double LatitudFinal, double LongitudInicial, double LongitudFinal)
         {
             this.LatitudInicial = LatitudInicial;
             this.LongitudFinal = LatitudFinal;
             this.LongitudInicial = LongitudInicial;
             this.LongitudFinal = LongitudFinal;
         }
+    }
+
+    //-----------------insert de La estacion 1-------------------------------
+
+    public class Estacion1Propiedades
+    {
+        public string TansporteContenedor { get; set; }
+        public string SentidoMovimiento { get; set; }
+        public Estacion1Propiedades() { }
+        public Estacion1Propiedades(string TransporteContenedor, string SentidoMovimiento)
+        {
+            this.TansporteContenedor = TransporteContenedor;
+            this.SentidoMovimiento = SentidoMovimiento;
+        }
+    }
+    //-----------------------insert de la salida de la Estacion 1--------
+    public class SalidaEstacion1Propiedades
+    {
+        public int Cod_Embarque { get; set; }
+        public string T_C_Salida { get; set; }
+        public string Destino { get; set; }
+        public string Puerto_Llegada { get; set; }
+        public DateTime Fecha_Salida { get; set; }
+        public SalidaEstacion1Propiedades() { }
+        public SalidaEstacion1Propiedades(int Cod_Embarque, string T_C_Salida, string Destino, string Puerto, DateTime Fecha_Salida)
+        {
+            this.Cod_Embarque = Cod_Embarque;
+            this.T_C_Salida = T_C_Salida;
+            this.Destino = Destino;
+            this.Puerto_Llegada = Puerto_Llegada;
+            this.Fecha_Salida = Fecha_Salida;
+        }
+    }
+    //-----------------insert de Llegada de la Estacion 1---------
+    public class LlegadaEstacion1Propiedades
+    {
+        public string Cod_Barra { get; set; }
+        public string Operador { get; set; }
+        public string Origen { get; set; }
+        public string Puerto_Salida { get; set; }
+        public int Factura { get; set; }
+        public string Incoterms { get; set; }
+        public string Bill_Of_Lading { get; set; }
+        public string Producto { get; set; }
+        public string Packing_List { get; set; }
+        public int Pedimento { get; set; }
+        public int Cantidad { get; set; }
+        public LlegadaEstacion1Propiedades() { }
+        public LlegadaEstacion1Propiedades(string Cod_Barra, string Operador,string Origen, string Puerto_Salida, int Factura, string Incoterms, string Bill_Of_Lading, string Producto, string Packing_List, int Pedimento,int Cantidad)
+        {
+            this.Cod_Barra = Cod_Barra;
+            this.Operador = Operador;
+            this.Origen = Origen;
+            this.Puerto_Salida = Puerto_Salida;
+            this.Factura = Factura;
+            this.Incoterms = Incoterms;
+            this.Bill_Of_Lading = Bill_Of_Lading;
+            this.Producto = Producto;
+            this.Packing_List = Packing_List;
+            this.Pedimento = Pedimento;
+            this.Cantidad = Cantidad;
+
+        }
+
     }
 }

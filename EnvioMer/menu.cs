@@ -156,6 +156,7 @@ namespace EnvioMer
 
         private void btnIncoterm_Click(object sender, EventArgs e)
         {
+
             AbrirFCostos(new Incotems());
             ActivateButton(sender, RGBcolores.colorB);
         }

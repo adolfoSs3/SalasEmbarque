@@ -229,3 +229,5 @@ C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\System.Secu
 C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
 C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.RastreoProd.resources
+C:\Users\ANGEL\Documents\GitHub\embarqueSalvado\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est1.frmEst1Llegada.resources
+C:\Users\ANGEL\Documents\GitHub\embarqueSalvado\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est1.frmEst1Salida.resources

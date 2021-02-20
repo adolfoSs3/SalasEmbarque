@@ -14,6 +14,7 @@ namespace EnvioMer
 {
     public partial class RastreoProd : Form
     {
+        Estacion1Propiedades Estacion1 = new Estacion1Propiedades();
         public RastreoProd()
         {
             InitializeComponent();
@@ -21,15 +22,29 @@ namespace EnvioMer
 
         private void btnAgregar1_Click(object sender, EventArgs e)
         {
-            if (cbxSentidoMov1.SelectedIndex.Equals(0))
+            try
             {
-                new frmEst1Llegada().ShowDialog();
+                //---------
+                Estacion1.TansporteContenedor = txtCodEmbarque1.Text;
+                Estacion1.SentidoMovimiento = cbxSentidoMov1.Text;
+                funciones.Estacion1Add(Estacion1);
+                if (cbxSentidoMov1.SelectedIndex.Equals(0))
+                {
+
+                    new frmEst1Llegada().ShowDialog();
+                }
+                else
+                if (cbxSentidoMov1.SelectedIndex.Equals(1))
+                {
+                    new frmEst1Salida().ShowDialog();
+                }
             }
-            else
-            if (cbxSentidoMov1.SelectedIndex.Equals(1))
+            catch (Exception Ex)
             {
-                new frmEst1Salida().ShowDialog();
+
+                MessageBox.Show("Error "+ Ex.Message);
             }
+            
         }
 
         private void btnAgregar2_Click(object sender, EventArgs e)
@@ -72,5 +87,7 @@ namespace EnvioMer
                 txtCodEmbarque2.Visible = false;
             }
         }
+
+       
     }
 }

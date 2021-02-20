@@ -234,6 +234,12 @@
     <EmbeddedResource Include="RastreoProd.resx">
       <DependentUpon>RastreoProd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistaEstaciones\Est1\frmEst1Llegada.resx">
+      <DependentUpon>frmEst1Llegada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistaEstaciones\Est1\frmEst1Salida.resx">
+      <DependentUpon>frmEst1Salida.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

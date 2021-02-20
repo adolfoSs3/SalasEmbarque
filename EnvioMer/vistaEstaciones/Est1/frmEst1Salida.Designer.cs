@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPuertoLlegada = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDestino = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtC_T_Salida = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeFechaSalida = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnAgregar1 = new System.Windows.Forms.Button();
+            this.BtnAgregarSalidaEstacion1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox3
+            // txtPuertoLlegada
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(12, 225);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(163, 26);
-            this.textBox3.TabIndex = 11;
+            this.txtPuertoLlegada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPuertoLlegada.Location = new System.Drawing.Point(12, 225);
+            this.txtPuertoLlegada.Name = "txtPuertoLlegada";
+            this.txtPuertoLlegada.Size = new System.Drawing.Size(163, 26);
+            this.txtPuertoLlegada.TabIndex = 11;
             // 
             // label3
             // 
@@ -58,13 +58,13 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Puerto de Llegada";
             // 
-            // textBox2
+            // txtDestino
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(12, 135);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 26);
-            this.textBox2.TabIndex = 9;
+            this.txtDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestino.Location = new System.Drawing.Point(12, 135);
+            this.txtDestino.Name = "txtDestino";
+            this.txtDestino.Size = new System.Drawing.Size(163, 26);
+            this.txtDestino.TabIndex = 9;
             // 
             // label2
             // 
@@ -76,13 +76,13 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Destino";
             // 
-            // textBox1
+            // txtC_T_Salida
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 26);
-            this.textBox1.TabIndex = 7;
+            this.txtC_T_Salida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtC_T_Salida.Location = new System.Drawing.Point(12, 67);
+            this.txtC_T_Salida.Name = "txtC_T_Salida";
+            this.txtC_T_Salida.Size = new System.Drawing.Size(163, 26);
+            this.txtC_T_Salida.TabIndex = 7;
             // 
             // label1
             // 
@@ -94,14 +94,14 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Contenedor o Transporte con\r\nel que sale";
             // 
-            // dateTimePicker1
+            // dateTimeFechaSalida
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(258, 65);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(120, 26);
-            this.dateTimePicker1.TabIndex = 12;
+            this.dateTimeFechaSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeFechaSalida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeFechaSalida.Location = new System.Drawing.Point(258, 65);
+            this.dateTimeFechaSalida.Name = "dateTimeFechaSalida";
+            this.dateTimeFechaSalida.Size = new System.Drawing.Size(120, 26);
+            this.dateTimeFechaSalida.TabIndex = 12;
             // 
             // label4
             // 
@@ -127,19 +127,20 @@
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // btnAgregar1
+            // BtnAgregarSalidaEstacion1
             // 
-            this.btnAgregar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
-            this.btnAgregar1.FlatAppearance.BorderSize = 0;
-            this.btnAgregar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar1.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar1.Location = new System.Drawing.Point(258, 191);
-            this.btnAgregar1.Name = "btnAgregar1";
-            this.btnAgregar1.Size = new System.Drawing.Size(217, 44);
-            this.btnAgregar1.TabIndex = 54;
-            this.btnAgregar1.Text = "Generar Reporte";
-            this.btnAgregar1.UseVisualStyleBackColor = false;
+            this.BtnAgregarSalidaEstacion1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.BtnAgregarSalidaEstacion1.FlatAppearance.BorderSize = 0;
+            this.BtnAgregarSalidaEstacion1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgregarSalidaEstacion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarSalidaEstacion1.ForeColor = System.Drawing.Color.White;
+            this.BtnAgregarSalidaEstacion1.Location = new System.Drawing.Point(258, 191);
+            this.BtnAgregarSalidaEstacion1.Name = "BtnAgregarSalidaEstacion1";
+            this.BtnAgregarSalidaEstacion1.Size = new System.Drawing.Size(217, 44);
+            this.BtnAgregarSalidaEstacion1.TabIndex = 54;
+            this.BtnAgregarSalidaEstacion1.Text = "Generar Reporte";
+            this.BtnAgregarSalidaEstacion1.UseVisualStyleBackColor = false;
+            this.BtnAgregarSalidaEstacion1.Click += new System.EventHandler(this.BtnAgregarSalidaEstacion1_Click);
             // 
             // frmEst1Salida
             // 
@@ -147,14 +148,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(487, 314);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnAgregar1);
+            this.Controls.Add(this.BtnAgregarSalidaEstacion1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.dateTimeFechaSalida);
+            this.Controls.Add(this.txtPuertoLlegada);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDestino);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtC_T_Salida);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "frmEst1Salida";
@@ -166,15 +167,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPuertoLlegada;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDestino;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtC_T_Salida;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimeFechaSalida;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnAgregar1;
+        private System.Windows.Forms.Button BtnAgregarSalidaEstacion1;
     }
 }
