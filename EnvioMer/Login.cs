@@ -36,7 +36,6 @@ namespace EnvioMer
                 {
                     tipo = reader.GetString(6);
                     institucion = reader.GetString(7);
-                    MessageBox.Show(institucion);
                     new menu().Show();
                     Hide();
                 }

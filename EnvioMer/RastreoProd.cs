@@ -18,11 +18,17 @@ namespace EnvioMer
         public RastreoProd()
         {
             InitializeComponent();
+            cbxSentidoMov1.SelectedIndex = 0;
         }
 
         private void btnAgregar1_Click(object sender, EventArgs e)
         {
-            try
+
+            frmEst1Salida sal =new frmEst1Salida();
+            AddOwnedForm(sal);
+            sal.txtCod.Text = txtCodEmbarque1.Text;
+            
+            // try
             {
                 //---------
                 Estacion1.TansporteContenedor = txtCodEmbarque1.Text;
@@ -36,15 +42,15 @@ namespace EnvioMer
                 else
                 if (cbxSentidoMov1.SelectedIndex.Equals(1))
                 {
-                    new frmEst1Salida().ShowDialog();
+                    sal.ShowDialog();
                 }
             }
-            catch (Exception Ex)
+            /*catch (Exception Ex)
             {
 
                 MessageBox.Show("Error "+ Ex.Message);
             }
-            
+            */
         }
 
         private void btnAgregar2_Click(object sender, EventArgs e)
@@ -88,6 +94,9 @@ namespace EnvioMer
             }
         }
 
-       
+        private void RastreoProd_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

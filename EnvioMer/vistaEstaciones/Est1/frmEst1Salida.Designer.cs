@@ -34,10 +34,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtC_T_Salida = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimeFechaSalida = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeFechaSalida1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.BtnAgregarSalidaEstacion1 = new System.Windows.Forms.Button();
+            this.txtCod = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtPuertoLlegada
@@ -94,14 +95,14 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Contenedor o Transporte con\r\nel que sale";
             // 
-            // dateTimeFechaSalida
+            // dateTimeFechaSalida1
             // 
-            this.dateTimeFechaSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeFechaSalida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeFechaSalida.Location = new System.Drawing.Point(258, 65);
-            this.dateTimeFechaSalida.Name = "dateTimeFechaSalida";
-            this.dateTimeFechaSalida.Size = new System.Drawing.Size(120, 26);
-            this.dateTimeFechaSalida.TabIndex = 12;
+            this.dateTimeFechaSalida1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeFechaSalida1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeFechaSalida1.Location = new System.Drawing.Point(258, 65);
+            this.dateTimeFechaSalida1.Name = "dateTimeFechaSalida1";
+            this.dateTimeFechaSalida1.Size = new System.Drawing.Size(120, 26);
+            this.dateTimeFechaSalida1.TabIndex = 12;
             // 
             // label4
             // 
@@ -142,15 +143,23 @@
             this.BtnAgregarSalidaEstacion1.UseVisualStyleBackColor = false;
             this.BtnAgregarSalidaEstacion1.Click += new System.EventHandler(this.BtnAgregarSalidaEstacion1_Click);
             // 
+            // txtCod
+            // 
+            this.txtCod.Location = new System.Drawing.Point(273, 128);
+            this.txtCod.Name = "txtCod";
+            this.txtCod.Size = new System.Drawing.Size(100, 20);
+            this.txtCod.TabIndex = 56;
+            // 
             // frmEst1Salida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(487, 314);
+            this.Controls.Add(this.txtCod);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnAgregarSalidaEstacion1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dateTimeFechaSalida);
+            this.Controls.Add(this.dateTimeFechaSalida1);
             this.Controls.Add(this.txtPuertoLlegada);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtDestino);
@@ -173,9 +182,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtC_T_Salida;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimeFechaSalida;
+        private System.Windows.Forms.DateTimePicker dateTimeFechaSalida1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BtnAgregarSalidaEstacion1;
+        public System.Windows.Forms.TextBox txtCod;
     }
 }

@@ -139,9 +139,9 @@ namespace EnvioMer
         public string T_C_Salida { get; set; }
         public string Destino { get; set; }
         public string Puerto_Llegada { get; set; }
-        public DateTime Fecha_Salida { get; set; }
+        public string Fecha_Salida { get; set; }
         public SalidaEstacion1Propiedades() { }
-        public SalidaEstacion1Propiedades(int Cod_Embarque, string T_C_Salida, string Destino, string Puerto, DateTime Fecha_Salida)
+        public SalidaEstacion1Propiedades(int Cod_Embarque, string T_C_Salida, string Destino, string Puerto, string Fecha_Salida)
         {
             this.Cod_Embarque = Cod_Embarque;
             this.T_C_Salida = T_C_Salida;

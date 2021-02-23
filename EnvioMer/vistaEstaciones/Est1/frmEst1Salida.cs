@@ -19,16 +19,20 @@ namespace EnvioMer.vistaEstaciones.Est1
         {
             InitializeComponent();
         }
-
+        
         private void BtnAgregarSalidaEstacion1_Click(object sender, EventArgs e)
         {
-           // try
+            // try
             {
-                SalidaEST1.Cod_Embarque = int.Parse(RastreoProcucto.txtCodEmbarque1.Text);
+                RastreoProd FRastreo = new RastreoProd();
+                AddOwnedForm(FRastreo);
+
+                SalidaEST1.Cod_Embarque = int.Parse(txtCod.Text);
                 SalidaEST1.T_C_Salida = Convert.ToString(txtC_T_Salida.Text);
                 SalidaEST1.Destino = Convert.ToString(txtDestino.Text);
                 SalidaEST1.Puerto_Llegada = Convert.ToString(txtPuertoLlegada.Text);
-                SalidaEST1.Fecha_Salida = Convert.ToDateTime(dateTimeFechaSalida.Text);//Checar sise puede Desde las propiedades Cambiar a tipo texto
+                SalidaEST1.Fecha_Salida = dateTimeFechaSalida1.Text;//Checar sise puede Desde las propiedades Cambiar a tipo texto
+                
                 funciones.SalidaEst1Add(SalidaEST1);
                 MessageBox.Show("Listo");
             }

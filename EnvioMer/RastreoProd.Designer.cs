@@ -159,7 +159,6 @@
             this.txtCodTransporte1.Name = "txtCodTransporte1";
             this.txtCodTransporte1.Size = new System.Drawing.Size(136, 26);
             this.txtCodTransporte1.TabIndex = 1;
-            
             // 
             // label1
             // 
@@ -349,6 +348,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RastreoProd";
             this.Text = "RastreoProd";
+            this.Load += new System.EventHandler(this.RastreoProd_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
