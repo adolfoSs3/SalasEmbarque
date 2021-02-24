@@ -224,14 +224,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(184, 231);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(528, 175);
+            this.dataGridView1.Size = new System.Drawing.Size(280, 175);
             this.dataGridView1.TabIndex = 36;
             // 
             // txtBuque
             // 
-            this.txtBuque.Enabled = false;
             this.txtBuque.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuque.Location = new System.Drawing.Point(548, 184);
+            this.txtBuque.Location = new System.Drawing.Point(549, 530);
             this.txtBuque.Name = "txtBuque";
             this.txtBuque.Size = new System.Drawing.Size(163, 26);
             this.txtBuque.TabIndex = 38;
@@ -240,7 +239,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(484, 187);
+            this.label10.Location = new System.Drawing.Point(485, 533);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(60, 20);
             this.label10.TabIndex = 37;

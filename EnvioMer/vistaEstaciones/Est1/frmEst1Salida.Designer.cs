@@ -149,6 +149,7 @@
             this.txtCod.Name = "txtCod";
             this.txtCod.Size = new System.Drawing.Size(100, 20);
             this.txtCod.TabIndex = 56;
+            this.txtCod.Visible = false;
             // 
             // frmEst1Salida
             // 
