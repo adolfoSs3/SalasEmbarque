@@ -175,10 +175,10 @@ namespace EnvioMer
                     Velocidad = 56;
                 }
                 double tiempoDias = (distanceBetween) / Velocidad;
-                double Horas = (Math.Round(tiempoDias) * 24) / 1;
+                double Horas = tiempoDias * 24 / 1;
 
                 //------------------------------------------------------
-                td.Rows.Add(descripcion,distanceBetween,Math.Round(tiempoDias),Math.Round(Horas));
+                td.Rows.Add(descripcion,distanceBetween,Math.Round(tiempoDias),Math.Ceiling(Horas));
                 dt.DataSource = td;
             }
             catch (Exception Ex)
@@ -243,6 +243,17 @@ namespace EnvioMer
                 "values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", add.CodEmbarque, add.FechaLlegada, add.Puerto, add.DestinoEn, add.EstAduana, add.TRetencion, add.Destino, add.Transportista, add.CartaPorte, add.Direccion, add.FechaSalida), Mysql.conexion.obtenerConexion());
             retorno = Command.ExecuteNonQuery();
             return retorno;
+        }
+
+        public void ConsultaLLegadaAEstacion2(DataGridView dt)
+        {
+            MySqlCommand comando = new MySqlCommand("SELECT * from llegada_estacion1 ORDER BY id DESC LIMIT 1;", Mysql.conexion.obtenerConexion());
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dt.DataSource = tabla;
+
         }
 
     }
