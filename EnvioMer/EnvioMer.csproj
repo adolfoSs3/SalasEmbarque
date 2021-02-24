@@ -240,6 +240,12 @@
     <EmbeddedResource Include="vistaEstaciones\Est1\frmEst1Salida.resx">
       <DependentUpon>frmEst1Salida.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistaEstaciones\Est2\frmEst2Llegada.resx">
+      <DependentUpon>frmEst2Llegada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistaEstaciones\Est2\frmEst2Salida.resx">
+      <DependentUpon>frmEst2Salida.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

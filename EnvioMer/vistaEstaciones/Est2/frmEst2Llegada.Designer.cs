@@ -28,51 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtTransporte = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtPuerto = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtDestino = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPuertoSalida = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtBill_of = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtPacking = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtFactura = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtBuque = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.dateTimeFechaSalida = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeFechaLlegada = new System.Windows.Forms.DateTimePicker();
+            this.txtDestinoEn = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtTRetencion = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtPuesrtoLlegada = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtAduana = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnAgregar1 = new System.Windows.Forms.Button();
+            this.txtCod2 = new System.Windows.Forms.TextBox();
+            this.txtCodEmbarque = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox9
+            // txtTransporte
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(548, 138);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(163, 26);
-            this.textBox9.TabIndex = 29;
+            this.txtTransporte.Enabled = false;
+            this.txtTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTransporte.Location = new System.Drawing.Point(548, 138);
+            this.txtTransporte.Name = "txtTransporte";
+            this.txtTransporte.Size = new System.Drawing.Size(163, 26);
+            this.txtTransporte.TabIndex = 29;
             // 
             // label9
             // 
@@ -84,14 +85,14 @@
             this.label9.TabIndex = 28;
             this.label9.Text = "Transporte:";
             // 
-            // textBox8
+            // txtPuerto
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(548, 97);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(163, 26);
-            this.textBox8.TabIndex = 27;
+            this.txtPuerto.Enabled = false;
+            this.txtPuerto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPuerto.Location = new System.Drawing.Point(548, 97);
+            this.txtPuerto.Name = "txtPuerto";
+            this.txtPuerto.Size = new System.Drawing.Size(163, 26);
+            this.txtPuerto.TabIndex = 27;
             // 
             // label8
             // 
@@ -103,14 +104,14 @@
             this.label8.TabIndex = 26;
             this.label8.Text = "Puerto:";
             // 
-            // textBox7
+            // txtDestino
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(548, 55);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(163, 26);
-            this.textBox7.TabIndex = 25;
+            this.txtDestino.Enabled = false;
+            this.txtDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestino.Location = new System.Drawing.Point(548, 55);
+            this.txtDestino.Name = "txtDestino";
+            this.txtDestino.Size = new System.Drawing.Size(163, 26);
+            this.txtDestino.TabIndex = 25;
             // 
             // label7
             // 
@@ -132,14 +133,14 @@
             this.label6.TabIndex = 22;
             this.label6.Text = "Fecha de Salida:";
             // 
-            // textBox2
+            // txtPuertoSalida
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(184, 55);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 26);
-            this.textBox2.TabIndex = 21;
+            this.txtPuertoSalida.Enabled = false;
+            this.txtPuertoSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPuertoSalida.Location = new System.Drawing.Point(184, 55);
+            this.txtPuertoSalida.Name = "txtPuertoSalida";
+            this.txtPuertoSalida.Size = new System.Drawing.Size(163, 26);
+            this.txtPuertoSalida.TabIndex = 21;
             // 
             // label2
             // 
@@ -151,15 +152,6 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Puerto de Salida:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(184, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 26);
-            this.textBox1.TabIndex = 19;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -170,14 +162,14 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Codigo del Embarque:";
             // 
-            // textBox5
+            // txtBill_of
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(184, 184);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(163, 26);
-            this.textBox5.TabIndex = 35;
+            this.txtBill_of.Enabled = false;
+            this.txtBill_of.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBill_of.Location = new System.Drawing.Point(184, 184);
+            this.txtBill_of.Name = "txtBill_of";
+            this.txtBill_of.Size = new System.Drawing.Size(163, 26);
+            this.txtBill_of.TabIndex = 35;
             // 
             // label5
             // 
@@ -189,14 +181,14 @@
             this.label5.TabIndex = 34;
             this.label5.Text = "Bill of Lading:";
             // 
-            // textBox4
+            // txtPacking
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(184, 138);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(163, 26);
-            this.textBox4.TabIndex = 33;
+            this.txtPacking.Enabled = false;
+            this.txtPacking.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPacking.Location = new System.Drawing.Point(184, 138);
+            this.txtPacking.Name = "txtPacking";
+            this.txtPacking.Size = new System.Drawing.Size(163, 26);
+            this.txtPacking.TabIndex = 33;
             // 
             // label4
             // 
@@ -208,14 +200,14 @@
             this.label4.TabIndex = 32;
             this.label4.Text = "Packing List:";
             // 
-            // textBox3
+            // txtFactura
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(184, 97);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(163, 26);
-            this.textBox3.TabIndex = 31;
+            this.txtFactura.Enabled = false;
+            this.txtFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFactura.Location = new System.Drawing.Point(184, 97);
+            this.txtFactura.Name = "txtFactura";
+            this.txtFactura.Size = new System.Drawing.Size(163, 26);
+            this.txtFactura.TabIndex = 31;
             // 
             // label3
             // 
@@ -235,14 +227,14 @@
             this.dataGridView1.Size = new System.Drawing.Size(528, 175);
             this.dataGridView1.TabIndex = 36;
             // 
-            // textBox10
+            // txtBuque
             // 
-            this.textBox10.Enabled = false;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(548, 184);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(163, 26);
-            this.textBox10.TabIndex = 38;
+            this.txtBuque.Enabled = false;
+            this.txtBuque.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuque.Location = new System.Drawing.Point(548, 184);
+            this.txtBuque.Name = "txtBuque";
+            this.txtBuque.Size = new System.Drawing.Size(163, 26);
+            this.txtBuque.TabIndex = 38;
             // 
             // label10
             // 
@@ -254,31 +246,31 @@
             this.label10.TabIndex = 37;
             this.label10.Text = "Buque:";
             // 
-            // dateTimePicker1
+            // dateTimeFechaSalida
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(549, 19);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(162, 26);
-            this.dateTimePicker1.TabIndex = 39;
+            this.dateTimeFechaSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeFechaSalida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeFechaSalida.Location = new System.Drawing.Point(549, 19);
+            this.dateTimeFechaSalida.Name = "dateTimeFechaSalida";
+            this.dateTimeFechaSalida.Size = new System.Drawing.Size(162, 26);
+            this.dateTimeFechaSalida.TabIndex = 39;
             // 
-            // dateTimePicker2
+            // dateTimeFechaLlegada
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(185, 436);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(162, 26);
-            this.dateTimePicker2.TabIndex = 49;
+            this.dateTimeFechaLlegada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeFechaLlegada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeFechaLlegada.Location = new System.Drawing.Point(186, 436);
+            this.dateTimeFechaLlegada.Name = "dateTimeFechaLlegada";
+            this.dateTimeFechaLlegada.Size = new System.Drawing.Size(162, 26);
+            this.dateTimeFechaLlegada.TabIndex = 49;
             // 
-            // textBox6
+            // txtDestinoEn
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(185, 533);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(163, 26);
-            this.textBox6.TabIndex = 48;
+            this.txtDestinoEn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDestinoEn.Location = new System.Drawing.Point(185, 533);
+            this.txtDestinoEn.Name = "txtDestinoEn";
+            this.txtDestinoEn.Size = new System.Drawing.Size(163, 26);
+            this.txtDestinoEn.TabIndex = 48;
             // 
             // label11
             // 
@@ -290,13 +282,13 @@
             this.label11.TabIndex = 47;
             this.label11.Text = "Se Envia al Destino en:";
             // 
-            // textBox11
+            // txtTRetencion
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(549, 486);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(163, 26);
-            this.textBox11.TabIndex = 46;
+            this.txtTRetencion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTRetencion.Location = new System.Drawing.Point(549, 486);
+            this.txtTRetencion.Name = "txtTRetencion";
+            this.txtTRetencion.Size = new System.Drawing.Size(163, 26);
+            this.txtTRetencion.TabIndex = 46;
             // 
             // label12
             // 
@@ -308,13 +300,13 @@
             this.label12.TabIndex = 45;
             this.label12.Text = "Tiempo de retención:";
             // 
-            // textBox12
+            // txtPuesrtoLlegada
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(184, 486);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(163, 26);
-            this.textBox12.TabIndex = 44;
+            this.txtPuesrtoLlegada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPuesrtoLlegada.Location = new System.Drawing.Point(184, 486);
+            this.txtPuesrtoLlegada.Name = "txtPuesrtoLlegada";
+            this.txtPuesrtoLlegada.Size = new System.Drawing.Size(163, 26);
+            this.txtPuesrtoLlegada.TabIndex = 44;
             // 
             // label13
             // 
@@ -326,13 +318,13 @@
             this.label13.TabIndex = 43;
             this.label13.Text = "Puerto:";
             // 
-            // textBox13
+            // txtAduana
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(549, 438);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(163, 26);
-            this.textBox13.TabIndex = 42;
+            this.txtAduana.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAduana.Location = new System.Drawing.Point(549, 438);
+            this.txtAduana.Name = "txtAduana";
+            this.txtAduana.Size = new System.Drawing.Size(163, 26);
+            this.txtAduana.TabIndex = 42;
             // 
             // label14
             // 
@@ -391,45 +383,64 @@
             this.btnAgregar1.TabIndex = 54;
             this.btnAgregar1.Text = "Guardar y Continuar";
             this.btnAgregar1.UseVisualStyleBackColor = false;
+            this.btnAgregar1.Click += new System.EventHandler(this.btnAgregar1_Click);
+            // 
+            // txtCod2
+            // 
+            this.txtCod2.Location = new System.Drawing.Point(763, 24);
+            this.txtCod2.Name = "txtCod2";
+            this.txtCod2.Size = new System.Drawing.Size(100, 20);
+            this.txtCod2.TabIndex = 56;
+            this.txtCod2.Visible = false;
+            // 
+            // txtCodEmbarque
+            // 
+            this.txtCodEmbarque.Enabled = false;
+            this.txtCodEmbarque.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodEmbarque.Location = new System.Drawing.Point(184, 16);
+            this.txtCodEmbarque.Name = "txtCodEmbarque";
+            this.txtCodEmbarque.Size = new System.Drawing.Size(163, 26);
+            this.txtCodEmbarque.TabIndex = 19;
             // 
             // frmEst2Llegada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 629);
+            this.Controls.Add(this.txtCod2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAgregar1);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.dateTimeFechaLlegada);
+            this.Controls.Add(this.txtDestinoEn);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.txtTRetencion);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.txtPuesrtoLlegada);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.txtAduana);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.dateTimeFechaSalida);
+            this.Controls.Add(this.txtBuque);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtBill_of);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtPacking);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtFactura);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtTransporte);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtPuerto);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtDestino);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPuertoSalida);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCodEmbarque);
             this.Controls.Add(this.label1);
             this.Name = "frmEst2Llegada";
             this.Text = "Datos del Envio Internaciónal";
@@ -441,39 +452,40 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtTransporte;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtPuerto;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtDestino;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPuertoSalida;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtBill_of;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPacking;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtFactura;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtBuque;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.DateTimePicker dateTimeFechaSalida;
+        private System.Windows.Forms.DateTimePicker dateTimeFechaLlegada;
+        private System.Windows.Forms.TextBox txtDestinoEn;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtTRetencion;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtPuesrtoLlegada;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtAduana;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnAgregar1;
+        public System.Windows.Forms.TextBox txtCod2;
+        private System.Windows.Forms.TextBox txtCodEmbarque;
     }
 }

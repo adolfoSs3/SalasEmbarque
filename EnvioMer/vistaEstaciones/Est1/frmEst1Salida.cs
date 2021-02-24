@@ -22,10 +22,9 @@ namespace EnvioMer.vistaEstaciones.Est1
         
         private void BtnAgregarSalidaEstacion1_Click(object sender, EventArgs e)
         {
-            // try
+             try
             {
-                RastreoProd FRastreo = new RastreoProd();
-                AddOwnedForm(FRastreo);
+                
 
                 SalidaEST1.Cod_Embarque = int.Parse(txtCod.Text);
                 SalidaEST1.T_C_Salida = Convert.ToString(txtC_T_Salida.Text);
@@ -36,11 +35,11 @@ namespace EnvioMer.vistaEstaciones.Est1
                 funciones.SalidaEst1Add(SalidaEST1);
                 MessageBox.Show("Listo");
             }
-           /* catch (Exception Ex)
+            catch (Exception Ex)
             {
 
                 MessageBox.Show("Error" + Ex.Message);
-            }*/
+            }
             
         }
     }

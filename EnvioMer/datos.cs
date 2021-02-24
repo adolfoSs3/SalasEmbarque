@@ -165,7 +165,7 @@ namespace EnvioMer
         public int Pedimento { get; set; }
         public int Cantidad { get; set; }
         public LlegadaEstacion1Propiedades() { }
-        public LlegadaEstacion1Propiedades(string Cod_Barra, string Operador,string Origen, string Puerto_Salida, int Factura, string Incoterms, string Bill_Of_Lading, string Producto, string Packing_List, int Pedimento,int Cantidad)
+        public LlegadaEstacion1Propiedades(string Cod_Barra, string Operador, string Origen, string Puerto_Salida, int Factura, string Incoterms, string Bill_Of_Lading, string Producto, string Packing_List, int Pedimento, int Cantidad)
         {
             this.Cod_Barra = Cod_Barra;
             this.Operador = Operador;
@@ -181,5 +181,77 @@ namespace EnvioMer
 
         }
 
+    }
+    ///-----------------insert de La estacion 2-------------------------------
+    public class Estacion2Propiedades
+    {
+        public string TransporteContenedor { get; set; }
+        public string SentidoMov { get; set; }
+        public Estacion2Propiedades() { }
+        public Estacion2Propiedades(string transContenedor,string SentidoMov)
+        {
+            this.TransporteContenedor = transContenedor;
+            this.SentidoMov = SentidoMov;
+        }
+    }
+    //-----------------insert de Llegada de la Estacion 2---------
+    public class LlegadaEstacion2Propiedades
+    {
+        public int CodEmbarque { get; set; }
+        public string PuertoSalida { get; set; }
+        public int Factura { get; set; }
+        public string PackingList { get; set; }
+        public string Bill_Of_Lading { get; set; }
+        public string Fecha_Salida { get; set; }
+        public string Fecha_Llegada { get; set; }
+        public string Destino { get; set; }
+        public string Puerto { get; set; }
+        public string Transporte { get; set; }
+        public string Buque { get; set; }
+        public string PuertoLlegada { get; set; }
+        public string DestinoEn { get; set; }
+        public string EstAduana { get; set; }
+        public string TRetencion { get; set; }
+        public LlegadaEstacion2Propiedades() { }
+        public LlegadaEstacion2Propiedades(
+            string PuertoSalida,int Factura,string PackingList,string Bill_Of_Lading,
+            string Fecha_Salida,string Fecha_Llegada,string Destino,string Puerto,
+            string Transporte,string Buque,string PuertoLlegada,string DestinoEn,
+            string EstAduana,string TRetencion)
+        {
+            this.CodEmbarque = CodEmbarque;
+            this.PuertoSalida = PuertoSalida;
+            this.Factura = Factura;
+            this.PackingList = PackingList;
+            this.Bill_Of_Lading = Bill_Of_Lading;
+            this.Fecha_Salida = Fecha_Salida;
+            this.Fecha_Llegada = Fecha_Llegada;
+            this.Destino = Destino;
+            this.Puerto = Puerto;
+            this.Transporte = Transporte;
+            this.Buque = Buque;
+            this.PuertoLlegada = PuertoLlegada;
+            this.DestinoEn = DestinoEn;
+            this.EstAduana = EstAduana;
+            this.TRetencion = TRetencion;
+
+    }
+        
+        
+    }
+    //-----------------------insert de la salida de la Estacion 2--------
+    public class SalidaEstacion2Propiedades
+    {
+        public int CodEmbarque { get; set; }
+        public string FechaLlegada { get; set; }
+        public string Puerto { get; set; }
+        public string DestinoEn { get; set; }
+        public string EstAduana { get; set; }
+        public string TRetencion { get; set; }
+        public string Destino { get; set; }
+        public string Transportista { get; set; }
+        public int CartaPorte { get; set; }
+        public string Direccion { get; set; }
+        public DateTime FechaSalida { get; set; }
     }
 }

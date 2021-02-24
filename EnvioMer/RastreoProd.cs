@@ -15,10 +15,12 @@ namespace EnvioMer
     public partial class RastreoProd : Form
     {
         Estacion1Propiedades Estacion1 = new Estacion1Propiedades();
+        Estacion2Propiedades Estacion2 = new Estacion2Propiedades();
         public RastreoProd()
         {
             InitializeComponent();
             cbxSentidoMov1.SelectedIndex = 0;
+            cbxSentidoMov2.SelectedIndex = 0;
         }
 
         private void btnAgregar1_Click(object sender, EventArgs e)
@@ -28,10 +30,10 @@ namespace EnvioMer
             AddOwnedForm(sal);
             sal.txtCod.Text = txtCodEmbarque1.Text;
             
-            // try
+            try
             {
                 //---------
-                Estacion1.TansporteContenedor = txtCodEmbarque1.Text;
+                Estacion1.TansporteContenedor = txtCodTransporte1.Text;
                 Estacion1.SentidoMovimiento = cbxSentidoMov1.Text;
                 funciones.Estacion1Add(Estacion1);
                 if (cbxSentidoMov1.SelectedIndex.Equals(0))
@@ -45,19 +47,26 @@ namespace EnvioMer
                     sal.ShowDialog();
                 }
             }
-            /*catch (Exception Ex)
+            catch (Exception Ex)
             {
 
                 MessageBox.Show("Error "+ Ex.Message);
             }
-            */
+            
         }
 
         private void btnAgregar2_Click(object sender, EventArgs e)
-        {
+        {   //Pasar el valor del txtCodTransporte2 al formulario frmEst2Salida, para su insercion
+            frmEst2Llegada Llegada2 = new frmEst2Llegada();
+            AddOwnedForm(Llegada2);
+            Llegada2.txtCod2.Text = txtCodEmbarque2.Text;
+            //-----------------------------------------------
+            Estacion2.TransporteContenedor = txtCodTransporte2.Text;
+            Estacion2.SentidoMov = cbxSentidoMov2.Text;
+            funciones.Estacion2Add(Estacion2);
             if (cbxSentidoMov2.SelectedIndex.Equals(0))
             {
-                new frmEst2Llegada().ShowDialog();
+                Llegada2.ShowDialog();
             }
             else
             if (cbxSentidoMov2.SelectedIndex.Equals(1))
@@ -94,9 +103,6 @@ namespace EnvioMer
             }
         }
 
-        private void RastreoProd_Load(object sender, EventArgs e)
-        {
-            
-        }
+      
     }
 }

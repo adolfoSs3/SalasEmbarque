@@ -38,7 +38,7 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodEmbarque = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -155,13 +155,13 @@
             this.label15.TabIndex = 50;
             this.label15.Text = "Fecha de Llegada:";
             // 
-            // textBox1
+            // txtCodEmbarque
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(185, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 26);
-            this.textBox1.TabIndex = 61;
+            this.txtCodEmbarque.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodEmbarque.Location = new System.Drawing.Point(185, 12);
+            this.txtCodEmbarque.Name = "txtCodEmbarque";
+            this.txtCodEmbarque.Size = new System.Drawing.Size(163, 26);
+            this.txtCodEmbarque.TabIndex = 61;
             // 
             // label1
             // 
@@ -355,7 +355,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCodEmbarque);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.textBox6);
@@ -387,7 +387,7 @@
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodEmbarque;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridView dataGridView1;
