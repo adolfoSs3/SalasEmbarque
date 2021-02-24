@@ -12,6 +12,7 @@ namespace EnvioMer.vistaEstaciones.Est2
 {
     public partial class frmEst2Llegada : Form
     {
+        funciones fun = new funciones();
         LlegadaEstacion2Propiedades LlegadaE2 = new LlegadaEstacion2Propiedades();
         public frmEst2Llegada()
         {
@@ -37,6 +38,11 @@ namespace EnvioMer.vistaEstaciones.Est2
             LlegadaE2.TRetencion = txtTRetencion.Text;
             funciones.LlegadaEst2Add(LlegadaE2);
             MessageBox.Show("Listo");
+        }
+
+        private void frmEst2Llegada_Load(object sender, EventArgs e)
+        {
+            fun.ConsultaLLegadaAEstacion2(dataGridProducto);
         }
     }
 }

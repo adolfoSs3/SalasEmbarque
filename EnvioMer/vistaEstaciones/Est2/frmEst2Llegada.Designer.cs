@@ -44,7 +44,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtFactura = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridProducto = new System.Windows.Forms.DataGridView();
             this.txtBuque = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dateTimeFechaSalida = new System.Windows.Forms.DateTimePicker();
@@ -63,7 +63,7 @@
             this.btnAgregar1 = new System.Windows.Forms.Button();
             this.txtCod2 = new System.Windows.Forms.TextBox();
             this.txtCodEmbarque = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridProducto)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTransporte
@@ -219,13 +219,13 @@
             this.label3.TabIndex = 30;
             this.label3.Text = "Facturas:";
             // 
-            // dataGridView1
+            // dataGridProducto
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(184, 231);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(280, 175);
-            this.dataGridView1.TabIndex = 36;
+            this.dataGridProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridProducto.Location = new System.Drawing.Point(184, 231);
+            this.dataGridProducto.Name = "dataGridProducto";
+            this.dataGridProducto.Size = new System.Drawing.Size(528, 175);
+            this.dataGridProducto.TabIndex = 36;
             // 
             // txtBuque
             // 
@@ -423,7 +423,7 @@
             this.Controls.Add(this.dateTimeFechaSalida);
             this.Controls.Add(this.txtBuque);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridProducto);
             this.Controls.Add(this.txtBill_of);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtPacking);
@@ -443,7 +443,8 @@
             this.Controls.Add(this.label1);
             this.Name = "frmEst2Llegada";
             this.Text = "Datos del Envio Internaciónal";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmEst2Llegada_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridProducto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,7 +468,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtFactura;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridProducto;
         private System.Windows.Forms.TextBox txtBuque;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker dateTimeFechaSalida;
