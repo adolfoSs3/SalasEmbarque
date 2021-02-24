@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.txtLatitud = new System.Windows.Forms.TextBox();
             this.txtLongitud = new System.Windows.Forms.TextBox();
@@ -47,9 +47,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridViewPrueba = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioBAvion = new System.Windows.Forms.RadioButton();
-            this.radioBCamion = new System.Windows.Forms.RadioButton();
             this.radioBBarco = new System.Windows.Forms.RadioButton();
+            this.radioBCamion = new System.Windows.Forms.RadioButton();
+            this.radioBAvion = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMapa)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -229,11 +229,11 @@
             this.dataGridViewPrueba.Location = new System.Drawing.Point(575, 412);
             this.dataGridViewPrueba.Name = "dataGridViewPrueba";
             this.dataGridViewPrueba.ReadOnly = true;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            this.dataGridViewPrueba.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            this.dataGridViewPrueba.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewPrueba.Size = new System.Drawing.Size(464, 150);
             this.dataGridViewPrueba.TabIndex = 17;
             // 
@@ -247,7 +247,27 @@
             this.groupBox1.Size = new System.Drawing.Size(254, 42);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Tipo de Transporte";
+            // 
+            // radioBBarco
+            // 
+            this.radioBBarco.AutoSize = true;
+            this.radioBBarco.Location = new System.Drawing.Point(191, 20);
+            this.radioBBarco.Name = "radioBBarco";
+            this.radioBBarco.Size = new System.Drawing.Size(53, 17);
+            this.radioBBarco.TabIndex = 2;
+            this.radioBBarco.Text = "Barco";
+            this.radioBBarco.UseVisualStyleBackColor = true;
+            // 
+            // radioBCamion
+            // 
+            this.radioBCamion.AutoSize = true;
+            this.radioBCamion.Location = new System.Drawing.Point(99, 20);
+            this.radioBCamion.Name = "radioBCamion";
+            this.radioBCamion.Size = new System.Drawing.Size(60, 17);
+            this.radioBCamion.TabIndex = 1;
+            this.radioBCamion.Text = "Camión";
+            this.radioBCamion.UseVisualStyleBackColor = true;
             // 
             // radioBAvion
             // 
@@ -260,26 +280,6 @@
             this.radioBAvion.TabStop = true;
             this.radioBAvion.Text = "Avión";
             this.radioBAvion.UseVisualStyleBackColor = true;
-            // 
-            // radioBCamion
-            // 
-            this.radioBCamion.AutoSize = true;
-            this.radioBCamion.Location = new System.Drawing.Point(99, 20);
-            this.radioBCamion.Name = "radioBCamion";
-            this.radioBCamion.Size = new System.Drawing.Size(60, 17);
-            this.radioBCamion.TabIndex = 1;
-            this.radioBCamion.Text = "Camión";
-            this.radioBCamion.UseVisualStyleBackColor = true;
-            // 
-            // radioBBarco
-            // 
-            this.radioBBarco.AutoSize = true;
-            this.radioBBarco.Location = new System.Drawing.Point(191, 20);
-            this.radioBBarco.Name = "radioBBarco";
-            this.radioBBarco.Size = new System.Drawing.Size(53, 17);
-            this.radioBBarco.TabIndex = 2;
-            this.radioBBarco.Text = "Barco";
-            this.radioBBarco.UseVisualStyleBackColor = true;
             // 
             // Mapa
             // 

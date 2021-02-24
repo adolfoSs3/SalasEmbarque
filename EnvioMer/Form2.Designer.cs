@@ -952,12 +952,15 @@
             this.comboPorcentaje.BackColor = System.Drawing.Color.LightGray;
             this.comboPorcentaje.FormattingEnabled = true;
             this.comboPorcentaje.Items.AddRange(new object[] {
-            "20",
-            "25",
-            "30",
-            "40",
-            "45",
-            "50"});
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"});
             this.comboPorcentaje.Location = new System.Drawing.Point(29, 205);
             this.comboPorcentaje.Name = "comboPorcentaje";
             this.comboPorcentaje.Size = new System.Drawing.Size(168, 29);
