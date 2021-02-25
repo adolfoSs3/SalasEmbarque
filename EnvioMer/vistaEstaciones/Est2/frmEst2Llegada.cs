@@ -21,12 +21,12 @@ namespace EnvioMer.vistaEstaciones.Est2
 
         private void btnAgregar1_Click(object sender, EventArgs e)
         {
-            LlegadaE2.CodEmbarque = int.Parse(txtCod2.Text);
+            LlegadaE2.CodEmbarque = int.Parse(txtCodEmbarque.Text);
             LlegadaE2.PuertoSalida = txtPuertoSalida.Text;
             LlegadaE2.Factura = int.Parse(txtFactura.Text);
             LlegadaE2.PackingList = txtPacking.Text;
             LlegadaE2.Bill_Of_Lading = txtBill_of.Text;
-            LlegadaE2.Fecha_Salida = dateTimeFechaSalida.Text;
+           // LlegadaE2.Fecha_Salida = dateTimeFechaSalida.Text;
             LlegadaE2.Fecha_Llegada = dateTimeFechaLlegada.Text;
             LlegadaE2.Destino = txtDestino.Text;
             LlegadaE2.Puerto = txtPuerto.Text;
@@ -42,7 +42,10 @@ namespace EnvioMer.vistaEstaciones.Est2
 
         private void frmEst2Llegada_Load(object sender, EventArgs e)
         {
-            fun.ConsultaLLegadaAEstacion2(dataGridProducto);
+            fun.DataLlegadaEstacion2(dataGridProducto);//llena el datagrid
+            fun.ConCodEmbarqueEst2(txtCodEmbarque);//llena solo el txtCodEmbarque
+            fun.ConsultaLLegadaAEstacion2(txtPuertoSalida, txtFactura, txtPacking, txtBill_of);///llena los txt de la izquierda
+            fun.ConsultaLLegadaAEstacion2LadoDerecho(txtFechaSAlida,txtDestino,txtPuerto,txtTransporte);
         }
     }
 }

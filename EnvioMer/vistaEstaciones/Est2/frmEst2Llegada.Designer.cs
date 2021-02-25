@@ -47,7 +47,6 @@
             this.dataGridProducto = new System.Windows.Forms.DataGridView();
             this.txtBuque = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimeFechaSalida = new System.Windows.Forms.DateTimePicker();
             this.dateTimeFechaLlegada = new System.Windows.Forms.DateTimePicker();
             this.txtDestinoEn = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -63,6 +62,7 @@
             this.btnAgregar1 = new System.Windows.Forms.Button();
             this.txtCod2 = new System.Windows.Forms.TextBox();
             this.txtCodEmbarque = new System.Windows.Forms.TextBox();
+            this.txtFechaSAlida = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridProducto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -245,15 +245,6 @@
             this.label10.TabIndex = 37;
             this.label10.Text = "Buque:";
             // 
-            // dateTimeFechaSalida
-            // 
-            this.dateTimeFechaSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeFechaSalida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeFechaSalida.Location = new System.Drawing.Point(549, 19);
-            this.dateTimeFechaSalida.Name = "dateTimeFechaSalida";
-            this.dateTimeFechaSalida.Size = new System.Drawing.Size(162, 26);
-            this.dateTimeFechaSalida.TabIndex = 39;
-            // 
             // dateTimeFechaLlegada
             // 
             this.dateTimeFechaLlegada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -401,11 +392,21 @@
             this.txtCodEmbarque.Size = new System.Drawing.Size(163, 26);
             this.txtCodEmbarque.TabIndex = 19;
             // 
+            // txtFechaSAlida
+            // 
+            this.txtFechaSAlida.Enabled = false;
+            this.txtFechaSAlida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFechaSAlida.Location = new System.Drawing.Point(548, 16);
+            this.txtFechaSAlida.Name = "txtFechaSAlida";
+            this.txtFechaSAlida.Size = new System.Drawing.Size(163, 26);
+            this.txtFechaSAlida.TabIndex = 57;
+            // 
             // frmEst2Llegada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 629);
+            this.Controls.Add(this.txtFechaSAlida);
             this.Controls.Add(this.txtCod2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAgregar1);
@@ -420,7 +421,6 @@
             this.Controls.Add(this.txtAduana);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.dateTimeFechaSalida);
             this.Controls.Add(this.txtBuque);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dataGridProducto);
@@ -471,7 +471,6 @@
         private System.Windows.Forms.DataGridView dataGridProducto;
         private System.Windows.Forms.TextBox txtBuque;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimeFechaSalida;
         private System.Windows.Forms.DateTimePicker dateTimeFechaLlegada;
         private System.Windows.Forms.TextBox txtDestinoEn;
         private System.Windows.Forms.Label label11;
@@ -487,5 +486,6 @@
         private System.Windows.Forms.Button btnAgregar1;
         public System.Windows.Forms.TextBox txtCod2;
         private System.Windows.Forms.TextBox txtCodEmbarque;
+        private System.Windows.Forms.TextBox txtFechaSAlida;
     }
 }

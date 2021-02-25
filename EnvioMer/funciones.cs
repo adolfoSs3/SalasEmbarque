@@ -215,7 +215,10 @@ namespace EnvioMer
             retorno = Comando.ExecuteNonQuery();
             return retorno;
         }
-
+        //------------------------------------------------------------------------------------------------------------------------------------
+        //------------------------------------------------------------------------------------------------------------------------------------
+        //------------------------------------------------------------------------------------------------------------------------------------
+        //------------------------------------------------------------------------------------------------------------------------------------
 
         //----------insercion de la estacion 2-------------
         public static int Estacion2Add(Estacion2Propiedades add)
@@ -244,10 +247,10 @@ namespace EnvioMer
             retorno = Command.ExecuteNonQuery();
             return retorno;
         }
-
-        public void ConsultaLLegadaAEstacion2(DataGridView dt)
+        //Muestra los datos en el datagrid dellegada en la estacion2 actualizado al ultimo dato incresado en la llegada de la estacion 1
+        public void DataLlegadaEstacion2(DataGridView dt)
         {
-            MySqlCommand comando = new MySqlCommand("SELECT * from llegada_estacion1 ORDER BY id DESC LIMIT 1;", Mysql.conexion.obtenerConexion());
+            MySqlCommand comando = new MySqlCommand("SELECT Producto,Cantidad from llegada_estacion1 ORDER BY id DESC LIMIT 1;", Mysql.conexion.obtenerConexion());
             MySqlDataAdapter adaptador = new MySqlDataAdapter();
             adaptador.SelectCommand = comando;
             DataTable tabla = new DataTable();
@@ -255,6 +258,50 @@ namespace EnvioMer
             dt.DataSource = tabla;
 
         }
+        //--------esta consulta solo sirve para obtener el Cod del embarque que esta en diferente tabla en la bd
+        public void ConCodEmbarqueEst2(TextBox txt1)
+        {
+            MySqlCommand comando1 = new MySqlCommand();
+            comando1.Connection= Mysql.conexion.obtenerConexion();
+            comando1.CommandText = ("SELECT * from salida_estacion1 ORDER BY Cod_Embarque DESC LIMIT 1;");
+            MySqlDataReader leer = comando1.ExecuteReader();
+            if (leer.Read() == true)
+            {
+                txt1.Text = leer["Cod_Embarque"].ToString();
+            }
+            
+        }
+        //----Esta cosulta manda los datos faltantes al form de llegada de la estacion 2
+        public void ConsultaLLegadaAEstacion2(TextBox txt1, TextBox txt2,TextBox txt3, TextBox txt4)
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = Mysql.conexion.obtenerConexion();
+            comando.CommandText = ("SELECT * from llegada_estacion1 ORDER BY id DESC LIMIT 1;");
+            MySqlDataReader leer = comando.ExecuteReader();
+            if (leer.Read() == true)
+            {
+                txt1.Text = leer["Puerto_Salida"].ToString();
+                txt2.Text = leer["Factura"].ToString();
+                txt3.Text = leer["Packing_List"].ToString();
+                txt4.Text = leer["Bill_Of_Lading"].ToString();
+            }
 
+        }
+        //----Esta cosulta manda los datos faltantes al form de llegada de la estacion 2 del lado derecho que son los mismos de la salida de la estacion 1
+        public void ConsultaLLegadaAEstacion2LadoDerecho(TextBox txt1, TextBox txt2, TextBox txt3, TextBox txt4)
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = Mysql.conexion.obtenerConexion();
+            comando.CommandText = ("SELECT * from salida_estacion1 ORDER BY Cod_Embarque DESC LIMIT 1");
+            MySqlDataReader leer = comando.ExecuteReader();
+            if (leer.Read() == true)
+            {
+                txt1.Text = leer["fecha_Salida"].ToString();
+                txt2.Text = leer["Destino"].ToString();
+                txt3.Text = leer["Puerdo_Llegada"].ToString();
+                txt4.Text = leer["Transporte_Contenedor_Salida"].ToString();
+            }
+
+        }
     }
 }
