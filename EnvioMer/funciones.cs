@@ -233,8 +233,8 @@ namespace EnvioMer
         public static int LlegadaEst2Add(LlegadaEstacion2Propiedades add)
         {
             int retorno;
-            MySqlCommand command = new MySqlCommand(String.Format("insert into llegadaestacion2(CodEmbarque,PuertaSalida,Factura,PackingList,Bill_of_Lading,Fecha_Salida,Fecha_Llegada,Destino,Puerto,Transporte,Buque,PuertoLlegada,DestinoEn,EstAduana,TRetencion)" +
-                "values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}')", add.CodEmbarque, add.PuertoSalida, add.Factura, add.PackingList, add.Bill_Of_Lading, add.Fecha_Salida, add.Fecha_Salida, add.Destino, add.Puerto, add.Transporte, add.Buque, add.PuertoLlegada, add.DestinoEn, add.EstAduana, add.TRetencion), Mysql.conexion.obtenerConexion());
+            MySqlCommand command = new MySqlCommand(String.Format("insert into llegadaestacion2(Fecha_Llegada,Puerto,DestinoEn,EstAduana,TRetencion,Buque)" +
+                "values ('{0}','{1}','{2}','{3}','{4}','{5}')",add.Fecha_Llegada,add.Puerto,add.DestinoEn, add.EstAduana, add.TRetencion,add.Buque), Mysql.conexion.obtenerConexion());
             retorno = command.ExecuteNonQuery();
             return retorno;
         }

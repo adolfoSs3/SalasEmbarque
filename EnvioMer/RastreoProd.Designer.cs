@@ -107,7 +107,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(159, 20);
             this.label4.TabIndex = 53;
-            this.label4.Text = "Codigo de Embarque";
+            this.label4.Text = "Código de Embarque";
             // 
             // txtCodEmbarque1
             // 
@@ -193,7 +193,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(159, 20);
             this.label3.TabIndex = 53;
-            this.label3.Text = "Codigo de Embarque";
+            this.label3.Text = "Código de Embarque";
             // 
             // txtCodEmbarque2
             // 
@@ -245,7 +245,6 @@
             this.txtCodTransporte2.Name = "txtCodTransporte2";
             this.txtCodTransporte2.Size = new System.Drawing.Size(136, 26);
             this.txtCodTransporte2.TabIndex = 1;
-
             // 
             // label7
             // 
@@ -289,7 +288,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(121, 20);
             this.label8.TabIndex = 53;
-            this.label8.Text = "Codigo de Flete";
+            this.label8.Text = "Código de Flete";
             // 
             // txtCodEmbarque3
             // 

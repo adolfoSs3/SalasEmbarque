@@ -160,7 +160,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 20);
             this.label1.TabIndex = 18;
-            this.label1.Text = "Codigo del Embarque:";
+            this.label1.Text = "Código del Embarque:";
             // 
             // txtBill_of
             // 
@@ -268,9 +268,9 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(6, 533);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(173, 20);
+            this.label11.Size = new System.Drawing.Size(168, 20);
             this.label11.TabIndex = 47;
-            this.label11.Text = "Se Envia al Destino en:";
+            this.label11.Text = "Se envia al destino en:";
             // 
             // txtTRetencion
             // 

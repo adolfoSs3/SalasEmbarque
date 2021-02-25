@@ -197,40 +197,18 @@ namespace EnvioMer
     //-----------------insert de Llegada de la Estacion 2---------
     public class LlegadaEstacion2Propiedades
     {
-        public int CodEmbarque { get; set; }
-        public string PuertoSalida { get; set; }
-        public int Factura { get; set; }
-        public string PackingList { get; set; }
-        public string Bill_Of_Lading { get; set; }
-        public string Fecha_Salida { get; set; }
         public string Fecha_Llegada { get; set; }
-        public string Destino { get; set; }
         public string Puerto { get; set; }
-        public string Transporte { get; set; }
         public string Buque { get; set; }
-        public string PuertoLlegada { get; set; }
         public string DestinoEn { get; set; }
         public string EstAduana { get; set; }
         public string TRetencion { get; set; }
         public LlegadaEstacion2Propiedades() { }
-        public LlegadaEstacion2Propiedades(
-            string PuertoSalida,int Factura,string PackingList,string Bill_Of_Lading,
-            string Fecha_Salida,string Fecha_Llegada,string Destino,string Puerto,
-            string Transporte,string Buque,string PuertoLlegada,string DestinoEn,
-            string EstAduana,string TRetencion)
+        public LlegadaEstacion2Propiedades(string Fecha_Llegada,string Puerto,string Buque,string DestinoEn,string EstAduana,string TRetencion)
         {
-            this.CodEmbarque = CodEmbarque;
-            this.PuertoSalida = PuertoSalida;
-            this.Factura = Factura;
-            this.PackingList = PackingList;
-            this.Bill_Of_Lading = Bill_Of_Lading;
-            this.Fecha_Salida = Fecha_Salida;
             this.Fecha_Llegada = Fecha_Llegada;
-            this.Destino = Destino;
             this.Puerto = Puerto;
-            this.Transporte = Transporte;
             this.Buque = Buque;
-            this.PuertoLlegada = PuertoLlegada;
             this.DestinoEn = DestinoEn;
             this.EstAduana = EstAduana;
             this.TRetencion = TRetencion;
