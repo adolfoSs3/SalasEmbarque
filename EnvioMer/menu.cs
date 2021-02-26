@@ -177,5 +177,11 @@ namespace EnvioMer
             AbrirFCostos(new RastreoProd());
             ActivateButton(sender, RGBcolores.colorB);
         }
+
+        private void btnFactCom_Click(object sender, EventArgs e)
+        {
+            AbrirFCostos(new FacturaComercial());
+            ActivateButton(sender, RGBcolores.colorB);
+        }
     }
 }
