@@ -54,15 +54,15 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtPuesrtoLlegada = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtAduana = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnAgregar1 = new System.Windows.Forms.Button();
-            this.txtCod2 = new System.Windows.Forms.TextBox();
             this.txtCodEmbarque = new System.Windows.Forms.TextBox();
             this.txtFechaSAlida = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboAduana = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridProducto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -224,7 +224,7 @@
             this.dataGridProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridProducto.Location = new System.Drawing.Point(184, 231);
             this.dataGridProducto.Name = "dataGridProducto";
-            this.dataGridProducto.Size = new System.Drawing.Size(528, 175);
+            this.dataGridProducto.Size = new System.Drawing.Size(226, 128);
             this.dataGridProducto.TabIndex = 36;
             // 
             // txtBuque
@@ -279,6 +279,7 @@
             this.txtTRetencion.Name = "txtTRetencion";
             this.txtTRetencion.Size = new System.Drawing.Size(163, 26);
             this.txtTRetencion.TabIndex = 46;
+            this.txtTRetencion.Visible = false;
             // 
             // label12
             // 
@@ -307,14 +308,6 @@
             this.label13.Size = new System.Drawing.Size(60, 20);
             this.label13.TabIndex = 43;
             this.label13.Text = "Puerto:";
-            // 
-            // txtAduana
-            // 
-            this.txtAduana.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAduana.Location = new System.Drawing.Point(549, 438);
-            this.txtAduana.Name = "txtAduana";
-            this.txtAduana.Size = new System.Drawing.Size(163, 26);
-            this.txtAduana.TabIndex = 42;
             // 
             // label14
             // 
@@ -375,14 +368,6 @@
             this.btnAgregar1.UseVisualStyleBackColor = false;
             this.btnAgregar1.Click += new System.EventHandler(this.btnAgregar1_Click);
             // 
-            // txtCod2
-            // 
-            this.txtCod2.Location = new System.Drawing.Point(763, 24);
-            this.txtCod2.Name = "txtCod2";
-            this.txtCod2.Size = new System.Drawing.Size(100, 20);
-            this.txtCod2.TabIndex = 56;
-            this.txtCod2.Visible = false;
-            // 
             // txtCodEmbarque
             // 
             this.txtCodEmbarque.Enabled = false;
@@ -401,13 +386,34 @@
             this.txtFechaSAlida.Size = new System.Drawing.Size(163, 26);
             this.txtFechaSAlida.TabIndex = 57;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(731, 39);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 58;
+            this.textBox1.Visible = false;
+            // 
+            // comboAduana
+            // 
+            this.comboAduana.FormattingEnabled = true;
+            this.comboAduana.Items.AddRange(new object[] {
+            "Liberado",
+            "Retenido"});
+            this.comboAduana.Location = new System.Drawing.Point(549, 443);
+            this.comboAduana.Name = "comboAduana";
+            this.comboAduana.Size = new System.Drawing.Size(163, 21);
+            this.comboAduana.TabIndex = 59;
+            this.comboAduana.SelectedIndexChanged += new System.EventHandler(this.comboAduana_SelectedIndexChanged);
+            // 
             // frmEst2Llegada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 629);
+            this.Controls.Add(this.comboAduana);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtFechaSAlida);
-            this.Controls.Add(this.txtCod2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAgregar1);
             this.Controls.Add(this.label16);
@@ -418,7 +424,6 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtPuesrtoLlegada);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.txtAduana);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.txtBuque);
@@ -478,14 +483,14 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtPuesrtoLlegada;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtAduana;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnAgregar1;
-        public System.Windows.Forms.TextBox txtCod2;
         private System.Windows.Forms.TextBox txtCodEmbarque;
         private System.Windows.Forms.TextBox txtFechaSAlida;
+        public System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboAduana;
     }
 }

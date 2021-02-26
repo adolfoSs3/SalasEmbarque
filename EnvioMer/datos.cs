@@ -197,6 +197,7 @@ namespace EnvioMer
     //-----------------insert de Llegada de la Estacion 2---------
     public class LlegadaEstacion2Propiedades
     {
+        public int Cod_Embarque { get; set; }
         public string Fecha_Llegada { get; set; }
         public string Puerto { get; set; }
         public string Buque { get; set; }
@@ -204,7 +205,7 @@ namespace EnvioMer
         public string EstAduana { get; set; }
         public string TRetencion { get; set; }
         public LlegadaEstacion2Propiedades() { }
-        public LlegadaEstacion2Propiedades(string Fecha_Llegada,string Puerto,string Buque,string DestinoEn,string EstAduana,string TRetencion)
+        public LlegadaEstacion2Propiedades(int Cod_Embarque,string Fecha_Llegada,string Puerto,string Buque,string DestinoEn,string EstAduana,string TRetencion)
         {
             this.Fecha_Llegada = Fecha_Llegada;
             this.Puerto = Puerto;
@@ -220,16 +221,25 @@ namespace EnvioMer
     //-----------------------insert de la salida de la Estacion 2--------
     public class SalidaEstacion2Propiedades
     {
+        public int Flete { get; set; }
         public int CodEmbarque { get; set; }
-        public string FechaLlegada { get; set; }
-        public string Puerto { get; set; }
-        public string DestinoEn { get; set; }
-        public string EstAduana { get; set; }
-        public string TRetencion { get; set; }
         public string Destino { get; set; }
         public string Transportista { get; set; }
         public int CartaPorte { get; set; }
         public string Direccion { get; set; }
         public DateTime FechaSalida { get; set; }
+        public SalidaEstacion2Propiedades() { }
+        public SalidaEstacion2Propiedades(int Flete,int CodEmbarque, string Destino, string Transportista, int CartaPorte, string Direccion, DateTime FechaSalida)
+        {
+            this.Flete = Flete;
+            this.CodEmbarque = CodEmbarque;
+            this.Destino = Destino;
+            this.Transportista = Transportista;
+            this.CartaPorte = CartaPorte;
+            this.Direccion = Direccion;
+            this.FechaSalida = FechaSalida;
+        }
+
     }
-}
+
+    }

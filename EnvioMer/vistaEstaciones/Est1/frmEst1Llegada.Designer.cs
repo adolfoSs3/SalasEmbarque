@@ -38,7 +38,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtFactura = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtIncoterm = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtPacking = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,6 +51,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.btnAgregar1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBoxIcoterm = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -143,14 +143,6 @@
             this.label5.Size = new System.Drawing.Size(64, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Factura";
-            // 
-            // txtIncoterm
-            // 
-            this.txtIncoterm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIncoterm.Location = new System.Drawing.Point(284, 47);
-            this.txtIncoterm.Name = "txtIncoterm";
-            this.txtIncoterm.Size = new System.Drawing.Size(163, 26);
-            this.txtIncoterm.TabIndex = 11;
             // 
             // label6
             // 
@@ -281,11 +273,32 @@
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // comboBoxIcoterm
+            // 
+            this.comboBoxIcoterm.FormattingEnabled = true;
+            this.comboBoxIcoterm.Items.AddRange(new object[] {
+            "EXW (Ex Works)",
+            "FCA (Free Carrier)",
+            "CPT (Carriage Paid To)",
+            "CIP (Carriage and Insurance Paid to)",
+            "DAT (Delivered At Terminal)",
+            "DAP (Delivered At Place)",
+            "DDP (Delivery Duty Paid)",
+            "FAS (Free Alongside Ship)",
+            "CFR (Cost and Freight)",
+            "FOB (Free On Board)",
+            "CIF (Cost, Insurance, and Freight)"});
+            this.comboBoxIcoterm.Location = new System.Drawing.Point(284, 52);
+            this.comboBoxIcoterm.Name = "comboBoxIcoterm";
+            this.comboBoxIcoterm.Size = new System.Drawing.Size(155, 21);
+            this.comboBoxIcoterm.TabIndex = 54;
+            // 
             // frmEst1Llegada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBoxIcoterm);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAgregar1);
             this.Controls.Add(this.txtCantidad);
@@ -298,7 +311,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtPacking);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtIncoterm);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtFactura);
             this.Controls.Add(this.label5);
@@ -330,7 +342,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtFactura;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtIncoterm;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtPacking;
         private System.Windows.Forms.Label label7;
@@ -344,5 +355,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnAgregar1;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.ComboBox comboBoxIcoterm;
     }
 }

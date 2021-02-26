@@ -233,8 +233,8 @@ namespace EnvioMer
         public static int LlegadaEst2Add(LlegadaEstacion2Propiedades add)
         {
             int retorno;
-            MySqlCommand command = new MySqlCommand(String.Format("insert into llegadaestacion2(Fecha_Llegada,Puerto,DestinoEn,EstAduana,TRetencion,Buque)" +
-                "values ('{0}','{1}','{2}','{3}','{4}','{5}')",add.Fecha_Llegada,add.Puerto,add.DestinoEn, add.EstAduana, add.TRetencion,add.Buque), Mysql.conexion.obtenerConexion());
+            MySqlCommand command = new MySqlCommand(String.Format("insert into llegadaestacion2(Fecha_Llegada,Puerto,DestinoEn,EstAduana,TRetencion,Buque,Cod_Embarque)" +
+                "values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')",add.Fecha_Llegada,add.Puerto,add.DestinoEn, add.EstAduana, add.TRetencion,add.Buque,add.Cod_Embarque), Mysql.conexion.obtenerConexion());
             retorno = command.ExecuteNonQuery();
             return retorno;
         }
@@ -242,8 +242,8 @@ namespace EnvioMer
         public static int SalidaEstacion2Add(SalidaEstacion2Propiedades add)
         {
             int retorno;
-            MySqlCommand Command = new MySqlCommand(String.Format("insert into salida estacion2(CodEmbarque,FechaLlegada,Puerto,DestinoEn,EstAduana,TRetencion,Destino,Transportista,CartaPorte,Direccion,FechaSalida)" +
-                "values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", add.CodEmbarque, add.FechaLlegada, add.Puerto, add.DestinoEn, add.EstAduana, add.TRetencion, add.Destino, add.Transportista, add.CartaPorte, add.Direccion, add.FechaSalida), Mysql.conexion.obtenerConexion());
+            MySqlCommand Command = new MySqlCommand(String.Format("insert into salidaestacion2(Flete,CodEmbarque,Destino,Transportista,CartaPorte,Direccion,FechaSalida)" +
+                "values('{0}','{1}','{2}','{3}','{4}','{5}','{6}')",add.Flete,add.CodEmbarque,add.Destino, add.Transportista, add.CartaPorte, add.Direccion, add.FechaSalida), Mysql.conexion.obtenerConexion());
             retorno = Command.ExecuteNonQuery();
             return retorno;
         }
@@ -301,7 +301,24 @@ namespace EnvioMer
                 txt3.Text = leer["Puerdo_Llegada"].ToString();
                 txt4.Text = leer["Transporte_Contenedor_Salida"].ToString();
             }
-
+        }
+        //-----------------------------------------------------------------------------
+        //-----------------------muestrtametodo para mostrar los datos fijos del formulario de salida de la estacion 2------------------------------------------------------
+        public void MostrardatosEstacion2Salida(TextBox txt2, TextBox txt3, TextBox txt4,TextBox txt5,TextBox txt6)
+        {
+            MySqlCommand command = new MySqlCommand();
+            command.Connection = Mysql.conexion.obtenerConexion();
+            command.CommandText=("SELECT * from llegadaestacion2 ORDER BY Cod_Embarque DESC LIMIT 1");
+            MySqlDataReader REader = command.ExecuteReader();
+            if (REader.Read() == true)
+            {
+                txt2.Text = REader["Fecha_Llegada"].ToString();
+                txt3.Text = REader["DestinoEn"].ToString();
+                txt4.Text = REader["Puerto"].ToString();
+                txt5.Text = REader["EstAduana"].ToString();
+                txt6.Text = REader["TRetencion"].ToString();
+            }
+           
         }
     }
 }

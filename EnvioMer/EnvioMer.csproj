@@ -208,6 +208,12 @@
     <Compile Include="vistaEstaciones\Est2\frmEst2Salida.Designer.cs">
       <DependentUpon>frmEst2Salida.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistaEstaciones\Est3\frmEstacion3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistaEstaciones\Est3\frmEstacion3.Designer.cs">
+      <DependentUpon>frmEstacion3.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Incotems.resx">
       <DependentUpon>Incotems.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistaEstaciones\Est2\frmEst2Salida.resx">
       <DependentUpon>frmEst2Salida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistaEstaciones\Est3\frmEstacion3.resx">
+      <DependentUpon>frmEstacion3.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />

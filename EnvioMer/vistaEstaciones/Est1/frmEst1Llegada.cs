@@ -16,6 +16,7 @@ namespace EnvioMer.vistaEstaciones.Est1
         public frmEst1Llegada()
         {
             InitializeComponent();
+            comboBoxIcoterm.SelectedIndex = 0;
         }
 
         private void btnAgregar1_Click(object sender, EventArgs e)
@@ -27,7 +28,7 @@ namespace EnvioMer.vistaEstaciones.Est1
                 LlegadaEstacion1.Origen = txtOrigen.Text;
                 LlegadaEstacion1.Puerto_Salida = txtPuSalida.Text;
                 LlegadaEstacion1.Factura = int.Parse(txtFactura.Text);
-                LlegadaEstacion1.Incoterms = txtIncoterm.Text;
+                LlegadaEstacion1.Incoterms = comboBoxIcoterm.Text;
                 LlegadaEstacion1.Bill_Of_Lading = txtBillLadinf.Text;
                 LlegadaEstacion1.Producto = txtProducto.Text;
                 LlegadaEstacion1.Packing_List = txtPacking.Text;

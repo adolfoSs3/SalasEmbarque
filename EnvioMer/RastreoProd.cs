@@ -21,6 +21,7 @@ namespace EnvioMer
             InitializeComponent();
             cbxSentidoMov1.SelectedIndex = 0;
             cbxSentidoMov2.SelectedIndex = 0;
+            comboTipEntrega.SelectedIndex = 0;
         }
 
         private void btnAgregar1_Click(object sender, EventArgs e)
@@ -59,7 +60,7 @@ namespace EnvioMer
         {   //Pasar el valor del txtCodTransporte2 al formulario frmEst2Salida, para su insercion
             frmEst2Llegada Llegada2 = new frmEst2Llegada();
             AddOwnedForm(Llegada2);
-            Llegada2.txtCod2.Text = txtCodEmbarque2.Text;
+            Llegada2.textBox1.Text = txtCodEmbarque2.Text;
             //-----------------------------------------------
             Estacion2.TransporteContenedor = txtCodTransporte2.Text;
             Estacion2.SentidoMov = cbxSentidoMov2.Text;
@@ -103,6 +104,17 @@ namespace EnvioMer
             }
         }
 
-      
+        private void btnAgregar3_Click(object sender, EventArgs e)
+        {
+            if (comboTipEntrega.SelectedIndex.Equals(0))
+            {
+                //Llegada2.ShowDialog();
+            }
+            else
+            if (comboTipEntrega.SelectedIndex.Equals(1))
+            {
+               // new frmEst2Salida().ShowDialog();
+            }
+        }
     }
 }
