@@ -183,5 +183,11 @@ namespace EnvioMer
             AbrirFCostos(new FacturaComercial());
             ActivateButton(sender, RGBcolores.colorB);
         }
+
+        private void btnCartaPorte_Click(object sender, EventArgs e)
+        {
+            AbrirFCostos(new CartaPorte());
+            ActivateButton(sender, RGBcolores.colorB);
+        }
     }
 }

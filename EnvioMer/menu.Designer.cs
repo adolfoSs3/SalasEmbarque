@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.btnFactCom = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCartaPorte = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,7 +64,7 @@
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.MenuVertical.Controls.Add(this.btnFactCom);
-            this.MenuVertical.Controls.Add(this.button1);
+            this.MenuVertical.Controls.Add(this.btnCartaPorte);
             this.MenuVertical.Controls.Add(this.btnRastreoProd);
             this.MenuVertical.Controls.Add(this.btnNewUser);
             this.MenuVertical.Controls.Add(this.BTNMapa);
@@ -95,21 +95,22 @@
             this.btnFactCom.UseVisualStyleBackColor = false;
             this.btnFactCom.Click += new System.EventHandler(this.btnFactCom_Click);
             // 
-            // button1
+            // btnCartaPorte
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 472);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 70);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Carta Porte";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCartaPorte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnCartaPorte.FlatAppearance.BorderSize = 0;
+            this.btnCartaPorte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCartaPorte.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCartaPorte.ForeColor = System.Drawing.Color.White;
+            this.btnCartaPorte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCartaPorte.Location = new System.Drawing.Point(0, 472);
+            this.btnCartaPorte.Name = "btnCartaPorte";
+            this.btnCartaPorte.Size = new System.Drawing.Size(200, 70);
+            this.btnCartaPorte.TabIndex = 17;
+            this.btnCartaPorte.Text = "Carta Porte";
+            this.btnCartaPorte.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCartaPorte.UseVisualStyleBackColor = false;
+            this.btnCartaPorte.Click += new System.EventHandler(this.btnCartaPorte_Click);
             // 
             // panelLogo
             // 
@@ -384,6 +385,6 @@
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Button btnRastreoProd;
         private System.Windows.Forms.Button btnFactCom;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCartaPorte;
     }
 }

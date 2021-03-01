@@ -239,3 +239,4 @@ C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vi
 C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est2.frmEst2Salida.resources
 C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.FacturaComercial.resources
 C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est3.frmEstacion3.resources
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.CartaPorte.resources
