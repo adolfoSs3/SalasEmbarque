@@ -49,13 +49,13 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtSentidoMov3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtCodEmbarque3 = new System.Windows.Forms.TextBox();
+            this.txtCodFlete3 = new System.Windows.Forms.TextBox();
             this.btnAgregar3 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtCodTransporte3 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.comboTipEntrega = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -263,7 +263,7 @@
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.txtSentidoMov3);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.txtCodEmbarque3);
+            this.groupBox3.Controls.Add(this.txtCodFlete3);
             this.groupBox3.Controls.Add(this.btnAgregar3);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.txtCodTransporte3);
@@ -294,12 +294,12 @@
             this.label8.TabIndex = 53;
             this.label8.Text = "Código de Flete";
             // 
-            // txtCodEmbarque3
+            // txtCodFlete3
             // 
-            this.txtCodEmbarque3.Location = new System.Drawing.Point(268, 185);
-            this.txtCodEmbarque3.Name = "txtCodEmbarque3";
-            this.txtCodEmbarque3.Size = new System.Drawing.Size(169, 26);
-            this.txtCodEmbarque3.TabIndex = 52;
+            this.txtCodFlete3.Location = new System.Drawing.Point(268, 185);
+            this.txtCodFlete3.Name = "txtCodFlete3";
+            this.txtCodFlete3.Size = new System.Drawing.Size(169, 26);
+            this.txtCodFlete3.TabIndex = 52;
             // 
             // btnAgregar3
             // 
@@ -341,15 +341,6 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Transporte/Contenedor";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(79, 54);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(120, 20);
-            this.label11.TabIndex = 55;
-            this.label11.Text = "Tipo de entrega";
-            // 
             // comboTipEntrega
             // 
             this.comboTipEntrega.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -357,10 +348,19 @@
             this.comboTipEntrega.Items.AddRange(new object[] {
             "Recibidos por el cliente",
             "Envíos distribuidos a clientes"});
-            this.comboTipEntrega.Location = new System.Drawing.Point(259, 51);
+            this.comboTipEntrega.Location = new System.Drawing.Point(274, 47);
             this.comboTipEntrega.Name = "comboTipEntrega";
-            this.comboTipEntrega.Size = new System.Drawing.Size(169, 28);
-            this.comboTipEntrega.TabIndex = 56;
+            this.comboTipEntrega.Size = new System.Drawing.Size(163, 28);
+            this.comboTipEntrega.TabIndex = 103;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(94, 50);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(120, 20);
+            this.label11.TabIndex = 102;
+            this.label11.Text = "Tipo de entrega";
             // 
             // RastreoProd
             // 
@@ -407,7 +407,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtCodEmbarque3;
+        private System.Windows.Forms.TextBox txtCodFlete3;
         private System.Windows.Forms.Button btnAgregar3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtCodTransporte3;

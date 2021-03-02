@@ -36,7 +36,7 @@ namespace EnvioMer.vistaEstaciones.Est2
                 Salida.Transportista = txtTransportista.Text;
                 Salida.CartaPorte = int.Parse(txtCartaPorte.Text);
                 Salida.Direccion = txtDireccionSalida.Text;
-                Salida.FechaSalida = Convert.ToDateTime(dateTimeFechaSalida.Text);
+                Salida.FechaSalida = dateTimeFechaSalida.Text;
                 funciones.SalidaEstacion2Add(Salida);
                 MessageBox.Show("Listo");
             }

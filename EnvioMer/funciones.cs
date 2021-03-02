@@ -56,13 +56,21 @@ namespace EnvioMer
         //Mostramos los datos en el DataGritView especificos dependiendo de la orden de compra
         public void ConsultaLCL(DataGridView dt, TextBox txtid)
         {
-            MySqlCommand comando = new MySqlCommand("SELECT Peso_kg, Volumen_m3,Costo,idEmbarque from lcl WHERE IdEmbarque ='" + txtid.Text + "'", Mysql.conexion.obtenerConexion());
-            MySqlDataAdapter adaptador = new MySqlDataAdapter();
-            adaptador.SelectCommand = comando;
-            DataTable tabla = new DataTable();
-            adaptador.Fill(tabla);
-            dt.DataSource = tabla;
+            try
+            {
+                MySqlCommand comando = new MySqlCommand("SELECT Peso_kg, Volumen_m3,Costo,idEmbarque from lcl WHERE IdEmbarque ='" + txtid.Text + "'", Mysql.conexion.obtenerConexion());
+                MySqlDataAdapter adaptador = new MySqlDataAdapter();
+                adaptador.SelectCommand = comando;
+                DataTable tabla = new DataTable();
+                adaptador.Fill(tabla);
+                dt.DataSource = tabla;
 
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message + "Checa la linea" + e.StackTrace);
+            }
+           
         }
         //--------------------------------------------------------------------------------------------
 
@@ -319,6 +327,60 @@ namespace EnvioMer
                 txt6.Text = REader["TRetencion"].ToString();
             }
            
+        }
+
+        public void SalidaMostrarFacturaEst3(TextBox txt1)
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = Mysql.conexion.obtenerConexion();
+            comando.CommandText = ("select Factura FROM llegada_estacion1 ORDER BY id DESC LIMIT 1;");
+            MySqlDataReader leer = comando.ExecuteReader();
+            if (leer.Read() == true)
+            {
+                txt1.Text = leer["Factura"].ToString();
+                
+            }
+        }
+        public void MostrarFleteyDireccionEst3(TextBox txt1, TextBox txt2)
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = Mysql.conexion.obtenerConexion();
+            comando.CommandText = ("select  Flete,Direccion from salidaestacion2 ORDER BY Flete DESC LIMIT 1;");
+            MySqlDataReader leer = comando.ExecuteReader();
+            if (leer.Read() == true)
+            {
+                txt1.Text = leer["Flete"].ToString();
+                txt2.Text = leer["Direccion"].ToString();
+            }
+        }
+        //------------llenado de la tabla de la estacion 3
+        public static int llenarEstacion3(Estacion3Propiedades add)
+        {
+            int retorno;
+            MySqlCommand command = new MySqlCommand(String.Format("insert into estacion3(TransporteCont3,CodFlete,TipoEntrega)" +
+                "values('{0}','{1}','{2}')", add.trnstCon,add.CodFlete,add.TipoEntrega), Mysql.conexion.obtenerConexion());
+            retorno = command.ExecuteNonQuery();
+            return retorno;
+        }
+        //---------------insert de la estacion 3 de la salida
+        public static int Salida1ClientesEstacion3(Salida1ClienteEstacion3 add)
+        {
+            int retorno;
+            MySqlCommand command = new MySqlCommand(String.Format("insert into salida1clienteestacion3(EntregaProd,FechaLlegada,ReferenciaEntrega,RecibidoPor)" +
+                "values('{0}','{1}','{2}','{3}')", add.EntregaProd, add.FechaLlegada, add.Referencia, add.RecibidoPor), Mysql.conexion.obtenerConexion());
+            retorno = command.ExecuteNonQuery();
+            return retorno;
+        }
+        //Mostrar datos en el datagridview de la salida 1 estacion3
+        public void datosSalida1Estacion3(DataGridView dt)
+        {
+            MySqlCommand comando = new MySqlCommand("select Producto,Cantidad, Factura FROM llegada_estacion1", Mysql.conexion.obtenerConexion());
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            adaptador.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            dt.DataSource = tabla;
+
         }
     }
 }

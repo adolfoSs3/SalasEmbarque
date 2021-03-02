@@ -188,7 +188,7 @@ namespace EnvioMer
         public string TransporteContenedor { get; set; }
         public string SentidoMov { get; set; }
         public Estacion2Propiedades() { }
-        public Estacion2Propiedades(string transContenedor,string SentidoMov)
+        public Estacion2Propiedades(string transContenedor, string SentidoMov)
         {
             this.TransporteContenedor = transContenedor;
             this.SentidoMov = SentidoMov;
@@ -205,7 +205,7 @@ namespace EnvioMer
         public string EstAduana { get; set; }
         public string TRetencion { get; set; }
         public LlegadaEstacion2Propiedades() { }
-        public LlegadaEstacion2Propiedades(int Cod_Embarque,string Fecha_Llegada,string Puerto,string Buque,string DestinoEn,string EstAduana,string TRetencion)
+        public LlegadaEstacion2Propiedades(int Cod_Embarque, string Fecha_Llegada, string Puerto, string Buque, string DestinoEn, string EstAduana, string TRetencion)
         {
             this.Fecha_Llegada = Fecha_Llegada;
             this.Puerto = Puerto;
@@ -214,9 +214,9 @@ namespace EnvioMer
             this.EstAduana = EstAduana;
             this.TRetencion = TRetencion;
 
-    }
-        
-        
+        }
+
+
     }
     //-----------------------insert de la salida de la Estacion 2--------
     public class SalidaEstacion2Propiedades
@@ -227,9 +227,9 @@ namespace EnvioMer
         public string Transportista { get; set; }
         public int CartaPorte { get; set; }
         public string Direccion { get; set; }
-        public DateTime FechaSalida { get; set; }
+        public string FechaSalida { get; set; }
         public SalidaEstacion2Propiedades() { }
-        public SalidaEstacion2Propiedades(int Flete,int CodEmbarque, string Destino, string Transportista, int CartaPorte, string Direccion, DateTime FechaSalida)
+        public SalidaEstacion2Propiedades(int Flete, int CodEmbarque, string Destino, string Transportista, int CartaPorte, string Direccion, string FechaSalida)
         {
             this.Flete = Flete;
             this.CodEmbarque = CodEmbarque;
@@ -241,5 +241,35 @@ namespace EnvioMer
         }
 
     }
+    public class Salida1ClienteEstacion3
+    {
+        public string EntregaProd { get; set; }
+        public string FechaLlegada { get; set; }
+        public string Referencia { get; set; }
+        public string RecibidoPor { get; set; }
+        public Salida1ClienteEstacion3() { }
+        public Salida1ClienteEstacion3(string EntregaProd,string FechaLlegada,string Referencia,string RecibidoPor)
+        {
+            this.EntregaProd = EntregaProd;
+            this.FechaLlegada = FechaLlegada;
+            this.Referencia = Referencia;
+            this.RecibidoPor = RecibidoPor;
+        }
+    }
+    public class Estacion3Propiedades    {
+        public string trnstCon { get; set; }
+        public int CodFlete { get; set; }
+        public string TipoEntrega { get; set; }
+        public Estacion3Propiedades() { }
+        public Estacion3Propiedades(string transtCont,int CodFlete,string TipoEntrega)
+        {
+            this.trnstCon = transtCont;
+            this.CodFlete = CodFlete;
+            this.TipoEntrega = TipoEntrega;
+        }
 
     }
+
+
+
+}
