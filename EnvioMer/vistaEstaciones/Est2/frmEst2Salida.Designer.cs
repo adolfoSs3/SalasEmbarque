@@ -209,6 +209,7 @@
             this.txtCartaPorte.Name = "txtCartaPorte";
             this.txtCartaPorte.Size = new System.Drawing.Size(163, 26);
             this.txtCartaPorte.TabIndex = 71;
+            this.txtCartaPorte.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCartaPorte_KeyPress);
             // 
             // label4
             // 
@@ -307,6 +308,7 @@
             this.button1.TabIndex = 77;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnAgregar1
             // 

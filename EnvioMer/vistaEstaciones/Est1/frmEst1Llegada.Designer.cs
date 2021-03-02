@@ -71,6 +71,7 @@
             this.txtCod_Barra.Name = "txtCod_Barra";
             this.txtCod_Barra.Size = new System.Drawing.Size(163, 26);
             this.txtCod_Barra.TabIndex = 1;
+            this.txtCod_Barra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCod_Barra_KeyPress);
             // 
             // txtOperador
             // 
@@ -133,6 +134,7 @@
             this.txtFactura.Name = "txtFactura";
             this.txtFactura.Size = new System.Drawing.Size(163, 26);
             this.txtFactura.TabIndex = 9;
+            this.txtFactura.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFactura_KeyPress);
             // 
             // label5
             // 
@@ -161,6 +163,7 @@
             this.txtPacking.Name = "txtPacking";
             this.txtPacking.Size = new System.Drawing.Size(163, 26);
             this.txtPacking.TabIndex = 13;
+            this.txtPacking.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPacking_KeyPress);
             // 
             // label7
             // 
@@ -179,6 +182,7 @@
             this.txtBillLadinf.Name = "txtBillLadinf";
             this.txtBillLadinf.Size = new System.Drawing.Size(163, 26);
             this.txtBillLadinf.TabIndex = 15;
+            this.txtBillLadinf.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBillLadinf_KeyPress);
             // 
             // label8
             // 
@@ -197,6 +201,7 @@
             this.txtPedimento.Name = "txtPedimento";
             this.txtPedimento.Size = new System.Drawing.Size(163, 26);
             this.txtPedimento.TabIndex = 17;
+            this.txtPedimento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPedimento_KeyPress);
             // 
             // label9
             // 
@@ -233,6 +238,7 @@
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(69, 26);
             this.txtCantidad.TabIndex = 21;
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
             // 
             // label11
             // 
@@ -272,9 +278,12 @@
             this.button1.TabIndex = 53;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBoxIcoterm
             // 
+            this.comboBoxIcoterm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxIcoterm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxIcoterm.FormattingEnabled = true;
             this.comboBoxIcoterm.Items.AddRange(new object[] {
             "EXW (Ex Works)",
@@ -290,14 +299,14 @@
             "CIF (Cost, Insurance, and Freight)"});
             this.comboBoxIcoterm.Location = new System.Drawing.Point(284, 52);
             this.comboBoxIcoterm.Name = "comboBoxIcoterm";
-            this.comboBoxIcoterm.Size = new System.Drawing.Size(155, 21);
+            this.comboBoxIcoterm.Size = new System.Drawing.Size(155, 28);
             this.comboBoxIcoterm.TabIndex = 54;
             // 
             // frmEst1Llegada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(723, 432);
             this.Controls.Add(this.comboBoxIcoterm);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAgregar1);

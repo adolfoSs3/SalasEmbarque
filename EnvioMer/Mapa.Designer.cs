@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.txtLatitud = new System.Windows.Forms.TextBox();
             this.txtLongitud = new System.Windows.Forms.TextBox();
@@ -92,6 +92,7 @@
             this.txtLatitud.Name = "txtLatitud";
             this.txtLatitud.Size = new System.Drawing.Size(166, 20);
             this.txtLatitud.TabIndex = 3;
+            this.txtLatitud.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLatitud_KeyPress);
             // 
             // txtLongitud
             // 
@@ -99,6 +100,7 @@
             this.txtLongitud.Name = "txtLongitud";
             this.txtLongitud.Size = new System.Drawing.Size(166, 20);
             this.txtLongitud.TabIndex = 4;
+            this.txtLongitud.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLongitud_KeyPress);
             // 
             // label1
             // 
@@ -194,6 +196,7 @@
             this.txtlatitud2.Name = "txtlatitud2";
             this.txtlatitud2.Size = new System.Drawing.Size(166, 20);
             this.txtlatitud2.TabIndex = 3;
+            this.txtlatitud2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtlatitud2_KeyPress);
             // 
             // txtLongitud2
             // 
@@ -201,6 +204,7 @@
             this.txtLongitud2.Name = "txtLongitud2";
             this.txtLongitud2.Size = new System.Drawing.Size(166, 20);
             this.txtLongitud2.TabIndex = 4;
+            this.txtLongitud2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLongitud2_KeyPress);
             // 
             // label5
             // 
@@ -229,11 +233,11 @@
             this.dataGridViewPrueba.Location = new System.Drawing.Point(575, 412);
             this.dataGridViewPrueba.Name = "dataGridViewPrueba";
             this.dataGridViewPrueba.ReadOnly = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            this.dataGridViewPrueba.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
+            this.dataGridViewPrueba.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewPrueba.Size = new System.Drawing.Size(464, 150);
             this.dataGridViewPrueba.TabIndex = 17;
             // 

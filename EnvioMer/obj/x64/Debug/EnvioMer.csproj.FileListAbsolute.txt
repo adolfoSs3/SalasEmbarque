@@ -279,7 +279,6 @@ C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\MySql.Da
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\PdfiumViewer.xml
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\bin\x64\Debug\nl\PdfiumViewer.resources.dll
-C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csprojAssemblyReference.cache
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.exe.config
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.CartaPorte.resources
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.FacturaComercial.resources
@@ -295,9 +294,9 @@ C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est1.frmEst1Salida.resources
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est2.frmEst2Llegada.resources
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est2.frmEst2Salida.resources
-C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est3.frmEstacion3.resources
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csproj.GenerateResource.cache
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csproj.CoreCompileInputs.cache
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csproj.CopyComplete
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.exe
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.pdb
+C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est3.frmSal1Estacion3.resources

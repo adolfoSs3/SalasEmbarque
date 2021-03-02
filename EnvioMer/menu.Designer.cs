@@ -32,27 +32,27 @@
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.btnFactCom = new System.Windows.Forms.Button();
             this.btnCartaPorte = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelContenedor = new System.Windows.Forms.Panel();
             this.btnRastreoProd = new System.Windows.Forms.Button();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.BTNMapa = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnIncoterm = new System.Windows.Forms.Button();
             this.BTNEmbarque = new System.Windows.Forms.Button();
+            this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.picturMaximizar = new System.Windows.Forms.PictureBox();
             this.picturRestaurar = new System.Windows.Forms.PictureBox();
             this.picturMenos = new System.Windows.Forms.PictureBox();
             this.picturX = new System.Windows.Forms.PictureBox();
             this.pictureBoxCerrar = new System.Windows.Forms.PictureBox();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturMenos)).BeginInit();
@@ -83,7 +83,7 @@
             this.btnFactCom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.btnFactCom.FlatAppearance.BorderSize = 0;
             this.btnFactCom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFactCom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFactCom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFactCom.ForeColor = System.Drawing.Color.White;
             this.btnFactCom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFactCom.Location = new System.Drawing.Point(0, 397);
@@ -100,7 +100,7 @@
             this.btnCartaPorte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.btnCartaPorte.FlatAppearance.BorderSize = 0;
             this.btnCartaPorte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCartaPorte.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCartaPorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCartaPorte.ForeColor = System.Drawing.Color.White;
             this.btnCartaPorte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCartaPorte.Location = new System.Drawing.Point(0, 472);
@@ -112,6 +112,59 @@
             this.btnCartaPorte.UseVisualStyleBackColor = false;
             this.btnCartaPorte.Click += new System.EventHandler(this.btnCartaPorte_Click);
             // 
+            // btnRastreoProd
+            // 
+            this.btnRastreoProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnRastreoProd.FlatAppearance.BorderSize = 0;
+            this.btnRastreoProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRastreoProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRastreoProd.ForeColor = System.Drawing.Color.White;
+            this.btnRastreoProd.Image = global::EnvioMer.Properties.Resources.escaneoCodigo;
+            this.btnRastreoProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRastreoProd.Location = new System.Drawing.Point(0, 323);
+            this.btnRastreoProd.Name = "btnRastreoProd";
+            this.btnRastreoProd.Size = new System.Drawing.Size(200, 70);
+            this.btnRastreoProd.TabIndex = 16;
+            this.btnRastreoProd.Text = "Rastreo del\r\nProducto";
+            this.btnRastreoProd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRastreoProd.UseVisualStyleBackColor = false;
+            this.btnRastreoProd.Click += new System.EventHandler(this.btnRastreoProd_Click);
+            // 
+            // btnNewUser
+            // 
+            this.btnNewUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnNewUser.FlatAppearance.BorderSize = 0;
+            this.btnNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewUser.ForeColor = System.Drawing.Color.White;
+            this.btnNewUser.Image = global::EnvioMer.Properties.Resources.usuario;
+            this.btnNewUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewUser.Location = new System.Drawing.Point(0, 546);
+            this.btnNewUser.Name = "btnNewUser";
+            this.btnNewUser.Size = new System.Drawing.Size(198, 70);
+            this.btnNewUser.TabIndex = 15;
+            this.btnNewUser.Text = "Nuevo Usuario";
+            this.btnNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNewUser.UseVisualStyleBackColor = false;
+            this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
+            // 
+            // BTNMapa
+            // 
+            this.BTNMapa.FlatAppearance.BorderSize = 0;
+            this.BTNMapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNMapa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNMapa.ForeColor = System.Drawing.Color.White;
+            this.BTNMapa.Image = global::EnvioMer.Properties.Resources.mapa;
+            this.BTNMapa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNMapa.Location = new System.Drawing.Point(0, 174);
+            this.BTNMapa.Name = "BTNMapa";
+            this.BTNMapa.Size = new System.Drawing.Size(200, 70);
+            this.BTNMapa.TabIndex = 12;
+            this.BTNMapa.Text = "Mapa";
+            this.BTNMapa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNMapa.UseVisualStyleBackColor = true;
+            this.BTNMapa.Click += new System.EventHandler(this.BTNMapa_Click);
+            // 
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(39)))), ((int)(((byte)(44)))));
@@ -122,6 +175,63 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(200, 100);
             this.panelLogo.TabIndex = 14;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(4, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::EnvioMer.Properties.Resources.nombre;
+            this.pictureBox2.Location = new System.Drawing.Point(62, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(127, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnIncoterm
+            // 
+            this.btnIncoterm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.btnIncoterm.FlatAppearance.BorderSize = 0;
+            this.btnIncoterm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIncoterm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIncoterm.ForeColor = System.Drawing.Color.White;
+            this.btnIncoterm.Image = global::EnvioMer.Properties.Resources.incoterms;
+            this.btnIncoterm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIncoterm.Location = new System.Drawing.Point(0, 248);
+            this.btnIncoterm.Name = "btnIncoterm";
+            this.btnIncoterm.Size = new System.Drawing.Size(200, 70);
+            this.btnIncoterm.TabIndex = 13;
+            this.btnIncoterm.Text = "Incoterm";
+            this.btnIncoterm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnIncoterm.UseVisualStyleBackColor = false;
+            this.btnIncoterm.Click += new System.EventHandler(this.btnIncoterm_Click);
+            // 
+            // BTNEmbarque
+            // 
+            this.BTNEmbarque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.BTNEmbarque.FlatAppearance.BorderSize = 0;
+            this.BTNEmbarque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNEmbarque.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNEmbarque.ForeColor = System.Drawing.Color.White;
+            this.BTNEmbarque.Image = global::EnvioMer.Properties.Resources.embarcacion;
+            this.BTNEmbarque.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNEmbarque.Location = new System.Drawing.Point(0, 100);
+            this.BTNEmbarque.Name = "BTNEmbarque";
+            this.BTNEmbarque.Size = new System.Drawing.Size(200, 70);
+            this.BTNEmbarque.TabIndex = 11;
+            this.BTNEmbarque.Text = "Embarque";
+            this.BTNEmbarque.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNEmbarque.UseVisualStyleBackColor = false;
+            this.BTNEmbarque.Click += new System.EventHandler(this.BTNEmbarque_Click);
             // 
             // BarraTitulo
             // 
@@ -150,124 +260,6 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Gestión y Envio de Mercancias";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(200, 50);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
-            this.panelContenedor.TabIndex = 3;
-            // 
-            // btnRastreoProd
-            // 
-            this.btnRastreoProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnRastreoProd.FlatAppearance.BorderSize = 0;
-            this.btnRastreoProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRastreoProd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRastreoProd.ForeColor = System.Drawing.Color.White;
-            this.btnRastreoProd.Image = global::EnvioMer.Properties.Resources.escaneoCodigo;
-            this.btnRastreoProd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRastreoProd.Location = new System.Drawing.Point(0, 323);
-            this.btnRastreoProd.Name = "btnRastreoProd";
-            this.btnRastreoProd.Size = new System.Drawing.Size(200, 70);
-            this.btnRastreoProd.TabIndex = 16;
-            this.btnRastreoProd.Text = "Rastreo del\r\nProducto";
-            this.btnRastreoProd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRastreoProd.UseVisualStyleBackColor = false;
-            this.btnRastreoProd.Click += new System.EventHandler(this.btnRastreoProd_Click);
-            // 
-            // btnNewUser
-            // 
-            this.btnNewUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnNewUser.FlatAppearance.BorderSize = 0;
-            this.btnNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewUser.ForeColor = System.Drawing.Color.White;
-            this.btnNewUser.Image = global::EnvioMer.Properties.Resources.usuario;
-            this.btnNewUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewUser.Location = new System.Drawing.Point(0, 546);
-            this.btnNewUser.Name = "btnNewUser";
-            this.btnNewUser.Size = new System.Drawing.Size(198, 70);
-            this.btnNewUser.TabIndex = 15;
-            this.btnNewUser.Text = "Nuevo Usuario";
-            this.btnNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNewUser.UseVisualStyleBackColor = false;
-            this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
-            // 
-            // BTNMapa
-            // 
-            this.BTNMapa.FlatAppearance.BorderSize = 0;
-            this.BTNMapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNMapa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNMapa.ForeColor = System.Drawing.Color.White;
-            this.BTNMapa.Image = global::EnvioMer.Properties.Resources.mapa;
-            this.BTNMapa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNMapa.Location = new System.Drawing.Point(0, 174);
-            this.BTNMapa.Name = "BTNMapa";
-            this.BTNMapa.Size = new System.Drawing.Size(200, 70);
-            this.BTNMapa.TabIndex = 12;
-            this.BTNMapa.Text = "Mapa";
-            this.BTNMapa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTNMapa.UseVisualStyleBackColor = true;
-            this.BTNMapa.Click += new System.EventHandler(this.BTNMapa_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::EnvioMer.Properties.Resources.nombre;
-            this.pictureBox2.Location = new System.Drawing.Point(62, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(127, 49);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnIncoterm
-            // 
-            this.btnIncoterm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.btnIncoterm.FlatAppearance.BorderSize = 0;
-            this.btnIncoterm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIncoterm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIncoterm.ForeColor = System.Drawing.Color.White;
-            this.btnIncoterm.Image = global::EnvioMer.Properties.Resources.incoterms;
-            this.btnIncoterm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIncoterm.Location = new System.Drawing.Point(0, 248);
-            this.btnIncoterm.Name = "btnIncoterm";
-            this.btnIncoterm.Size = new System.Drawing.Size(200, 70);
-            this.btnIncoterm.TabIndex = 13;
-            this.btnIncoterm.Text = "Incoterm";
-            this.btnIncoterm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnIncoterm.UseVisualStyleBackColor = false;
-            this.btnIncoterm.Click += new System.EventHandler(this.btnIncoterm_Click);
-            // 
-            // BTNEmbarque
-            // 
-            this.BTNEmbarque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.BTNEmbarque.FlatAppearance.BorderSize = 0;
-            this.BTNEmbarque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNEmbarque.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNEmbarque.ForeColor = System.Drawing.Color.White;
-            this.BTNEmbarque.Image = global::EnvioMer.Properties.Resources.embarcacion;
-            this.BTNEmbarque.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNEmbarque.Location = new System.Drawing.Point(0, 100);
-            this.BTNEmbarque.Name = "BTNEmbarque";
-            this.BTNEmbarque.Size = new System.Drawing.Size(200, 70);
-            this.BTNEmbarque.TabIndex = 11;
-            this.BTNEmbarque.Text = "Embarque";
-            this.BTNEmbarque.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BTNEmbarque.UseVisualStyleBackColor = false;
-            this.BTNEmbarque.Click += new System.EventHandler(this.BTNEmbarque_Click);
             // 
             // picturMaximizar
             // 
@@ -338,6 +330,14 @@
             this.pictureBoxCerrar.TabStop = false;
             this.pictureBoxCerrar.Click += new System.EventHandler(this.pictureBoxCerrar_Click);
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(200, 50);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1080, 670);
+            this.panelContenedor.TabIndex = 3;
+            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,10 +352,10 @@
             this.Text = "Form1";
             this.MenuVertical.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            this.BarraTitulo.ResumeLayout(false);
-            this.BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.BarraTitulo.ResumeLayout(false);
+            this.BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturMenos)).EndInit();

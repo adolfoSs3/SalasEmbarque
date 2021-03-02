@@ -123,7 +123,7 @@ namespace EnvioMer
 
                 if (comboTipEntrega.SelectedIndex.Equals(0))
                 {
-                    new frmSal1Estacion3().ShowDialog();
+                    new frmSal1Estacion3().ShowDialog();                   
                 }
                 else
             if (comboTipEntrega.SelectedIndex.Equals(1))

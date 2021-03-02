@@ -47,6 +47,8 @@
             this.txtCodTransporte2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.comboTipEntrega = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.txtSentidoMov3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtCodFlete3 = new System.Windows.Forms.TextBox();
@@ -54,8 +56,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtCodTransporte3 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboTipEntrega = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -271,15 +271,36 @@
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(25, 350);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(502, 282);
+            this.groupBox3.Size = new System.Drawing.Size(447, 282);
             this.groupBox3.TabIndex = 55;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Estacion3: Distribución Regional y Entrega al Cliente";
             // 
+            // comboTipEntrega
+            // 
+            this.comboTipEntrega.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboTipEntrega.FormattingEnabled = true;
+            this.comboTipEntrega.Items.AddRange(new object[] {
+            "Recibidos por el cliente",
+            "Envíos distribuidos a clientes"});
+            this.comboTipEntrega.Location = new System.Drawing.Point(212, 47);
+            this.comboTipEntrega.Name = "comboTipEntrega";
+            this.comboTipEntrega.Size = new System.Drawing.Size(163, 28);
+            this.comboTipEntrega.TabIndex = 103;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(32, 50);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(120, 20);
+            this.label11.TabIndex = 102;
+            this.label11.Text = "Tipo de entrega";
+            // 
             // txtSentidoMov3
             // 
             this.txtSentidoMov3.Enabled = false;
-            this.txtSentidoMov3.Location = new System.Drawing.Point(268, 145);
+            this.txtSentidoMov3.Location = new System.Drawing.Point(206, 145);
             this.txtSentidoMov3.Name = "txtSentidoMov3";
             this.txtSentidoMov3.Size = new System.Drawing.Size(136, 26);
             this.txtSentidoMov3.TabIndex = 54;
@@ -288,7 +309,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(141, 188);
+            this.label8.Location = new System.Drawing.Point(79, 188);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(121, 20);
             this.label8.TabIndex = 53;
@@ -296,7 +317,7 @@
             // 
             // txtCodFlete3
             // 
-            this.txtCodFlete3.Location = new System.Drawing.Point(268, 185);
+            this.txtCodFlete3.Location = new System.Drawing.Point(206, 185);
             this.txtCodFlete3.Name = "txtCodFlete3";
             this.txtCodFlete3.Size = new System.Drawing.Size(169, 26);
             this.txtCodFlete3.TabIndex = 52;
@@ -308,7 +329,7 @@
             this.btnAgregar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar3.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar3.Location = new System.Drawing.Point(268, 228);
+            this.btnAgregar3.Location = new System.Drawing.Point(206, 228);
             this.btnAgregar3.Name = "btnAgregar3";
             this.btnAgregar3.Size = new System.Drawing.Size(169, 44);
             this.btnAgregar3.TabIndex = 51;
@@ -319,7 +340,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(89, 151);
+            this.label9.Location = new System.Drawing.Point(27, 151);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(173, 20);
             this.label9.TabIndex = 2;
@@ -327,7 +348,7 @@
             // 
             // txtCodTransporte3
             // 
-            this.txtCodTransporte3.Location = new System.Drawing.Point(268, 102);
+            this.txtCodTransporte3.Location = new System.Drawing.Point(206, 102);
             this.txtCodTransporte3.Name = "txtCodTransporte3";
             this.txtCodTransporte3.Size = new System.Drawing.Size(136, 26);
             this.txtCodTransporte3.TabIndex = 1;
@@ -335,32 +356,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(88, 105);
+            this.label10.Location = new System.Drawing.Point(26, 105);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(174, 20);
             this.label10.TabIndex = 0;
             this.label10.Text = "Transporte/Contenedor";
-            // 
-            // comboTipEntrega
-            // 
-            this.comboTipEntrega.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboTipEntrega.FormattingEnabled = true;
-            this.comboTipEntrega.Items.AddRange(new object[] {
-            "Recibidos por el cliente",
-            "Envíos distribuidos a clientes"});
-            this.comboTipEntrega.Location = new System.Drawing.Point(274, 47);
-            this.comboTipEntrega.Name = "comboTipEntrega";
-            this.comboTipEntrega.Size = new System.Drawing.Size(163, 28);
-            this.comboTipEntrega.TabIndex = 103;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(94, 50);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(120, 20);
-            this.label11.TabIndex = 102;
-            this.label11.Text = "Tipo de entrega";
             // 
             // RastreoProd
             // 
