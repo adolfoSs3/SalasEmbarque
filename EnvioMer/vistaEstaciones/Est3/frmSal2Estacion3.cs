@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EnvioMer.vistaEstaciones.Est3
 {
-    public partial class frmEstacion3 : Form
+    public partial class frmSal2Estacion3 : Form
     {
-        public frmEstacion3()
+        public frmSal2Estacion3()
         {
             InitializeComponent();
         }

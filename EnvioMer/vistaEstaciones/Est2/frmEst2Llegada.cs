@@ -54,5 +54,16 @@ namespace EnvioMer.vistaEstaciones.Est2
                 txtTRetencion.Visible = true;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Esta Seguro?", "", MessageBoxButtons.YesNo);
+            {
+                if (result == DialogResult.Yes)
+                {
+                    Close();
+                }
+            }
+        }
     }
 }

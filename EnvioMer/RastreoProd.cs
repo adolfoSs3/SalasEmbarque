@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EnvioMer.vistaEstaciones.Est1;
 using EnvioMer.vistaEstaciones.Est2;
+using EnvioMer.vistaEstaciones.Est3;
 
 namespace EnvioMer
 {
@@ -16,6 +17,8 @@ namespace EnvioMer
     {
         Estacion1Propiedades Estacion1 = new Estacion1Propiedades();
         Estacion2Propiedades Estacion2 = new Estacion2Propiedades();
+        Estacion3Propiedades estacion3 = new Estacion3Propiedades();
+
         public RastreoProd()
         {
             InitializeComponent();
@@ -106,14 +109,28 @@ namespace EnvioMer
 
         private void btnAgregar3_Click(object sender, EventArgs e)
         {
-            if (comboTipEntrega.SelectedIndex.Equals(0))
+           
+            if (txtCodFlete3.Text==""&& txtCodTransporte3.Text == "")
             {
-                //Llegada2.ShowDialog();
+                MessageBox.Show("Te falta llenar campos");
             }
             else
-            if (comboTipEntrega.SelectedIndex.Equals(1))
             {
-               // new frmEst2Salida().ShowDialog();
+                estacion3.trnstCon = txtCodTransporte3.Text;
+                estacion3.CodFlete = int.Parse(txtCodFlete3.Text);
+                estacion3.TipoEntrega = comboTipEntrega.Text;
+                funciones.llenarEstacion3(estacion3);
+
+                if (comboTipEntrega.SelectedIndex.Equals(0))
+                {
+                    new frmSal1Estacion3().ShowDialog();
+                }
+                else
+            if (comboTipEntrega.SelectedIndex.Equals(1))
+                {
+                    new frmSal2Estacion3().ShowDialog();
+                }
+               
             }
         }
     }
