@@ -24,7 +24,7 @@ namespace EnvioMer.vistaEstaciones.Est3
 
         private void frmEstacion3_Load(object sender, EventArgs e)
         {
-            fun.datosSalida1Estacion3(dataGridView1);
+            fun.DatosSalida1Estacion3(dataGridView1);
             fun.MostrarFleteyDireccionEst3(txtNFlete,txtDireccionSalida);
             fun.SalidaMostrarFacturaEst3(txtFactura);
 
@@ -34,7 +34,7 @@ namespace EnvioMer.vistaEstaciones.Est3
 
         private void btnAgregar1_Click(object sender, EventArgs e)
         {
-            //  try
+              try
             {
                 sal1Est3.EntregaProd = txtEntregaProd.Text;
                 sal1Est3.FechaLlegada = dateTimeFechaLlegada.Text;
@@ -44,10 +44,10 @@ namespace EnvioMer.vistaEstaciones.Est3
                 MessageBox.Show("Los artículos fueron entregados en el domicilio indicado, la mercancía se entregó en condiciones optimas");
                 Close();
             }
-            /*  catch (Exception ex)
+              catch (Exception ex)
               {
                   MessageBox.Show(ex.Message + ex.StackTrace);
-              }*/
+              }
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -372,7 +372,7 @@ namespace EnvioMer
             return retorno;
         }
         //Mostrar datos en el datagridview de la salida 1 estacion3
-        public void datosSalida1Estacion3(DataGridView dt)
+        public void DatosSalida1Estacion3(DataGridView dt)
         {
             MySqlCommand comando = new MySqlCommand("select Producto,Cantidad, Factura FROM llegada_estacion1", Mysql.conexion.obtenerConexion());
             MySqlDataAdapter adaptador = new MySqlDataAdapter();
@@ -381,6 +381,29 @@ namespace EnvioMer
             adaptador.Fill(tabla);
             dt.DataSource = tabla;
 
+        }
+        //Dados que se muestran en la estacion 3 salida2
+        public void MostrardatosEstacion3salida2(TextBox txt1, TextBox txt2,TextBox txt3)
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = Mysql.conexion.obtenerConexion();
+            comando.CommandText = ("select  Flete,Transportista,CartaPorte from salidaestacion2 ORDER BY Flete DESC LIMIT 1;");
+            MySqlDataReader leer = comando.ExecuteReader();
+            if (leer.Read() == true)
+            {
+                txt1.Text = leer["Flete"].ToString();
+                txt2.Text = leer["Transportista"].ToString();
+                txt3.Text = leer["CartaPorte"].ToString();
+            }
+        }
+        //Insertamos datos De la estacion 3 Salida 2
+        public static int Salida2Estacion3Add (Salida2ClienteEstacion3 add)
+        {
+                int retorno;
+                MySqlCommand command = new MySqlCommand(String.Format("insert into salida2clienteestacion3(Cliente,ReferenciaEntrega,RecibidoPor,Direccion,Comentarios)" +
+                    "values('{0}','{1}','{2}','{3}','{4}')", add.Cliente, add.ReferenciaE, add.RecibidoPor, add.Direccion, add.Comentarios), Mysql.conexion.obtenerConexion());
+                retorno = command.ExecuteNonQuery();
+                return retorno;           
         }
     }
 }

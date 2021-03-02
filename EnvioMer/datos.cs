@@ -269,6 +269,24 @@ namespace EnvioMer
         }
 
     }
+    public class Salida2ClienteEstacion3
+    {
+        public string Cliente { get; set; }
+        public string ReferenciaE{ get; set; }
+        public string RecibidoPor { get; set; }
+        public string Direccion { get; set; }
+        public string Comentarios { get; set; }
+        public Salida2ClienteEstacion3() { }
+        public Salida2ClienteEstacion3(string Cliente,string ReferenciaE,string RecibidoPor,string Direccion,string Comentario)
+        {
+            this.Cliente = Cliente;
+            this.ReferenciaE = ReferenciaE;
+            this.RecibidoPor = RecibidoPor;
+            this.Direccion = Direccion;
+            this.Comentarios = Comentario;
+        }
+
+    }
 
 
 

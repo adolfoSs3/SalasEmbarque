@@ -279,6 +279,9 @@
     <EmbeddedResource Include="vistaEstaciones\Est3\frmSal1Estacion3.resx">
       <DependentUpon>frmSal1Estacion3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistaEstaciones\Est3\frmSal2Estacion3.resx">
+      <DependentUpon>frmSal2Estacion3.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

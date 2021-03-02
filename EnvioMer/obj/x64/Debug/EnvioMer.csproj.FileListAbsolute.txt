@@ -300,3 +300,7 @@ C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.exe
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.pdb
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est3.frmSal1Estacion3.resources
+C:\Users\ANGEL\Documents\GitHub\embarqueSalvado\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.CartaPorte.resources
+C:\Users\ANGEL\Documents\GitHub\embarqueSalvado\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.FacturaComercial.resources
+C:\Users\ANGEL\Documents\GitHub\embarqueSalvado\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est3.frmSal1Estacion3.resources
+C:\Users\ANGEL\Documents\GitHub\embarqueSalvado\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est3.frmSal2Estacion3.resources
