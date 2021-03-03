@@ -28,8 +28,6 @@ namespace EnvioMer
             this.P_destino = P_destino;
         }
     }
-
-
     public class DatosLCL
     {
         public int PaqueteN { get; set; }
@@ -48,7 +46,6 @@ namespace EnvioMer
             this.idEmbarque = idEmbarque;
         }
     }
-
     public class DatosFCL
     {
         public int Cantidad { get; set; }
@@ -69,7 +66,6 @@ namespace EnvioMer
     //AEREo---------------------------------------------------------------------
     public class DatosAereo
     {
-
         public string Origen { get; set; }
         public string Destino { get; set; }
         public string Pago_en { get; set; }
@@ -118,9 +114,7 @@ namespace EnvioMer
             this.LongitudFinal = LongitudFinal;
         }
     }
-
     //-----------------insert de La estacion 1-------------------------------
-
     public class Estacion1Propiedades
     {
         public string TansporteContenedor { get; set; }
@@ -241,6 +235,7 @@ namespace EnvioMer
         }
 
     }
+    //estacion numero 3
     public class Salida1ClienteEstacion3
     {
         public string EntregaProd { get; set; }
@@ -287,7 +282,42 @@ namespace EnvioMer
         }
 
     }
-
+    //Factura comercial parte 1
+    public class FacturaParte1
+    {
+        public int NIdentifi { get; set; }
+        public string Nombre { get; set; }
+        public string Telefono { get; set; }
+        public string Email { get; set; }
+        public string CompanyName { get; set; }
+        public string Pais { get; set; }
+        public string PartiesTransaction { get; set; }
+        public string Fecha { get; set; }
+        public string ConoEmbarque { get; set; }
+        public int NFactura { get; set; }
+        public int OrdenCompra { get; set; }
+        public string TPago { get; set; }
+        public string Incoterm { get; set; }
+        public string ReasonEx { get; set; }
+        public FacturaParte1() { }
+        public FacturaParte1(int NIdentifi,string Nombre,string Telefono,string Email,string CompanyName,string Pais,string PartiesTransaction,string Fecha,string ConoEmbarque,int NFactura, int OrdenCompra, string TPago,string Incoterm, string ReasonEx)
+        {
+            this.NIdentifi = NIdentifi;
+            this.Nombre = Nombre;
+            this.Telefono = Telefono;
+            this.Email = Email;
+            this.CompanyName = CompanyName;
+            this.Pais = Pais;
+            this.PartiesTransaction = PartiesTransaction;
+            this.Fecha = Fecha;
+            this.ConoEmbarque = ConoEmbarque;
+            this.NFactura = NFactura;
+            this.OrdenCompra = OrdenCompra;
+            this.TPago = TPago;
+            this.Incoterm = Incoterm;
+            this.ReasonEx = ReasonEx;
+        }
+    }
 
 
 }

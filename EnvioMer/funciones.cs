@@ -405,5 +405,28 @@ namespace EnvioMer
                 retorno = command.ExecuteNonQuery();
                 return retorno;           
         }
+        //factura comercial Parte 1
+        public static int FacturaComercialParte1Add(FacturaParte1 add)
+        {
+            int retorno;
+            MySqlCommand command = new MySqlCommand(String.Format("insert into facturacomercialp1(NIdentifi,Nombre,Telefono,Email,CompanyName,Pais,PartiesTransaction,Fecha,ConoEmbarque,NFactura,OrdenCompra,TPago,Incoterm,ReasonExport)" +
+                "values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')", add.NIdentifi,add.Nombre,add.Telefono,add.Email,add.CompanyName,add.Pais,add.PartiesTransaction,add.Fecha,add.ConoEmbarque,add.NFactura,add.OrdenCompra,add.TPago,add.Incoterm,add.ReasonEx), Mysql.conexion.obtenerConexion());
+            retorno = command.ExecuteNonQuery();
+            return retorno;
+        }
+        //datos ya generados
+        public void Parte1Fact(TextBox txt1, TextBox txt2)
+        {
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = Mysql.conexion.obtenerConexion();
+            comando.CommandText = ("select  Factura,Incoterms from llegada_estacion1 ORDER BY id DESC LIMIT 1;");
+            MySqlDataReader leer = comando.ExecuteReader();
+            if (leer.Read() == true)
+            {
+                txt1.Text = leer["Factura"].ToString();
+                txt2.Text = leer["Incoterms"].ToString();
+            }
+        }
+
     }
 }

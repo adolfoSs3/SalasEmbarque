@@ -24,6 +24,7 @@ namespace EnvioMer.vistaEstaciones.Est2
         private void frmEst2Salida_Load(object sender, EventArgs e)
         {
             fun.MostrardatosEstacion2Salida(txtFechaLlegada, txtDestinoEn, txtPuerto, txtAduana, txtTRetencion);
+            fun.DatosSalida1Estacion3(dataGridView1);
         }
 
         private void btnAgregar1_Click(object sender, EventArgs e)

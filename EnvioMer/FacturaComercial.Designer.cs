@@ -33,44 +33,43 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxReasonExport = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtTpago = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtOrdenCompra = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtFactura = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtConoEmbarque = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbPartiesTransa = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtPais = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtCompanyName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNidentifi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -151,6 +150,8 @@
             this.label57 = new System.Windows.Forms.Label();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
+            this.btnAgregar1 = new System.Windows.Forms.Button();
+            this.txtIncoterm = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -213,44 +214,45 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.txtIncoterm);
+            this.groupBox1.Controls.Add(this.btnAgregar1);
+            this.groupBox1.Controls.Add(this.dateTimeFecha);
+            this.groupBox1.Controls.Add(this.comboBoxReasonExport);
             this.groupBox1.Controls.Add(this.label26);
-            this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.txtTpago);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txtOrdenCompra);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.txtFactura);
             this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.txtConoEmbarque);
             this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.textBox10);
             this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbPartiesTransa);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtPais);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtCompanyName);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtTelefono);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtNidentifi);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
@@ -260,18 +262,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Shipped from (Envio de):";
             // 
-            // comboBox3
+            // dateTimeFecha
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.dateTimeFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeFecha.Location = new System.Drawing.Point(316, 206);
+            this.dateTimeFecha.Name = "dateTimeFecha";
+            this.dateTimeFecha.Size = new System.Drawing.Size(163, 26);
+            this.dateTimeFecha.TabIndex = 90;
+            // 
+            // comboBoxReasonExport
+            // 
+            this.comboBoxReasonExport.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxReasonExport.FormattingEnabled = true;
+            this.comboBoxReasonExport.Items.AddRange(new object[] {
             "Sold (Vendido)",
             "Not Sold (No esta Vendido)",
             "Other (Otros)"});
-            this.comboBox3.Location = new System.Drawing.Point(629, 371);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(197, 28);
-            this.comboBox3.TabIndex = 39;
+            this.comboBoxReasonExport.Location = new System.Drawing.Point(629, 371);
+            this.comboBoxReasonExport.Name = "comboBoxReasonExport";
+            this.comboBoxReasonExport.Size = new System.Drawing.Size(197, 28);
+            this.comboBoxReasonExport.TabIndex = 39;
             // 
             // label26
             // 
@@ -281,15 +292,6 @@
             this.label26.Size = new System.Drawing.Size(138, 20);
             this.label26.TabIndex = 38;
             this.label26.Text = "Reason for Export";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(629, 289);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 28);
-            this.comboBox2.TabIndex = 37;
             // 
             // label25
             // 
@@ -319,12 +321,12 @@
             this.label24.TabIndex = 34;
             this.label24.Text = "Payment Terms";
             // 
-            // textBox11
+            // txtTpago
             // 
-            this.textBox11.Location = new System.Drawing.Point(629, 201);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(190, 26);
-            this.textBox11.TabIndex = 33;
+            this.txtTpago.Location = new System.Drawing.Point(629, 201);
+            this.txtTpago.Name = "txtTpago";
+            this.txtTpago.Size = new System.Drawing.Size(190, 26);
+            this.txtTpago.TabIndex = 33;
             // 
             // label14
             // 
@@ -345,12 +347,12 @@
             this.label16.TabIndex = 31;
             this.label16.Text = "Purchase Order No.";
             // 
-            // textBox7
+            // txtOrdenCompra
             // 
-            this.textBox7.Location = new System.Drawing.Point(629, 130);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(190, 26);
-            this.textBox7.TabIndex = 30;
+            this.txtOrdenCompra.Location = new System.Drawing.Point(629, 130);
+            this.txtOrdenCompra.Name = "txtOrdenCompra";
+            this.txtOrdenCompra.Size = new System.Drawing.Size(190, 26);
+            this.txtOrdenCompra.TabIndex = 30;
             // 
             // label17
             // 
@@ -381,12 +383,13 @@
             this.label19.TabIndex = 27;
             this.label19.Text = "(Conocimiento de Embarque)";
             // 
-            // textBox8
+            // txtFactura
             // 
-            this.textBox8.Location = new System.Drawing.Point(629, 60);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(190, 26);
-            this.textBox8.TabIndex = 26;
+            this.txtFactura.Enabled = false;
+            this.txtFactura.Location = new System.Drawing.Point(629, 60);
+            this.txtFactura.Name = "txtFactura";
+            this.txtFactura.Size = new System.Drawing.Size(190, 26);
+            this.txtFactura.TabIndex = 26;
             // 
             // label20
             // 
@@ -398,12 +401,12 @@
             this.label20.TabIndex = 25;
             this.label20.Text = "(Fecha)";
             // 
-            // textBox9
+            // txtConoEmbarque
             // 
-            this.textBox9.Location = new System.Drawing.Point(316, 281);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(190, 26);
-            this.textBox9.TabIndex = 24;
+            this.txtConoEmbarque.Location = new System.Drawing.Point(316, 281);
+            this.txtConoEmbarque.Name = "txtConoEmbarque";
+            this.txtConoEmbarque.Size = new System.Drawing.Size(190, 26);
+            this.txtConoEmbarque.TabIndex = 24;
             // 
             // label21
             // 
@@ -414,13 +417,6 @@
             this.label21.TabIndex = 23;
             this.label21.Text = "Air Waybill No";
             // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(316, 206);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(190, 26);
-            this.textBox10.TabIndex = 22;
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -430,17 +426,17 @@
             this.label22.TabIndex = 21;
             this.label22.Text = "Date";
             // 
-            // comboBox1
+            // cmbPartiesTransa
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbPartiesTransa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPartiesTransa.FormattingEnabled = true;
+            this.cmbPartiesTransa.Items.AddRange(new object[] {
             "Related (Vinculado)",
             "Non-Related (No Vinculado)"});
-            this.comboBox1.Location = new System.Drawing.Point(316, 133);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(190, 28);
-            this.comboBox1.TabIndex = 20;
+            this.cmbPartiesTransa.Location = new System.Drawing.Point(316, 133);
+            this.cmbPartiesTransa.Name = "cmbPartiesTransa";
+            this.cmbPartiesTransa.Size = new System.Drawing.Size(190, 28);
+            this.cmbPartiesTransa.TabIndex = 20;
             // 
             // label15
             // 
@@ -470,12 +466,12 @@
             this.label13.TabIndex = 16;
             this.label13.Text = "Country";
             // 
-            // textBox6
+            // txtPais
             // 
-            this.textBox6.Location = new System.Drawing.Point(316, 60);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(190, 26);
-            this.textBox6.TabIndex = 15;
+            this.txtPais.Location = new System.Drawing.Point(316, 60);
+            this.txtPais.Name = "txtPais";
+            this.txtPais.Size = new System.Drawing.Size(190, 26);
+            this.txtPais.TabIndex = 15;
             // 
             // label10
             // 
@@ -496,13 +492,13 @@
             this.label11.TabIndex = 13;
             this.label11.Text = "Company Name/Address";
             // 
-            // textBox5
+            // txtCompanyName
             // 
-            this.textBox5.Location = new System.Drawing.Point(10, 355);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(405, 109);
-            this.textBox5.TabIndex = 12;
+            this.txtCompanyName.Location = new System.Drawing.Point(10, 355);
+            this.txtCompanyName.Multiline = true;
+            this.txtCompanyName.Name = "txtCompanyName";
+            this.txtCompanyName.Size = new System.Drawing.Size(405, 109);
+            this.txtCompanyName.TabIndex = 12;
             // 
             // label8
             // 
@@ -523,12 +519,12 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "Email";
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(10, 276);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 26);
-            this.textBox4.TabIndex = 9;
+            this.txtEmail.Location = new System.Drawing.Point(10, 276);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(190, 26);
+            this.txtEmail.TabIndex = 9;
             // 
             // label7
             // 
@@ -559,12 +555,12 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "(Nombre)";
             // 
-            // textBox3
+            // txtTelefono
             // 
-            this.textBox3.Location = new System.Drawing.Point(10, 206);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(190, 26);
-            this.textBox3.TabIndex = 5;
+            this.txtTelefono.Location = new System.Drawing.Point(10, 206);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(190, 26);
+            this.txtTelefono.TabIndex = 5;
             // 
             // label4
             // 
@@ -576,12 +572,12 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "(Numero de Identificación)";
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(10, 135);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(190, 26);
-            this.textBox2.TabIndex = 3;
+            this.txtNombre.Location = new System.Drawing.Point(10, 135);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(190, 26);
+            this.txtNombre.TabIndex = 3;
             // 
             // label3
             // 
@@ -592,12 +588,12 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Contact Name";
             // 
-            // textBox1
+            // txtNidentifi
             // 
-            this.textBox1.Location = new System.Drawing.Point(10, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(190, 26);
-            this.textBox1.TabIndex = 1;
+            this.txtNidentifi.Location = new System.Drawing.Point(10, 60);
+            this.txtNidentifi.Name = "txtNidentifi";
+            this.txtNidentifi.Size = new System.Drawing.Size(190, 26);
+            this.txtNidentifi.TabIndex = 1;
             // 
             // label2
             // 
@@ -1389,6 +1385,29 @@
             this.label58.TabIndex = 24;
             this.label58.Text = "Total No of Packages";
             // 
+            // btnAgregar1
+            // 
+            this.btnAgregar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.btnAgregar1.FlatAppearance.BorderSize = 0;
+            this.btnAgregar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar1.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar1.Location = new System.Drawing.Point(629, 466);
+            this.btnAgregar1.Name = "btnAgregar1";
+            this.btnAgregar1.Size = new System.Drawing.Size(352, 44);
+            this.btnAgregar1.TabIndex = 106;
+            this.btnAgregar1.Text = "Guardar y Generar Reporte";
+            this.btnAgregar1.UseVisualStyleBackColor = false;
+            this.btnAgregar1.Click += new System.EventHandler(this.btnAgregar1_Click);
+            // 
+            // txtIncoterm
+            // 
+            this.txtIncoterm.Enabled = false;
+            this.txtIncoterm.Location = new System.Drawing.Point(629, 281);
+            this.txtIncoterm.Name = "txtIncoterm";
+            this.txtIncoterm.Size = new System.Drawing.Size(190, 26);
+            this.txtIncoterm.TabIndex = 107;
+            // 
             // FacturaComercial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1400,6 +1419,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FacturaComercial";
             this.Text = "FacturaComercial";
+            this.Load += new System.EventHandler(this.FacturaComercial_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -1427,44 +1447,42 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbPartiesTransa;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtPais;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCompanyName;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNidentifi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtTpago;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtOrdenCompra;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtFactura;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtConoEmbarque;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBoxReasonExport;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label51;
@@ -1544,5 +1562,8 @@
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.TextBox textBox26;
         private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.DateTimePicker dateTimeFecha;
+        private System.Windows.Forms.Button btnAgregar1;
+        private System.Windows.Forms.TextBox txtIncoterm;
     }
 }
