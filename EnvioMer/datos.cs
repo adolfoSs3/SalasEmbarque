@@ -318,6 +318,48 @@ namespace EnvioMer
             this.ReasonEx = ReasonEx;
         }
     }
-
+    /// estas dos son similares Pero Tienen diferente PRopocito
+    /// ---------------------------------------------------------------------
+   //Factura comercial Parte2 destinatario
+    public class FacturaComercialP2PRopiedadesUnoo1
+    {
+        public int NIdentifi { get; set; }
+        public string Nombre { get; set; }
+        public string Telefono { get; set; }
+        public string Email { get; set; }
+        public string Pais { get; set; }
+        public string CompanyName { get; set; }
+        public FacturaComercialP2PRopiedadesUnoo1() { }
+        public FacturaComercialP2PRopiedadesUnoo1(int NIdentifi, string Nombre, string Telefono, string Email, string Pais, string CompanyName)
+        {
+            this.NIdentifi = NIdentifi;
+            this.Nombre = Nombre;
+            this.Telefono = Telefono;
+            this.Email = Email;
+            this.CompanyName = CompanyName;
+            this.Pais = Pais;
+        }
+    }
+    //factura comercial parte dos Vendido a...
+    public class FacturaComercialP2PRopiedadesDoos2
+    {
+        public int NIdentifi { get; set; }
+        public string Nombre { get; set; }
+        public string Telefono { get; set; }
+        public string Email { get; set; }
+        public string Pais { get; set; }
+        public string CompanyName { get; set; }
+        public FacturaComercialP2PRopiedadesDoos2() { }
+        public FacturaComercialP2PRopiedadesDoos2(int NIdentifi, string Nombre, string Telefono, string Email, string Pais, string CompanyName)
+        {
+            this.NIdentifi = NIdentifi;
+            this.Nombre = Nombre;
+            this.Telefono = Telefono;
+            this.Email = Email;
+            this.CompanyName = CompanyName;
+            this.Pais = Pais;
+        }
+    }
+    /// ---------------------------------------------------------------------
 
 }

@@ -75,42 +75,42 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.txtPais2to2 = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.txtPais2 = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.txtNombreDirecion2to2 = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.txtEmail2to2 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.txtNIdentifi2to2 = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txtTelefono2to2 = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.txtNombre2to2 = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtNombreDirecion2 = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtEmail2 = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtTelefono2 = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtNombre2 = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtNIdentifi2 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -152,6 +152,7 @@
             this.label58 = new System.Windows.Forms.Label();
             this.btnAgregar1 = new System.Windows.Forms.Button();
             this.txtIncoterm = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -617,44 +618,45 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.label51);
             this.groupBox2.Controls.Add(this.label52);
-            this.groupBox2.Controls.Add(this.textBox23);
+            this.groupBox2.Controls.Add(this.txtPais2to2);
             this.groupBox2.Controls.Add(this.label49);
             this.groupBox2.Controls.Add(this.label50);
-            this.groupBox2.Controls.Add(this.textBox22);
+            this.groupBox2.Controls.Add(this.txtPais2);
             this.groupBox2.Controls.Add(this.label45);
             this.groupBox2.Controls.Add(this.label46);
-            this.groupBox2.Controls.Add(this.textBox20);
+            this.groupBox2.Controls.Add(this.txtNombreDirecion2to2);
             this.groupBox2.Controls.Add(this.label47);
             this.groupBox2.Controls.Add(this.label48);
-            this.groupBox2.Controls.Add(this.textBox21);
+            this.groupBox2.Controls.Add(this.txtEmail2to2);
             this.groupBox2.Controls.Add(this.label43);
-            this.groupBox2.Controls.Add(this.textBox19);
+            this.groupBox2.Controls.Add(this.txtNIdentifi2to2);
             this.groupBox2.Controls.Add(this.label44);
             this.groupBox2.Controls.Add(this.checkBox1);
             this.groupBox2.Controls.Add(this.label37);
             this.groupBox2.Controls.Add(this.label38);
             this.groupBox2.Controls.Add(this.label39);
-            this.groupBox2.Controls.Add(this.textBox17);
+            this.groupBox2.Controls.Add(this.txtTelefono2to2);
             this.groupBox2.Controls.Add(this.label40);
-            this.groupBox2.Controls.Add(this.textBox18);
+            this.groupBox2.Controls.Add(this.txtNombre2to2);
             this.groupBox2.Controls.Add(this.label41);
             this.groupBox2.Controls.Add(this.label42);
             this.groupBox2.Controls.Add(this.label27);
             this.groupBox2.Controls.Add(this.label28);
-            this.groupBox2.Controls.Add(this.textBox12);
+            this.groupBox2.Controls.Add(this.txtNombreDirecion2);
             this.groupBox2.Controls.Add(this.label29);
             this.groupBox2.Controls.Add(this.label30);
-            this.groupBox2.Controls.Add(this.textBox13);
+            this.groupBox2.Controls.Add(this.txtEmail2);
             this.groupBox2.Controls.Add(this.label31);
             this.groupBox2.Controls.Add(this.label32);
             this.groupBox2.Controls.Add(this.label33);
-            this.groupBox2.Controls.Add(this.textBox14);
+            this.groupBox2.Controls.Add(this.txtTelefono2);
             this.groupBox2.Controls.Add(this.label34);
-            this.groupBox2.Controls.Add(this.textBox15);
+            this.groupBox2.Controls.Add(this.txtNombre2);
             this.groupBox2.Controls.Add(this.label35);
-            this.groupBox2.Controls.Add(this.textBox16);
+            this.groupBox2.Controls.Add(this.txtNIdentifi2);
             this.groupBox2.Controls.Add(this.label36);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(7, 6);
@@ -683,12 +685,12 @@
             this.label52.TabIndex = 53;
             this.label52.Text = "Country";
             // 
-            // textBox23
+            // txtPais2to2
             // 
-            this.textBox23.Location = new System.Drawing.Point(843, 371);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(190, 26);
-            this.textBox23.TabIndex = 52;
+            this.txtPais2to2.Location = new System.Drawing.Point(843, 371);
+            this.txtPais2to2.Name = "txtPais2to2";
+            this.txtPais2to2.Size = new System.Drawing.Size(190, 26);
+            this.txtPais2to2.TabIndex = 52;
             // 
             // label49
             // 
@@ -709,12 +711,12 @@
             this.label50.TabIndex = 50;
             this.label50.Text = "Country";
             // 
-            // textBox22
+            // txtPais2
             // 
-            this.textBox22.Location = new System.Drawing.Point(251, 282);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(190, 26);
-            this.textBox22.TabIndex = 49;
+            this.txtPais2.Location = new System.Drawing.Point(251, 282);
+            this.txtPais2.Name = "txtPais2";
+            this.txtPais2.Size = new System.Drawing.Size(190, 26);
+            this.txtPais2.TabIndex = 49;
             // 
             // label45
             // 
@@ -735,13 +737,13 @@
             this.label46.TabIndex = 47;
             this.label46.Text = "Company Name/Address";
             // 
-            // textBox20
+            // txtNombreDirecion2to2
             // 
-            this.textBox20.Location = new System.Drawing.Point(511, 371);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(303, 83);
-            this.textBox20.TabIndex = 46;
+            this.txtNombreDirecion2to2.Location = new System.Drawing.Point(511, 371);
+            this.txtNombreDirecion2to2.Multiline = true;
+            this.txtNombreDirecion2to2.Name = "txtNombreDirecion2to2";
+            this.txtNombreDirecion2to2.Size = new System.Drawing.Size(303, 83);
+            this.txtNombreDirecion2to2.TabIndex = 46;
             // 
             // label47
             // 
@@ -762,12 +764,12 @@
             this.label48.TabIndex = 44;
             this.label48.Text = "Email";
             // 
-            // textBox21
+            // txtEmail2to2
             // 
-            this.textBox21.Location = new System.Drawing.Point(511, 318);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(190, 26);
-            this.textBox21.TabIndex = 43;
+            this.txtEmail2to2.Location = new System.Drawing.Point(511, 318);
+            this.txtEmail2to2.Name = "txtEmail2to2";
+            this.txtEmail2to2.Size = new System.Drawing.Size(190, 26);
+            this.txtEmail2to2.TabIndex = 43;
             // 
             // label43
             // 
@@ -779,12 +781,12 @@
             this.label43.TabIndex = 42;
             this.label43.Text = "(Numero de Identificación)";
             // 
-            // textBox19
+            // txtNIdentifi2to2
             // 
-            this.textBox19.Location = new System.Drawing.Point(511, 112);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(190, 26);
-            this.textBox19.TabIndex = 41;
+            this.txtNIdentifi2to2.Location = new System.Drawing.Point(511, 112);
+            this.txtNIdentifi2to2.Name = "txtNIdentifi2to2";
+            this.txtNIdentifi2to2.Size = new System.Drawing.Size(190, 26);
+            this.txtNIdentifi2to2.TabIndex = 41;
             // 
             // label44
             // 
@@ -804,6 +806,7 @@
             this.checkBox1.TabIndex = 39;
             this.checkBox1.Text = "Same as Shipped To";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label37
             // 
@@ -834,12 +837,12 @@
             this.label39.TabIndex = 36;
             this.label39.Text = "(Nombre)";
             // 
-            // textBox17
+            // txtTelefono2to2
             // 
-            this.textBox17.Location = new System.Drawing.Point(511, 254);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(190, 26);
-            this.textBox17.TabIndex = 35;
+            this.txtTelefono2to2.Location = new System.Drawing.Point(511, 254);
+            this.txtTelefono2to2.Name = "txtTelefono2to2";
+            this.txtTelefono2to2.Size = new System.Drawing.Size(190, 26);
+            this.txtTelefono2to2.TabIndex = 35;
             // 
             // label40
             // 
@@ -851,12 +854,12 @@
             this.label40.TabIndex = 34;
             this.label40.Text = "(Vendido al Mismo Destinatario)";
             // 
-            // textBox18
+            // txtNombre2to2
             // 
-            this.textBox18.Location = new System.Drawing.Point(511, 183);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(190, 26);
-            this.textBox18.TabIndex = 33;
+            this.txtNombre2to2.Location = new System.Drawing.Point(511, 183);
+            this.txtNombre2to2.Name = "txtNombre2to2";
+            this.txtNombre2to2.Size = new System.Drawing.Size(190, 26);
+            this.txtNombre2to2.TabIndex = 33;
             // 
             // label41
             // 
@@ -895,13 +898,13 @@
             this.label28.TabIndex = 28;
             this.label28.Text = "Company Name/Address";
             // 
-            // textBox12
+            // txtNombreDirecion2
             // 
-            this.textBox12.Location = new System.Drawing.Point(6, 361);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(313, 93);
-            this.textBox12.TabIndex = 27;
+            this.txtNombreDirecion2.Location = new System.Drawing.Point(6, 361);
+            this.txtNombreDirecion2.Multiline = true;
+            this.txtNombreDirecion2.Name = "txtNombreDirecion2";
+            this.txtNombreDirecion2.Size = new System.Drawing.Size(313, 93);
+            this.txtNombreDirecion2.TabIndex = 27;
             // 
             // label29
             // 
@@ -922,12 +925,12 @@
             this.label30.TabIndex = 25;
             this.label30.Text = "Email";
             // 
-            // textBox13
+            // txtEmail2
             // 
-            this.textBox13.Location = new System.Drawing.Point(6, 282);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(190, 26);
-            this.textBox13.TabIndex = 24;
+            this.txtEmail2.Location = new System.Drawing.Point(6, 282);
+            this.txtEmail2.Name = "txtEmail2";
+            this.txtEmail2.Size = new System.Drawing.Size(190, 26);
+            this.txtEmail2.TabIndex = 24;
             // 
             // label31
             // 
@@ -958,12 +961,12 @@
             this.label33.TabIndex = 21;
             this.label33.Text = "(Nombre)";
             // 
-            // textBox14
+            // txtTelefono2
             // 
-            this.textBox14.Location = new System.Drawing.Point(6, 212);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(190, 26);
-            this.textBox14.TabIndex = 20;
+            this.txtTelefono2.Location = new System.Drawing.Point(6, 212);
+            this.txtTelefono2.Name = "txtTelefono2";
+            this.txtTelefono2.Size = new System.Drawing.Size(190, 26);
+            this.txtTelefono2.TabIndex = 20;
             // 
             // label34
             // 
@@ -975,12 +978,12 @@
             this.label34.TabIndex = 19;
             this.label34.Text = "(Numero de Identificación)";
             // 
-            // textBox15
+            // txtNombre2
             // 
-            this.textBox15.Location = new System.Drawing.Point(6, 141);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(190, 26);
-            this.textBox15.TabIndex = 18;
+            this.txtNombre2.Location = new System.Drawing.Point(6, 141);
+            this.txtNombre2.Name = "txtNombre2";
+            this.txtNombre2.Size = new System.Drawing.Size(190, 26);
+            this.txtNombre2.TabIndex = 18;
             // 
             // label35
             // 
@@ -991,12 +994,12 @@
             this.label35.TabIndex = 17;
             this.label35.Text = "Contact Name";
             // 
-            // textBox16
+            // txtNIdentifi2
             // 
-            this.textBox16.Location = new System.Drawing.Point(6, 66);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(190, 26);
-            this.textBox16.TabIndex = 16;
+            this.txtNIdentifi2.Location = new System.Drawing.Point(6, 66);
+            this.txtNIdentifi2.Name = "txtNIdentifi2";
+            this.txtNIdentifi2.Size = new System.Drawing.Size(190, 26);
+            this.txtNIdentifi2.TabIndex = 16;
             // 
             // label36
             // 
@@ -1408,6 +1411,21 @@
             this.txtIncoterm.Size = new System.Drawing.Size(190, 26);
             this.txtIncoterm.TabIndex = 107;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(234, 476);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(352, 44);
+            this.button1.TabIndex = 107;
+            this.button1.Text = "Guardar y Generar Reporte";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FacturaComercial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1487,42 +1505,42 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox txtPais2to2;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox txtPais2;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox txtNombreDirecion2to2;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox txtEmail2to2;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox txtNIdentifi2to2;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox txtTelefono2to2;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox txtNombre2to2;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtNombreDirecion2;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtEmail2;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtTelefono2;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtNombre2;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtNIdentifi2;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -1565,5 +1583,6 @@
         private System.Windows.Forms.DateTimePicker dateTimeFecha;
         private System.Windows.Forms.Button btnAgregar1;
         private System.Windows.Forms.TextBox txtIncoterm;
+        private System.Windows.Forms.Button button1;
     }
 }
