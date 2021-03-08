@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using MySql.Data.Types;
 using System.Windows.Forms;
 using System.Data;
 using System.Configuration;
@@ -440,10 +441,35 @@ namespace EnvioMer
         public static int FacturaComercialParte2de2Add(FacturaComercialP2PRopiedadesDoos2 add)
         {
             int retorno;
-            MySqlCommand command = new MySqlCommand(String.Format("insert into factura2destinatario(NIdentifi,Nombre,Telefono,Email,Pais,CompanyName)" +
+            MySqlCommand command = new MySqlCommand(String.Format("insert into factura2destinatariovendidoa(NIdentifi,Nombre,Telefono,Email,Pais,CompanyName)" +
                 "values('{0}','{1}','{2}','{3}','{4}','{5}')", add.NIdentifi, add.Nombre, add.Telefono, add.Email, add.Pais, add.CompanyName), Mysql.conexion.obtenerConexion());
             retorno = command.ExecuteNonQuery();
             return retorno;
+        }
+        //_------------------Factura Parte 3 
+        public void FactutaPate3(DataGridView dt)
+        {
+            MySqlCommand agregar = new MySqlCommand("insert into facturaparte3 values(NPaquetes,NoUnitario,UnidadMedida,DesMercancia,PaisOrigen,PUnitario,PTotal)", Mysql.conexion.obtenerConexion());
+            //try
+            {
+                foreach (DataGridViewRow row in dt.Rows)
+                {
+                    agregar.Parameters.Clear();
+                    agregar.Parameters.Add("NPaquetes", MySqlDbType.Int16).Value = Convert.ToString(row.Cells["Column1"].Value);
+                    agregar.Parameters.Add("NoUnitario", MySqlDbType.Int16).Value = Convert.ToString(row.Cells["Column2"].Value);
+                    agregar.Parameters.Add("UnidadMedida", MySqlDbType.VarChar).Value = Convert.ToString(row.Cells["Column3"].Value);
+                    agregar.Parameters.Add("DesMercancia", MySqlDbType.VarChar).Value = Convert.ToString(row.Cells["Column4"].Value);
+                    agregar.Parameters.Add("PaisOrigen", MySqlDbType.VarChar).Value = Convert.ToString(row.Cells["Column5"].Value);
+                    agregar.Parameters.Add("PUnitario", MySqlDbType.Double).Value = Convert.ToString(row.Cells["Column6"].Value);
+                    agregar.Parameters.Add("PTotal", MySqlDbType.Double).Value = Convert.ToString(row.Cells["Column7"].Value);
+                    agregar.ExecuteNonQuery();
+                    MessageBox.Show("Listo");
+                }
+            }
+           /* catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message + Ex.StackTrace);
+            }*/
         }
     }
 }

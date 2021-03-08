@@ -114,7 +114,7 @@
             this.label36 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGMercancia = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.textBox33 = new System.Windows.Forms.TextBox();
@@ -153,6 +153,15 @@
             this.btnAgregar1 = new System.Windows.Forms.Button();
             this.txtIncoterm = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bntAgregar = new System.Windows.Forms.Button();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -161,7 +170,7 @@
             this.groupBox2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGMercancia)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
@@ -1023,7 +1032,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Controls.Add(this.bntAgregar);
+            this.groupBox3.Controls.Add(this.dataGMercancia);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(6, 5);
             this.groupBox3.Name = "groupBox3";
@@ -1032,13 +1042,22 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Mercancia";
             // 
-            // dataGridView1
+            // dataGMercancia
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(52, 66);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(837, 306);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGMercancia.AllowUserToOrderColumns = true;
+            this.dataGMercancia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGMercancia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7});
+            this.dataGMercancia.Location = new System.Drawing.Point(6, 36);
+            this.dataGMercancia.Name = "dataGMercancia";
+            this.dataGMercancia.Size = new System.Drawing.Size(955, 386);
+            this.dataGMercancia.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -1054,6 +1073,7 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.White;
+            this.groupBox4.Controls.Add(this.button2);
             this.groupBox4.Controls.Add(this.textBox33);
             this.groupBox4.Controls.Add(this.label73);
             this.groupBox4.Controls.Add(this.label74);
@@ -1426,6 +1446,76 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(483, 456);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(352, 44);
+            this.button2.TabIndex = 108;
+            this.button2.Text = "Guardar y Generar Reporte";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "No.Of Packages(No. de Paquetes)";
+            this.Column1.Name = "Column1";
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.Column1.Width = 110;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "No.Of Units (No.Unitario)";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Unit Of Measure (Unidad de medida)";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 150;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Description of Goods (Including Harmonized Tariff No)(Descripción de la Mercancia" +
+    " Con No.De Clasificación Arancelaría )";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 280;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Country Of Origin(Pais de Origen)";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Value Unit (Precio Unitario)";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 70;
+            // 
+            // bntAgregar
+            // 
+            this.bntAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.bntAgregar.FlatAppearance.BorderSize = 0;
+            this.bntAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntAgregar.ForeColor = System.Drawing.Color.White;
+            this.bntAgregar.Location = new System.Drawing.Point(488, 487);
+            this.bntAgregar.Name = "bntAgregar";
+            this.bntAgregar.Size = new System.Drawing.Size(164, 55);
+            this.bntAgregar.TabIndex = 107;
+            this.bntAgregar.Text = "Agregar";
+            this.bntAgregar.UseVisualStyleBackColor = false;
+            this.bntAgregar.Click += new System.EventHandler(this.bntAgregar_Click);
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Total Value(Precio Total)";
+            this.Column7.Name = "Column7";
+            // 
             // FacturaComercial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1449,7 +1539,7 @@
             this.groupBox2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGMercancia)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -1544,7 +1634,7 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGMercancia;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox textBox33;
@@ -1584,5 +1674,14 @@
         private System.Windows.Forms.Button btnAgregar1;
         private System.Windows.Forms.TextBox txtIncoterm;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.Button bntAgregar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 }

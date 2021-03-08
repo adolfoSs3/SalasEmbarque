@@ -83,6 +83,7 @@ namespace EnvioMer
             }
             else
             {
+                tabControl1.SelectedIndex = 1;
                 DialogResult result = MessageBox.Show("¿Esta seguro?", "Agregar", MessageBoxButtons.YesNo);
                 {
                     if (result == DialogResult.Yes)
@@ -114,7 +115,7 @@ namespace EnvioMer
             {
                 MessageBox.Show("Faltan datos por llenar","Error");
             }else
-            if (checkBox1.Enabled == true)
+            if (checkBox1.Checked == true)
             {
                 txtNIdentifi2to2.Text = txtNIdentifi2.Text;
                 txtNombre2to2.Text = txtNombre2.Text; ;
@@ -123,7 +124,7 @@ namespace EnvioMer
                 txtPais2to2.Text = txtPais2.Text;
                 txtNombreDirecion2to2.Text = txtNombreDirecion2.Text;
             }else
-                if (checkBox1.Enabled==false) 
+                if (checkBox1.Checked ==false) 
             {
                 txtNIdentifi2to2.Clear();
                 txtNombre2to2.Clear();
@@ -132,6 +133,11 @@ namespace EnvioMer
                 txtPais2to2.Clear();
                 txtNombreDirecion2to2.Clear();
             }
+        }
+
+        private void bntAgregar_Click(object sender, EventArgs e)
+        {
+            fun.FactutaPate3(dataGMercancia);
         }
     }
 }
