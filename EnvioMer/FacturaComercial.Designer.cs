@@ -33,6 +33,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtIncoterm = new System.Windows.Forms.TextBox();
+            this.btnAgregar1 = new System.Windows.Forms.Button();
             this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
             this.comboBoxReasonExport = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
@@ -73,6 +75,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.txtPais2to2 = new System.Windows.Forms.TextBox();
@@ -114,9 +117,18 @@
             this.label36 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.bntAgregar = new System.Windows.Forms.Button();
             this.dataGMercancia = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox33 = new System.Windows.Forms.TextBox();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
@@ -150,18 +162,6 @@
             this.label57 = new System.Windows.Forms.Label();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
-            this.btnAgregar1 = new System.Windows.Forms.Button();
-            this.txtIncoterm = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bntAgregar = new System.Windows.Forms.Button();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -272,6 +272,29 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Shipped from (Envio de):";
             // 
+            // txtIncoterm
+            // 
+            this.txtIncoterm.Enabled = false;
+            this.txtIncoterm.Location = new System.Drawing.Point(629, 281);
+            this.txtIncoterm.Name = "txtIncoterm";
+            this.txtIncoterm.Size = new System.Drawing.Size(190, 26);
+            this.txtIncoterm.TabIndex = 107;
+            // 
+            // btnAgregar1
+            // 
+            this.btnAgregar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.btnAgregar1.FlatAppearance.BorderSize = 0;
+            this.btnAgregar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar1.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar1.Location = new System.Drawing.Point(629, 466);
+            this.btnAgregar1.Name = "btnAgregar1";
+            this.btnAgregar1.Size = new System.Drawing.Size(352, 44);
+            this.btnAgregar1.TabIndex = 106;
+            this.btnAgregar1.Text = "Guardar y Generar Reporte";
+            this.btnAgregar1.UseVisualStyleBackColor = false;
+            this.btnAgregar1.Click += new System.EventHandler(this.btnAgregar1_Click);
+            // 
             // dateTimeFecha
             // 
             this.dateTimeFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -363,6 +386,7 @@
             this.txtOrdenCompra.Name = "txtOrdenCompra";
             this.txtOrdenCompra.Size = new System.Drawing.Size(190, 26);
             this.txtOrdenCompra.TabIndex = 30;
+            this.txtOrdenCompra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOrdenCompra_KeyPress);
             // 
             // label17
             // 
@@ -400,6 +424,7 @@
             this.txtFactura.Name = "txtFactura";
             this.txtFactura.Size = new System.Drawing.Size(190, 26);
             this.txtFactura.TabIndex = 26;
+            this.txtFactura.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFactura_KeyPress);
             // 
             // label20
             // 
@@ -571,6 +596,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(190, 26);
             this.txtTelefono.TabIndex = 5;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // label4
             // 
@@ -604,6 +630,7 @@
             this.txtNidentifi.Name = "txtNidentifi";
             this.txtNidentifi.Size = new System.Drawing.Size(190, 26);
             this.txtNidentifi.TabIndex = 1;
+            this.txtNidentifi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNidentifi_KeyPress);
             // 
             // label2
             // 
@@ -674,6 +701,21 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Shipped To (Destinatario)";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(234, 476);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(352, 44);
+            this.button1.TabIndex = 107;
+            this.button1.Text = "Guardar y Generar Reporte";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label51
             // 
@@ -796,6 +838,7 @@
             this.txtNIdentifi2to2.Name = "txtNIdentifi2to2";
             this.txtNIdentifi2to2.Size = new System.Drawing.Size(190, 26);
             this.txtNIdentifi2to2.TabIndex = 41;
+            this.txtNIdentifi2to2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNIdentifi2to2_KeyPress);
             // 
             // label44
             // 
@@ -852,6 +895,7 @@
             this.txtTelefono2to2.Name = "txtTelefono2to2";
             this.txtTelefono2to2.Size = new System.Drawing.Size(190, 26);
             this.txtTelefono2to2.TabIndex = 35;
+            this.txtTelefono2to2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono2to2_KeyPress);
             // 
             // label40
             // 
@@ -976,6 +1020,7 @@
             this.txtTelefono2.Name = "txtTelefono2";
             this.txtTelefono2.Size = new System.Drawing.Size(190, 26);
             this.txtTelefono2.TabIndex = 20;
+            this.txtTelefono2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono2_KeyPress);
             // 
             // label34
             // 
@@ -1009,6 +1054,7 @@
             this.txtNIdentifi2.Name = "txtNIdentifi2";
             this.txtNIdentifi2.Size = new System.Drawing.Size(190, 26);
             this.txtNIdentifi2.TabIndex = 16;
+            this.txtNIdentifi2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNIdentifi2_KeyPress);
             // 
             // label36
             // 
@@ -1042,6 +1088,21 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Mercancia";
             // 
+            // bntAgregar
+            // 
+            this.bntAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.bntAgregar.FlatAppearance.BorderSize = 0;
+            this.bntAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntAgregar.ForeColor = System.Drawing.Color.White;
+            this.bntAgregar.Location = new System.Drawing.Point(488, 487);
+            this.bntAgregar.Name = "bntAgregar";
+            this.bntAgregar.Size = new System.Drawing.Size(164, 55);
+            this.bntAgregar.TabIndex = 107;
+            this.bntAgregar.Text = "Agregar";
+            this.bntAgregar.UseVisualStyleBackColor = false;
+            this.bntAgregar.Click += new System.EventHandler(this.bntAgregar_Click);
+            // 
             // dataGMercancia
             // 
             this.dataGMercancia.AllowUserToOrderColumns = true;
@@ -1058,6 +1119,47 @@
             this.dataGMercancia.Name = "dataGMercancia";
             this.dataGMercancia.Size = new System.Drawing.Size(955, 386);
             this.dataGMercancia.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "No.Of Packages(No. de Paquetes)";
+            this.Column1.Name = "Column1";
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.Column1.Width = 110;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "No.Of Units (No.Unitario)";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Unit Of Measure (Unidad de medida)";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 150;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Description of Goods (Including Harmonized Tariff No)(Descripción de la Mercancia" +
+    " Con No.De Clasificación Arancelaría )";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 280;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Country Of Origin(Pais de Origen)";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Value Unit (Precio Unitario)";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 70;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Total Value(Precio Total)";
+            this.Column7.Name = "Column7";
             // 
             // tabPage4
             // 
@@ -1115,12 +1217,27 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Detalles de Mercancia";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(483, 456);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(352, 44);
+            this.button2.TabIndex = 108;
+            this.button2.Text = "Guardar y Generar Reporte";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // textBox33
             // 
             this.textBox33.Location = new System.Drawing.Point(594, 369);
             this.textBox33.Name = "textBox33";
             this.textBox33.Size = new System.Drawing.Size(100, 26);
             this.textBox33.TabIndex = 57;
+            this.textBox33.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox33_KeyPress);
             // 
             // label73
             // 
@@ -1147,6 +1264,7 @@
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(100, 26);
             this.textBox32.TabIndex = 54;
+            this.textBox32.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox32_KeyPress);
             // 
             // label71
             // 
@@ -1173,6 +1291,7 @@
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(100, 26);
             this.textBox31.TabIndex = 51;
+            this.textBox31.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox31_KeyPress);
             // 
             // label69
             // 
@@ -1199,6 +1318,7 @@
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(100, 26);
             this.textBox30.TabIndex = 48;
+            this.textBox30.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox30_KeyPress);
             // 
             // label67
             // 
@@ -1225,6 +1345,7 @@
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(100, 26);
             this.textBox29.TabIndex = 45;
+            this.textBox29.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox29_KeyPress);
             // 
             // label65
             // 
@@ -1251,6 +1372,7 @@
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(100, 26);
             this.textBox28.TabIndex = 42;
+            this.textBox28.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox28_KeyPress);
             // 
             // label63
             // 
@@ -1277,6 +1399,7 @@
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(100, 26);
             this.textBox27.TabIndex = 39;
+            this.textBox27.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox27_KeyPress);
             // 
             // label61
             // 
@@ -1398,6 +1521,7 @@
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(75, 26);
             this.textBox26.TabIndex = 25;
+            this.textBox26.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox26_KeyPress);
             // 
             // label58
             // 
@@ -1407,114 +1531,6 @@
             this.label58.Size = new System.Drawing.Size(160, 20);
             this.label58.TabIndex = 24;
             this.label58.Text = "Total No of Packages";
-            // 
-            // btnAgregar1
-            // 
-            this.btnAgregar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
-            this.btnAgregar1.FlatAppearance.BorderSize = 0;
-            this.btnAgregar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar1.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar1.Location = new System.Drawing.Point(629, 466);
-            this.btnAgregar1.Name = "btnAgregar1";
-            this.btnAgregar1.Size = new System.Drawing.Size(352, 44);
-            this.btnAgregar1.TabIndex = 106;
-            this.btnAgregar1.Text = "Guardar y Generar Reporte";
-            this.btnAgregar1.UseVisualStyleBackColor = false;
-            this.btnAgregar1.Click += new System.EventHandler(this.btnAgregar1_Click);
-            // 
-            // txtIncoterm
-            // 
-            this.txtIncoterm.Enabled = false;
-            this.txtIncoterm.Location = new System.Drawing.Point(629, 281);
-            this.txtIncoterm.Name = "txtIncoterm";
-            this.txtIncoterm.Size = new System.Drawing.Size(190, 26);
-            this.txtIncoterm.TabIndex = 107;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(234, 476);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(352, 44);
-            this.button1.TabIndex = 107;
-            this.button1.Text = "Guardar y Generar Reporte";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(483, 456);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(352, 44);
-            this.button2.TabIndex = 108;
-            this.button2.Text = "Guardar y Generar Reporte";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "No.Of Packages(No. de Paquetes)";
-            this.Column1.Name = "Column1";
-            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.Column1.Width = 110;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "No.Of Units (No.Unitario)";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Unit Of Measure (Unidad de medida)";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 150;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Description of Goods (Including Harmonized Tariff No)(Descripción de la Mercancia" +
-    " Con No.De Clasificación Arancelaría )";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 280;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Country Of Origin(Pais de Origen)";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Value Unit (Precio Unitario)";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 70;
-            // 
-            // bntAgregar
-            // 
-            this.bntAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
-            this.bntAgregar.FlatAppearance.BorderSize = 0;
-            this.bntAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntAgregar.ForeColor = System.Drawing.Color.White;
-            this.bntAgregar.Location = new System.Drawing.Point(488, 487);
-            this.bntAgregar.Name = "bntAgregar";
-            this.bntAgregar.Size = new System.Drawing.Size(164, 55);
-            this.bntAgregar.TabIndex = 107;
-            this.bntAgregar.Text = "Agregar";
-            this.bntAgregar.UseVisualStyleBackColor = false;
-            this.bntAgregar.Click += new System.EventHandler(this.bntAgregar_Click);
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Total Value(Precio Total)";
-            this.Column7.Name = "Column7";
             // 
             // FacturaComercial
             // 

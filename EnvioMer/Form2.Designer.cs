@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panelFCL = new System.Windows.Forms.Panel();
             this.panelLCL = new System.Windows.Forms.Panel();
             this.BtnAgregarLCL = new System.Windows.Forms.Button();
             this.dataGridTablaLCL = new System.Windows.Forms.DataGridView();
@@ -43,7 +44,6 @@
             this.TxtPesoLCL = new System.Windows.Forms.TextBox();
             this.TxtNPaquetesLCL = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.panelFCL = new System.Windows.Forms.Panel();
             this.dataGridTablaFCL = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.BtnAgregar = new System.Windows.Forms.Button();
@@ -130,9 +130,9 @@
             this.label18 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panelFCL.SuspendLayout();
             this.panelLCL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTablaLCL)).BeginInit();
-            this.panelFCL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTablaFCL)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -180,6 +180,29 @@
             this.tabPage1.Size = new System.Drawing.Size(1060, 624);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Maritimo";
+            // 
+            // panelFCL
+            // 
+            this.panelFCL.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelFCL.BackColor = System.Drawing.Color.Transparent;
+            this.panelFCL.Controls.Add(this.panelLCL);
+            this.panelFCL.Controls.Add(this.dataGridTablaFCL);
+            this.panelFCL.Controls.Add(this.label8);
+            this.panelFCL.Controls.Add(this.BtnAgregar);
+            this.panelFCL.Controls.Add(this.LblTotal);
+            this.panelFCL.Controls.Add(this.textCantidadPaquetesFCL);
+            this.panelFCL.Controls.Add(this.label14);
+            this.panelFCL.Controls.Add(this.comboTipoCont);
+            this.panelFCL.Controls.Add(this.label17);
+            this.panelFCL.Controls.Add(this.textCostoXcontenedor);
+            this.panelFCL.Controls.Add(this.label16);
+            this.panelFCL.Location = new System.Drawing.Point(202, 80);
+            this.panelFCL.Name = "panelFCL";
+            this.panelFCL.Size = new System.Drawing.Size(716, 375);
+            this.panelFCL.TabIndex = 53;
+            this.panelFCL.Visible = false;
             // 
             // panelLCL
             // 
@@ -318,29 +341,6 @@
             this.label9.Size = new System.Drawing.Size(158, 20);
             this.label9.TabIndex = 0;
             this.label9.Text = "Número de paquetes";
-            // 
-            // panelFCL
-            // 
-            this.panelFCL.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelFCL.BackColor = System.Drawing.Color.Transparent;
-            this.panelFCL.Controls.Add(this.panelLCL);
-            this.panelFCL.Controls.Add(this.dataGridTablaFCL);
-            this.panelFCL.Controls.Add(this.label8);
-            this.panelFCL.Controls.Add(this.BtnAgregar);
-            this.panelFCL.Controls.Add(this.LblTotal);
-            this.panelFCL.Controls.Add(this.textCantidadPaquetesFCL);
-            this.panelFCL.Controls.Add(this.label14);
-            this.panelFCL.Controls.Add(this.comboTipoCont);
-            this.panelFCL.Controls.Add(this.label17);
-            this.panelFCL.Controls.Add(this.textCostoXcontenedor);
-            this.panelFCL.Controls.Add(this.label16);
-            this.panelFCL.Location = new System.Drawing.Point(202, 80);
-            this.panelFCL.Name = "panelFCL";
-            this.panelFCL.Size = new System.Drawing.Size(716, 375);
-            this.panelFCL.TabIndex = 53;
-            this.panelFCL.Visible = false;
             // 
             // dataGridTablaFCL
             // 
@@ -844,7 +844,6 @@
             // 
             // label21
             // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
             this.label21.Location = new System.Drawing.Point(2, 420);
@@ -1355,11 +1354,11 @@
             this.Text = "Form2";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.panelFCL.ResumeLayout(false);
+            this.panelFCL.PerformLayout();
             this.panelLCL.ResumeLayout(false);
             this.panelLCL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTablaLCL)).EndInit();
-            this.panelFCL.ResumeLayout(false);
-            this.panelFCL.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTablaFCL)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
