@@ -51,5 +51,10 @@ namespace EnvioMer.vistaEstaciones.Est3
             }
             
         }
+
+        private void BtnAgregarSalidaEstacion1_Click(object sender, EventArgs e)
+        {
+            new frmReportEst3().ShowDialog();
+        }
     }
 }

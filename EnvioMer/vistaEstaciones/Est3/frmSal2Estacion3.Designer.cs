@@ -37,7 +37,6 @@
             this.txtTransportista = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BtnAgregarSalidaEstacion1 = new System.Windows.Forms.Button();
             this.btnAgregar1 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtComentario = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.BtnAgregarSalidaEstacion1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -137,20 +137,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(375, 146);
             this.dataGridView1.TabIndex = 102;
             // 
-            // BtnAgregarSalidaEstacion1
-            // 
-            this.BtnAgregarSalidaEstacion1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
-            this.BtnAgregarSalidaEstacion1.FlatAppearance.BorderSize = 0;
-            this.BtnAgregarSalidaEstacion1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgregarSalidaEstacion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregarSalidaEstacion1.ForeColor = System.Drawing.Color.White;
-            this.BtnAgregarSalidaEstacion1.Location = new System.Drawing.Point(444, 405);
-            this.BtnAgregarSalidaEstacion1.Name = "BtnAgregarSalidaEstacion1";
-            this.BtnAgregarSalidaEstacion1.Size = new System.Drawing.Size(352, 44);
-            this.BtnAgregarSalidaEstacion1.TabIndex = 103;
-            this.BtnAgregarSalidaEstacion1.Text = "Generar Reporte";
-            this.BtnAgregarSalidaEstacion1.UseVisualStyleBackColor = false;
-            // 
             // btnAgregar1
             // 
             this.btnAgregar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
@@ -160,7 +146,7 @@
             this.btnAgregar1.ForeColor = System.Drawing.Color.White;
             this.btnAgregar1.Location = new System.Drawing.Point(444, 355);
             this.btnAgregar1.Name = "btnAgregar1";
-            this.btnAgregar1.Size = new System.Drawing.Size(352, 44);
+            this.btnAgregar1.Size = new System.Drawing.Size(217, 44);
             this.btnAgregar1.TabIndex = 105;
             this.btnAgregar1.Text = "Guardar y Continuar";
             this.btnAgregar1.UseVisualStyleBackColor = false;
@@ -178,7 +164,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(393, 181);
+            this.label2.Location = new System.Drawing.Point(393, 179);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(173, 20);
             this.label2.TabIndex = 107;
@@ -257,11 +243,26 @@
             this.label9.TabIndex = 114;
             this.label9.Text = "Comentarios:";
             // 
+            // BtnAgregarSalidaEstacion1
+            // 
+            this.BtnAgregarSalidaEstacion1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.BtnAgregarSalidaEstacion1.FlatAppearance.BorderSize = 0;
+            this.BtnAgregarSalidaEstacion1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgregarSalidaEstacion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarSalidaEstacion1.ForeColor = System.Drawing.Color.White;
+            this.BtnAgregarSalidaEstacion1.Location = new System.Drawing.Point(444, 405);
+            this.BtnAgregarSalidaEstacion1.Name = "BtnAgregarSalidaEstacion1";
+            this.BtnAgregarSalidaEstacion1.Size = new System.Drawing.Size(217, 44);
+            this.BtnAgregarSalidaEstacion1.TabIndex = 103;
+            this.BtnAgregarSalidaEstacion1.Text = "Generar Reporte";
+            this.BtnAgregarSalidaEstacion1.UseVisualStyleBackColor = false;
+            this.BtnAgregarSalidaEstacion1.Click += new System.EventHandler(this.BtnAgregarSalidaEstacion1_Click);
+            // 
             // frmSal2Estacion3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(835, 471);
             this.Controls.Add(this.txtComentario);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtCliente);
@@ -304,7 +305,6 @@
         private System.Windows.Forms.TextBox txtTransportista;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button BtnAgregarSalidaEstacion1;
         private System.Windows.Forms.Button btnAgregar1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label2;
@@ -316,5 +316,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtComentario;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button BtnAgregarSalidaEstacion1;
     }
 }

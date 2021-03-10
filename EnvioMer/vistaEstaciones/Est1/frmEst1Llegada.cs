@@ -36,14 +36,23 @@ namespace EnvioMer.vistaEstaciones.Est1
                 LlegadaEstacion1.Cantidad = int.Parse(txtCantidad.Text);
                 funciones.LlegadaEstacion1Add(LlegadaEstacion1);
                 MessageBox.Show("Listo");
+
+                ValEstaticEST1.Cod_Barra = txtCod_Barra.Text;
+                ValEstaticEST1.Operador = txtOperador.Text;
+                ValEstaticEST1.Origen = txtOrigen.Text;
+                ValEstaticEST1.Puerto_Salida = txtPuSalida.Text;
+                ValEstaticEST1.Factura = txtFactura.Text;
+                ValEstaticEST1.Incoterms = comboBoxIcoterm.Text;
+                ValEstaticEST1.Bill_Of_Lading = txtBillLadinf.Text;
+                ValEstaticEST1.Producto = txtProducto.Text;
+                ValEstaticEST1.Packing_List = txtPacking.Text;
+                ValEstaticEST1.Pedimento = txtPedimento.Text;
+                ValEstaticEST1.Cantidad = txtCantidad.Text;
             }
             catch (Exception Ex)
             {
-
                 MessageBox.Show("ERROR " + Ex.Message);
             }
-            
-
         }
 
         private void button1_Click(object sender, EventArgs e)

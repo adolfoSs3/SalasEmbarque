@@ -22,10 +22,8 @@ namespace EnvioMer.vistaEstaciones.Est1
         
         private void BtnAgregarSalidaEstacion1_Click(object sender, EventArgs e)
         {
-             try
+            try
             {
-                
-
                 SalidaEST1.Cod_Embarque = int.Parse(txtCod.Text);
                 SalidaEST1.T_C_Salida = Convert.ToString(txtC_T_Salida.Text);
                 SalidaEST1.Destino = Convert.ToString(txtDestino.Text);
@@ -34,18 +32,21 @@ namespace EnvioMer.vistaEstaciones.Est1
                 
                 funciones.SalidaEst1Add(SalidaEST1);
                 MessageBox.Show("Listo");
+
+                ValEstaticEST1.Cod_Embarque = txtCod.Text;
+                ValEstaticEST1.T_C_Salida = txtC_T_Salida.Text;
+                ValEstaticEST1.Destino = txtDestino.Text;
+                ValEstaticEST1.Puerto_Llegada = txtPuertoLlegada.Text;
+                ValEstaticEST1.Fecha_Salida = dateTimeFechaSalida1.Text;
+
+                new frmReportEst1().ShowDialog();
             }
             catch (Exception Ex)
             {
-
                 MessageBox.Show("Error" + Ex.Message);
             }
-            
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        private void button1_Click(object sender, EventArgs e) => Close();
     }
 }

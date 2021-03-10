@@ -40,6 +40,8 @@ namespace EnvioMer.vistaEstaciones.Est2
                 Salida.FechaSalida = dateTimeFechaSalida.Text;
                 funciones.SalidaEstacion2Add(Salida);
                 MessageBox.Show("Listo");
+
+                new frmReportEst2().ShowDialog();
             }
             catch (Exception ex)
             {
