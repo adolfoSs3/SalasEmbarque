@@ -432,7 +432,7 @@ namespace EnvioMer
         public static int FacturaComercialParte2de1Add(FacturaComercialP2PRopiedadesUnoo1 add)
         {
             int retorno;
-            MySqlCommand command = new MySqlCommand(String.Format("insert into factura2destinatario(NIdentifi,Nombre,Telefono,Email,Pais,CompanyName)" +
+            MySqlCommand command = new MySqlCommand(String.Format("insert into factura2destinatario(NIdentificacion,Nombre,Telefono,Email,Pais,NombreDireccion)" +
                 "values('{0}','{1}','{2}','{3}','{4}','{5}')", add.NIdentifi, add.Nombre, add.Telefono, add.Email, add.Pais, add.CompanyName), Mysql.conexion.obtenerConexion());
             retorno = command.ExecuteNonQuery();
             return retorno;
@@ -441,7 +441,7 @@ namespace EnvioMer
         public static int FacturaComercialParte2de2Add(FacturaComercialP2PRopiedadesDoos2 add)
         {
             int retorno;
-            MySqlCommand command = new MySqlCommand(String.Format("insert into factura2destinatariovendidoa(NIdentifi,Nombre,Telefono,Email,Pais,CompanyName)" +
+            MySqlCommand command = new MySqlCommand(String.Format("insert into factura2destinatariovendidoa(NIdentificacion,Nombre,Telefono,Email,Pais,NombreDireccion)" +
                 "values('{0}','{1}','{2}','{3}','{4}','{5}')", add.NIdentifi, add.Nombre, add.Telefono, add.Email, add.Pais, add.CompanyName), Mysql.conexion.obtenerConexion());
             retorno = command.ExecuteNonQuery();
             return retorno;
