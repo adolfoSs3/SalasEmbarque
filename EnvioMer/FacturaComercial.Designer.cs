@@ -1230,6 +1230,7 @@
             this.button2.TabIndex = 108;
             this.button2.Text = "Guardar y Generar Reporte";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox33
             // 

@@ -362,4 +362,13 @@ namespace EnvioMer
     }
     /// ---------------------------------------------------------------------
 
+    public class FacturaComercialP2PRopiedadesDoos4
+    {
+        public int NIdentifi { get; set; }
+        public int totalPaq { get; set; }
+        public float pesoTotal { get; set; }
+        public string instrucciones { get; set; }
+        public string declaraciones { get; set; }
+
+    }
 }
