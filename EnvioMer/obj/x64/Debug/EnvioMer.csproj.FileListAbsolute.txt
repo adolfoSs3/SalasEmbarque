@@ -75,7 +75,6 @@ D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMe
 D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\K4os.Hash.xxHash.dll
 D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\bin\x64\Debug\MySql.Data.xml
-D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csprojAssemblyReference.cache
 D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.exe.config
 D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.menu.resources
 D:\Users\EdzonCarlos\Documents\1.-ASIATECH\Github Softwere\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.FormCostos.resources
