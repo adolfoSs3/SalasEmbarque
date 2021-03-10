@@ -124,7 +124,7 @@ namespace EnvioMer
                 txtPais2to2.Text = txtPais2.Text;
                 txtNombreDirecion2to2.Text = txtNombreDirecion2.Text;
             }else
-                if (checkBox1.Checked ==false) 
+            if (checkBox1.Checked ==false) 
             {
                 txtNIdentifi2to2.Clear();
                 txtNombre2to2.Clear();
@@ -135,11 +135,18 @@ namespace EnvioMer
             }
         }
 
+
         private void bntAgregar_Click(object sender, EventArgs e)
         {
             fun.FactutaPate3(dataGMercancia);
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        #region Validacion
         private void txtNidentifi_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
@@ -299,5 +306,7 @@ namespace EnvioMer
                 return;
             }
         }
+
+        #endregion        
     }
 }

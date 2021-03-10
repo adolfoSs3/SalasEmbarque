@@ -191,11 +191,9 @@ namespace EnvioMer
                 dt.DataSource = td;
             }
             catch (Exception Ex)
-            {
-
+            {            
                 MessageBox.Show(Ex.Message);
-            }
-          
+            }          
         }
         //-----------------------Estacion1-------------------------------
         public static int Estacion1Add (Estacion1Propiedades add)
@@ -471,5 +469,7 @@ namespace EnvioMer
                 MessageBox.Show(Ex.Message + Ex.StackTrace);
             }*/
         }
+
+        public void FacturaParte4()
     }
 }
