@@ -405,3 +405,4 @@ C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est2.frmReportEst2.resources
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est3.frmReportEst3.resources
 C:\Users\Software\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.vistaEstaciones.Est3.frmSal2Estacion3.resources
+C:\Users\vpala\Documents\GitHub\SalasEmbarque\EnvioMer\obj\x64\Debug\EnvioMer.csprojAssemblyReference.cache

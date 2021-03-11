@@ -447,22 +447,29 @@ namespace EnvioMer
         //_------------------Factura Parte 3 
         public void FactutaPate3(DataGridView dt)
         {
-            MySqlCommand agregar = new MySqlCommand("insert into facturaparte3 values(NPaquetes,NoUnitario,UnidadMedida,DesMercancia,PaisOrigen,PUnitario,PTotal)", Mysql.conexion.obtenerConexion());
+            MySqlCommand agregar = new MySqlCommand("INSERT INTO `facturaparte3`(`NPaquetes`, `NoUnitario`, `UnidadMedida`, `DesMercancia`, `PaisOrigen`, `PUnitario`, `PTotal`) VALUES (@NPaquetes,@NoUnitario,@UnidadMedida,@DesMercancia,@PaisOrigen,@PUnitario,@PTotal)", Mysql.conexion.obtenerConexion());
             //try
             {
+                agregar.Parameters.Add("@NPaquetes", MySqlDbType.Int32);
+                agregar.Parameters.Add("@NoUnitario", MySqlDbType.Int32);
+                agregar.Parameters.Add("@UnidadMedida", MySqlDbType.VarChar);
+                agregar.Parameters.Add("@DesMercancia", MySqlDbType.VarChar);
+                agregar.Parameters.Add("@PaisOrigen", MySqlDbType.VarChar);
+                agregar.Parameters.Add("@PUnitario", MySqlDbType.Double);
+                agregar.Parameters.Add("@PTotal", MySqlDbType.Double);
                 foreach (DataGridViewRow row in dt.Rows)
                 {
-                    agregar.Parameters.Clear();
-                    agregar.Parameters.Add("NPaquetes", MySqlDbType.Int16).Value = Convert.ToString(row.Cells["Column1"].Value);
-                    agregar.Parameters.Add("NoUnitario", MySqlDbType.Int16).Value = Convert.ToString(row.Cells["Column2"].Value);
-                    agregar.Parameters.Add("UnidadMedida", MySqlDbType.VarChar).Value = Convert.ToString(row.Cells["Column3"].Value);
-                    agregar.Parameters.Add("DesMercancia", MySqlDbType.VarChar).Value = Convert.ToString(row.Cells["Column4"].Value);
-                    agregar.Parameters.Add("PaisOrigen", MySqlDbType.VarChar).Value = Convert.ToString(row.Cells["Column5"].Value);
-                    agregar.Parameters.Add("PUnitario", MySqlDbType.Double).Value = Convert.ToString(row.Cells["Column6"].Value);
-                    agregar.Parameters.Add("PTotal", MySqlDbType.Double).Value = Convert.ToString(row.Cells["Column7"].Value);
+                    //agregar.Parameters.Clear();
+                    agregar.Parameters["@NPaquetes"].Value = Convert.ToInt32(row.Cells["Column1"].Value);
+                    agregar.Parameters["@NoUnitario"].Value = Convert.ToInt32(row.Cells["Column2"].Value);
+                    agregar.Parameters["@UnidadMedida"].Value = Convert.ToString(row.Cells["Column3"].Value);
+                    agregar.Parameters["@DesMercancia"].Value = Convert.ToString(row.Cells["Column4"].Value);
+                    agregar.Parameters["@PaisOrigen"].Value = Convert.ToString(row.Cells["Column5"].Value);
+                    agregar.Parameters["@PUnitario"].Value = Convert.ToDouble(row.Cells["Column6"].Value);
+                    agregar.Parameters["@PTotal"].Value = Convert.ToDouble(row.Cells["Column7"].Value);
                     agregar.ExecuteNonQuery();
-                    MessageBox.Show("Listo");
                 }
+                MessageBox.Show("Listo");
             }
            /* catch (Exception Ex)
             {

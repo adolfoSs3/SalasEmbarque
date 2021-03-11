@@ -61,6 +61,7 @@
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1080, 670);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Incotems";
             this.Text = "Incotems";

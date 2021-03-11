@@ -162,6 +162,14 @@
             this.label57 = new System.Windows.Forms.Label();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -274,7 +282,6 @@
             // 
             // txtIncoterm
             // 
-            this.txtIncoterm.Enabled = false;
             this.txtIncoterm.Location = new System.Drawing.Point(629, 281);
             this.txtIncoterm.Name = "txtIncoterm";
             this.txtIncoterm.Size = new System.Drawing.Size(190, 26);
@@ -419,7 +426,6 @@
             // 
             // txtFactura
             // 
-            this.txtFactura.Enabled = false;
             this.txtFactura.Location = new System.Drawing.Point(629, 60);
             this.txtFactura.Name = "txtFactura";
             this.txtFactura.Size = new System.Drawing.Size(190, 26);
@@ -740,7 +746,7 @@
             // 
             this.txtPais2to2.Location = new System.Drawing.Point(843, 371);
             this.txtPais2to2.Name = "txtPais2to2";
-            this.txtPais2to2.Size = new System.Drawing.Size(190, 26);
+            this.txtPais2to2.Size = new System.Drawing.Size(140, 26);
             this.txtPais2to2.TabIndex = 52;
             // 
             // label49
@@ -766,7 +772,7 @@
             // 
             this.txtPais2.Location = new System.Drawing.Point(251, 282);
             this.txtPais2.Name = "txtPais2";
-            this.txtPais2.Size = new System.Drawing.Size(190, 26);
+            this.txtPais2.Size = new System.Drawing.Size(121, 26);
             this.txtPais2.TabIndex = 49;
             // 
             // label45
@@ -1078,6 +1084,14 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.textBox7);
+            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.textBox5);
+            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.textBox2);
+            this.groupBox3.Controls.Add(this.textBox1);
             this.groupBox3.Controls.Add(this.bntAgregar);
             this.groupBox3.Controls.Add(this.dataGMercancia);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1099,13 +1113,13 @@
             this.bntAgregar.Name = "bntAgregar";
             this.bntAgregar.Size = new System.Drawing.Size(164, 55);
             this.bntAgregar.TabIndex = 107;
-            this.bntAgregar.Text = "Agregar";
+            this.bntAgregar.Text = "Guardar";
             this.bntAgregar.UseVisualStyleBackColor = false;
             this.bntAgregar.Click += new System.EventHandler(this.bntAgregar_Click);
             // 
             // dataGMercancia
             // 
-            this.dataGMercancia.AllowUserToOrderColumns = true;
+            this.dataGMercancia.AllowUserToAddRows = false;
             this.dataGMercancia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGMercancia.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -1115,9 +1129,9 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGMercancia.Location = new System.Drawing.Point(6, 36);
+            this.dataGMercancia.Location = new System.Drawing.Point(6, 171);
             this.dataGMercancia.Name = "dataGMercancia";
-            this.dataGMercancia.Size = new System.Drawing.Size(955, 386);
+            this.dataGMercancia.Size = new System.Drawing.Size(955, 300);
             this.dataGMercancia.TabIndex = 0;
             // 
             // Column1
@@ -1533,6 +1547,71 @@
             this.label58.TabIndex = 24;
             this.label58.Text = "Total No of Packages";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(50, 59);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 26);
+            this.textBox1.TabIndex = 108;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(156, 59);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 26);
+            this.textBox2.TabIndex = 109;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(262, 59);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(145, 26);
+            this.textBox3.TabIndex = 110;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(413, 59);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(275, 26);
+            this.textBox4.TabIndex = 111;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(694, 59);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 26);
+            this.textBox5.TabIndex = 112;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(796, 59);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(65, 26);
+            this.textBox6.TabIndex = 113;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Enabled = false;
+            this.textBox7.Location = new System.Drawing.Point(861, 59);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 26);
+            this.textBox7.TabIndex = 114;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(839, 110);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(122, 55);
+            this.button3.TabIndex = 115;
+            this.button3.Text = "Agregar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // FacturaComercial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1541,6 +1620,7 @@
             this.ClientSize = new System.Drawing.Size(1064, 631);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FacturaComercial";
             this.Text = "FacturaComercial";
@@ -1556,6 +1636,7 @@
             this.groupBox2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGMercancia)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -1700,5 +1781,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Button bntAgregar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using System.Configuration;
 
 
 namespace EnvioMer
@@ -28,7 +30,7 @@ namespace EnvioMer
         private void labelCerrar_Click(object sender, EventArgs e)
         {
             Close();
-        }              
+        }
 
         private void btnaceptar_Click(object sender, EventArgs e)
         {                              
@@ -39,6 +41,7 @@ namespace EnvioMer
                 panelFCL.Visible = true;
                 panelLCL.Visible = false;
                 labelFCL.Visible = true;
+                labelLCL.Visible = false;
             }
             else            
             if (dato == "LCL Contenedor Compartido")
@@ -46,6 +49,7 @@ namespace EnvioMer
                 panelLCL.Visible = true;
                 panelFCL.Visible = false;
                 labelLCL.Visible = true;
+                labelFCL.Visible = false;
             }
 
             //llenado de la tabla maritimo en mysql
@@ -61,7 +65,7 @@ namespace EnvioMer
             }
             catch (Exception EX) {
                 MessageBox.Show("Detalles" + EX);
-            }            
+            }
         }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
@@ -91,7 +95,6 @@ namespace EnvioMer
                     }
                 else if (result == DialogResult.No)
                 {
-                    
                    DialogResult r2= MessageBox.Show("¿Quieres Cambiar de contenedor?", "",MessageBoxButtons.YesNo);
                     {
                         if (r2 == DialogResult.Yes)
@@ -106,9 +109,7 @@ namespace EnvioMer
                         {
                             
                         }
-
                     }
-                    
                 }
                     //Se muestran los datos de la tabla FCL
                     Funciones.ConsultaFCL(dataGridTablaFCL,TXTidCompra);
@@ -174,7 +175,7 @@ namespace EnvioMer
                         //se muestra el costo total de los contenedores
                         labelLCLTotal.Text = Funciones.CostoFinalLCL(TXTidCompra).ToString();
                     }
-                }                
+                }
             }
             catch (Exception EX)
             {
@@ -202,8 +203,7 @@ namespace EnvioMer
         private void Btngregar_Click(object sender, EventArgs e)
         {
           try
-
-            {
+          {
                 //variables para realisa el calcular el precio del envio
                 double precio = double.Parse(textValorDeclarado.Text);
                 int cantidad = int.Parse(textCantidad.Text);
@@ -245,15 +245,11 @@ namespace EnvioMer
                 combomonedaAEreo.Text="Moneda";
                 textCostoEnvio.Text="Costo Del Envio";
                 textValorDeclarado.Text="Valor declarado";
-            }
-            catch(Exception ex)
-            {
+          }
+          catch(Exception ex)
+          {
                 MessageBox.Show("Error en " + ex.Message);
-            }
-          
-
-
-
+          }
         }
 
         private void dataGridAereo_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -263,12 +259,11 @@ namespace EnvioMer
 
         private void comboServicio_SelectedIndexChanged(object sender, EventArgs e)
         {//no se cambie el contenido del combo
-            
-           
             combomonedaAEreo.DropDownStyle = ComboBoxStyle.DropDownList;
             comboServicio.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
+        #region validacion
         private void TXTidCompra_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 45) || (e.KeyChar >= 58 && e.KeyChar <= 255))
@@ -386,6 +381,37 @@ namespace EnvioMer
                 MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
                 return;
+            }
+        } 
+        #endregion
+
+        private void TXTidCompra_Leave(object sender, EventArgs e)
+        {
+            MySqlConnection connection;
+            string connectionQuery = ConfigurationManager.ConnectionStrings["SQL_Conection"].ConnectionString;
+            bool status;
+
+            try
+            {
+                connection = new MySqlConnection(connectionQuery);
+                MySqlCommand comando = new MySqlCommand();
+                connection.Open();
+                comando.Connection = connection;
+                comando.CommandText = $"SELECT `OrdenCompra` FROM `maritimo` WHERE `OrdenCompra` = '{TXTidCompra.Text}'";
+                comando.Prepare();
+                MySqlDataReader reader = comando.ExecuteReader();
+                status = reader.Read() ? true : false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                status = false;
+            }
+
+            if (status.Equals(true))
+            {
+                MessageBox.Show("La orden de producción ya Existe", "ERROR");
+                TXTidCompra.Focus();
             }
         }
     }

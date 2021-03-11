@@ -170,6 +170,7 @@
             this.tabPage1.AutoScroll = true;
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tabPage1.Controls.Add(this.panelLCL);
             this.tabPage1.Controls.Add(this.panelFCL);
             this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Controls.Add(this.panel2);
@@ -187,7 +188,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelFCL.BackColor = System.Drawing.Color.Transparent;
-            this.panelFCL.Controls.Add(this.panelLCL);
             this.panelFCL.Controls.Add(this.dataGridTablaFCL);
             this.panelFCL.Controls.Add(this.label8);
             this.panelFCL.Controls.Add(this.BtnAgregar);
@@ -198,7 +198,7 @@
             this.panelFCL.Controls.Add(this.label17);
             this.panelFCL.Controls.Add(this.textCostoXcontenedor);
             this.panelFCL.Controls.Add(this.label16);
-            this.panelFCL.Location = new System.Drawing.Point(202, 80);
+            this.panelFCL.Location = new System.Drawing.Point(244, 92);
             this.panelFCL.Name = "panelFCL";
             this.panelFCL.Size = new System.Drawing.Size(716, 375);
             this.panelFCL.TabIndex = 53;
@@ -219,7 +219,7 @@
             this.panelLCL.Controls.Add(this.TxtNPaquetesLCL);
             this.panelLCL.Controls.Add(this.label9);
             this.panelLCL.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.panelLCL.Location = new System.Drawing.Point(0, 0);
+            this.panelLCL.Location = new System.Drawing.Point(217, 89);
             this.panelLCL.Name = "panelLCL";
             this.panelLCL.Size = new System.Drawing.Size(710, 375);
             this.panelLCL.TabIndex = 54;
@@ -567,6 +567,7 @@
             this.TXTidCompra.Size = new System.Drawing.Size(154, 26);
             this.TXTidCompra.TabIndex = 44;
             this.TXTidCompra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXTidCompra_KeyPress);
+            this.TXTidCompra.Leave += new System.EventHandler(this.TXTidCompra_Leave);
             // 
             // panel10
             // 
@@ -1349,6 +1350,7 @@
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1080, 670);
             this.Controls.Add(this.tabControl1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCostos";
             this.Text = "Form2";

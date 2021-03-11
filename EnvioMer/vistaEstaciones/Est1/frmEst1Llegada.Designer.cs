@@ -331,6 +331,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCod_Barra);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "frmEst1Llegada";
             this.Text = "Datos de Llegada de Productos";

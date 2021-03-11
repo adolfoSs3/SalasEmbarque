@@ -49,6 +49,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.ReportView);
+            this.DoubleBuffered = true;
             this.Name = "frmReportEst1";
             this.Text = "Reporte Estación 1";
             this.ResumeLayout(false);

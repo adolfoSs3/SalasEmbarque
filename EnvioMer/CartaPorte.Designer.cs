@@ -69,6 +69,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox28 = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.textBox27 = new System.Windows.Forms.TextBox();
@@ -97,7 +98,6 @@
             this.label21 = new System.Windows.Forms.Label();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -551,6 +551,20 @@
             this.tabPage2.Text = "Parte 2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(792, 418);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(196, 64);
+            this.button2.TabIndex = 109;
+            this.button2.Text = "Guardar y Generar Reporte";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // textBox28
             // 
             this.textBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -810,20 +824,6 @@
             this.label20.TabIndex = 34;
             this.label20.Text = "Descripción de la mercancia";
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(24)))), ((int)(((byte)(48)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(792, 418);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(196, 64);
-            this.button2.TabIndex = 109;
-            this.button2.Text = "Guardar y Generar Reporte";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // CartaPorte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -832,6 +832,7 @@
             this.ClientSize = new System.Drawing.Size(1064, 631);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CartaPorte";
             this.Text = "CartaPorte";

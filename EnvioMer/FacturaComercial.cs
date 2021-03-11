@@ -68,6 +68,8 @@ namespace EnvioMer
                         txtFactura.Clear();
                         txtOrdenCompra.Clear();
                         txtTpago.Clear();
+
+                        tabControl1.SelectedIndex = 1;
                     }
 
                 }
@@ -307,6 +309,19 @@ namespace EnvioMer
             }
         }
 
-        #endregion        
+        #endregion
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string val1 = textBox1.Text;
+            string val2 = textBox2.Text;
+            string val3 = textBox3.Text;
+            string val4 = textBox4.Text;
+            string val5 = textBox5.Text;
+            string val6 = textBox6.Text;
+            string val7 = textBox7.Text;
+            string[] row = { val1, val2, val3, val4, val5, val6, val7 };
+            dataGMercancia.Rows.Add(row);
+        }
     }
 }

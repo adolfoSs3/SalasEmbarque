@@ -168,6 +168,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtC_T_Salida);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "frmEst1Salida";
             this.Text = "Datos de Salida de Productos";
